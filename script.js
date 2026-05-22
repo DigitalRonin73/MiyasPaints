@@ -261,7 +261,7 @@ let activeLanguage = savedLanguage;
 // Later, seatsLeft can be replaced by live availability from a booking backend.
 const classEvents = {
   "tropical-sunset": {
- image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=82",
+ image: "images/tropical-sunset-artwork.jpg",
     imageAlt: {
       en: "Two tropical sunset palm tree paintings on a table",
       ja: "テーブルに置かれた2枚のトロピカルサンセット作品"
@@ -309,7 +309,7 @@ const classEvents = {
     seatsLeft: 4
   },
   "sea-turtle": {
- image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=900&q=82",
+ image: "images/sea-turtle-class-story.jpg",
     imageAlt: {
       en: "Sea turtle acrylic painting on an easel",
       ja: "イーゼルに置かれたウミガメのアクリル作品"

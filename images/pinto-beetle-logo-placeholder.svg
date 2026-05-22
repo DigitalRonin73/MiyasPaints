@@ -1,7 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="Pinto Beetle logo placeholder">
-  <rect width="96" height="96" rx="28" fill="#ff5fa2"/>
-  <circle cx="48" cy="50" r="25" fill="#fff8ef"/>
-  <path d="M31 45c5-14 29-14 34 0M30 47h36M48 25v50M27 60c8 15 34 15 42 0" fill="none" stroke="#292236" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="39" cy="44" r="4" fill="#292236"/>
-  <circle cx="57" cy="44" r="4" fill="#292236"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-labelledby="title desc">
+  <title id="title">Pinto Beetle logo placeholder</title>
+  <desc id="desc">Round placeholder logo for Pinto Beetle Sip and Paint Okinawa.</desc>
+  <defs>
+    <linearGradient id="sunset" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff5fa2"/>
+      <stop offset="0.55" stop-color="#ff8f70"/>
+      <stop offset="1" stop-color="#ffd96a"/>
+    </linearGradient>
+  </defs>
+  <circle cx="110" cy="110" r="102" fill="#fffdf7" stroke="#ff5fa2" stroke-width="8"/>
+  <circle cx="110" cy="110" r="86" fill="none" stroke="#6f3fa5" stroke-width="4" stroke-dasharray="10 8"/>
+  <path d="M54 112c26-33 59-43 101-30 19 7 30 24 24 45-6 23-31 38-63 37-34-1-61-18-72-40-2-4 1-9 10-12Z" fill="#2f194d"/>
+  <path d="M70 110c21 3 32 14 33 34-18-3-31-14-33-34Zm41-25c11 16 12 35 2 57-14-14-16-33-2-57Zm31 6c14 10 21 24 19 41-15-7-23-21-19-41Z" fill="url(#sunset)" opacity=".9"/>
+  <path d="M55 89c18 10 37 11 57 4m14-17c18-10 34-11 50-2" fill="none" stroke="#2f194d" stroke-width="7" stroke-linecap="round"/>
+  <text x="110" y="45" text-anchor="middle" fill="#2f194d" font-size="24" font-family="Georgia, serif" font-style="italic">Pinto Beetle</text>
+  <text x="110" y="195" text-anchor="middle" fill="#6f3fa5" font-size="17" font-family="Arial, sans-serif" font-weight="700">SIP | PAINT | CREATE</text>
 </svg>
