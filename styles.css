@@ -32,6 +32,8 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.62;
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
 }
 
 body.nav-open {
@@ -53,6 +55,18 @@ input,
 select,
 textarea {
   font: inherit;
+}
+
+h1,
+h2,
+h3,
+p,
+a,
+button,
+span,
+label {
+  writing-mode: horizontal-tb;
+  text-orientation: mixed;
 }
 
 :focus-visible {
@@ -411,8 +425,9 @@ h3 {
   width: 100%;
   aspect-ratio: 4 / 4.6;
   border-radius: var(--radius);
+  filter: sepia(0.08) saturate(1.08) brightness(1.04) contrast(0.98);
   object-fit: cover;
-  object-position: center center;
+  object-position: 44% center;
   box-shadow: var(--shadow);
 }
 
