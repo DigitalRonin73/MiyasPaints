@@ -136,7 +136,7 @@ const translations = {
     navContact: "お問い合わせ",
     reserveSeat: "席を予約する",
     viewClasses: "開催予定を見る",
-    heroEyebrow: "沖縄 Sip & Paint",
+    heroEyebrow: "Sip & Paint Okinawa",
     heroTitle: "Sip, Paint, and Create in Okinawa",
     heroSubtitle: "読谷で開催する、子ども・大人・カップル・家族向けの初心者歓迎アクリルペイント教室です。",
     heroNote: "リラックス。\n楽しんで。\n作品づくり！",
@@ -247,7 +247,7 @@ const translations = {
     contactTitle: "質問はInstagramでお気軽にどうぞ",
     contactLocationLabel: "場所:",
     messageInstagram: "Instagramでメッセージ",
-    footerTagline: "沖縄 Sip & Paint",
+    footerTagline: "Sip & Paint Okinawa",
     copyright: "© 2026 Pinto Beetle. All rights reserved."
   }
 };
