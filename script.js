@@ -137,7 +137,7 @@ const translations = {
     reserveSeat: "席を予約する",
     viewClasses: "開催予定を見る",
     heroEyebrow: "沖縄 Sip & Paint",
-    heroTitle: "沖縄で飲んで、描いて、楽しもう",
+    heroTitle: "Sip, Paint, and Create in Okinawa",
     heroSubtitle: "読谷で開催する、子ども・大人・カップル・家族向けの初心者歓迎アクリルペイント教室です。",
     heroNote: "リラックス。\n楽しんで。\n作品づくり！",
     heroImageAlt: "青い作品を持って笑うPinto Beetleのクラス参加者",
