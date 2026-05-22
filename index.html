@@ -1,26 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Miya's Paints</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pinto Beetle | Sip & Paint Okinawa</title>
+  <meta name="description" content="Beginner-friendly acrylic painting classes for kids and adults in Yomitan, Okinawa. All supplies included. Reserve your seat today.">
+  <meta name="theme-color" content="#ff5fa2">
+
+  <meta property="og:title" content="Pinto Beetle | Sip & Paint Okinawa">
+  <meta property="og:description" content="Beginner-friendly acrylic painting classes for kids and adults in Yomitan, Okinawa. All supplies included. Reserve your seat today.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&q=80">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Pinto Beetle | Sip & Paint Okinawa">
+  <meta name="twitter:description" content="Beginner-friendly acrylic painting classes for kids and adults in Yomitan, Okinawa. All supplies included. Reserve your seat today.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Favicon placeholder: replace with /images/favicon.png when the brand mark is ready. -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23ff5fa2'/%3E%3Ctext x='32' y='43' font-size='34' text-anchor='middle' fill='white' font-family='Arial'%3EP%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Miya's Paints</h1>
-    <p>Original artwork and custom paintings.</p>
+  <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Pinto Beetle home">
+        <!-- Replace this placeholder with the final Pinto Beetle logo file. -->
+        <img class="brand-mark" src="images/pinto-beetle-logo-placeholder.svg" alt="" aria-hidden="true">
+        <span>
+          <span class="brand-name">Pinto Beetle</span>
+          <span class="brand-tagline">Sip & Paint Okinawa 🌴</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu" data-i18n-aria-label="menuToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-menu" id="site-menu">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#classes" data-i18n="navClasses">Classes</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#gallery" data-i18n="navGallery">Gallery</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </div>
+
+      <div class="nav-actions">
+        <div class="language-toggle" aria-label="Language selector">
+          <button type="button" class="language-option is-active" data-lang="en" aria-pressed="true">🇺🇸 EN</button>
+          <span aria-hidden="true">|</span>
+          <button type="button" class="language-option" data-lang="ja" aria-pressed="false">🇯🇵 日本語</button>
+        </div>
+        <a class="button button-small button-primary header-reserve" href="#reserve" data-i18n="reserveSeat">Reserve Your Seat</a>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Artwork Coming Soon</h2>
-      <p>This website is currently under development.</p>
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-i18n="heroEyebrow">Sip & Paint Okinawa</p>
+        <h1 data-i18n="heroTitle">Sip, Paint, and Create in Okinawa</h1>
+        <p class="hero-text" data-i18n="heroSubtitle">Beginner-friendly acrylic painting classes for kids, adults, couples, and families in Yomitan.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#reserve"><span aria-hidden="true">▣</span><span data-i18n="reserveSeat">Reserve Your Seat</span></a>
+          <a class="button button-secondary" href="#classes"><span data-i18n="viewClasses">View Upcoming Classes</span><span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-stats" aria-label="Class highlights">
+          <span><strong>¥4,500</strong> <span data-i18n="perPerson">per person</span></span>
+          <span><strong>Yomitan</strong> Okinawa</span>
+          <span><strong>All</strong> <span data-i18n="supplies">supplies included</span></span>
+        </div>
+      </div>
+
+      <div class="hero-media reveal">
+        <!-- Replace with a real Pinto Beetle class photo: smiling participants holding finished paintings. -->
+ <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=900&q=82" alt="Smiling Pinto Beetle class guests holding blue paintings" data-i18n-alt="heroImageAlt">
+        <span class="paint-stroke stroke-one" aria-hidden="true"></span>
+        <span class="paint-stroke stroke-two" aria-hidden="true"></span>
+        <span class="tropical-accent accent-palm" aria-hidden="true">🌴</span>
+        <span class="tropical-accent accent-heart" aria-hidden="true">♡</span>
+        <p class="hero-note" data-i18n="heroNote">Relax.<br>Unplug.<br>Create & enjoy!</p>
+      </div>
+    </section>
+
+    <section class="quick-info section compact" aria-labelledby="quick-info-title">
+      <h2 class="sr-only" id="quick-info-title" data-i18n="quickInfoTitle">Quick class details</h2>
+      <article class="info-card reveal">
+        <span class="card-icon card-icon-pink" aria-hidden="true">✎</span>
+        <h3 data-i18n="infoBeginnerTitle">Beginner Friendly</h3>
+        <p data-i18n="infoBeginnerText">No experience needed. Miya guides every step at an easy pace.</p>
+      </article>
+      <article class="info-card reveal">
+        <span class="card-icon card-icon-yellow" aria-hidden="true">☷</span>
+        <h3 data-i18n="infoSmallTitle">Small Classes</h3>
+        <p data-i18n="infoSmallText">Relaxed groups with time for questions, laughs, and photos.</p>
+      </article>
+      <article class="info-card reveal">
+        <span class="card-icon card-icon-teal" aria-hidden="true">▥</span>
+        <h3 data-i18n="infoSuppliesTitle">All Supplies Included</h3>
+        <p data-i18n="infoSuppliesText">Canvas, paint, brushes, and instruction are ready when you arrive.</p>
+      </article>
+    </section>
+
+    <section class="section section-tint" id="classes" aria-labelledby="classes-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="classesEyebrow">Upcoming Classes</p>
+        <h2 id="classes-title" data-i18n="classesTitle">Pick your next painting night</h2>
+        <p data-i18n="classesIntro">Choose a design, reserve your spot, and come enjoy a cozy creative session in Yomitan.</p>
+        <a class="text-link" href="#reserve" data-i18n="viewAllClasses">View all classes →</a>
+      </div>
+
+      <!-- Class cards are filled from classEvents in script.js. Edit class details there so cards and booking prefill stay in sync. -->
+      <div class="event-grid">
+        <article class="event-card reveal" data-event-id="tropical-sunset">
+          <!-- Replace with real Tropical Sunset class artwork or participant photo. -->
+          <div class="event-image-wrap">
+            <img data-event-field="image" src="" alt="">
+            <time class="date-card" data-event-field="dateCard" datetime=""><span data-event-field="month"></span><strong data-event-field="day"></strong><span data-event-field="weekday"></span></time>
+          </div>
+          <div class="event-content">
+            <span class="badge" data-event-field="seats"></span>
+            <h3 data-event-field="title"></h3>
+            <dl class="event-details">
+              <div><dt data-i18n="dateLabel">Date</dt><dd data-event-field="date"></dd></div>
+              <div><dt data-i18n="timeLabel">Time</dt><dd data-event-field="time"></dd></div>
+              <div><dt data-i18n="locationLabel">Location</dt><dd data-event-field="location"></dd></div>
+              <div><dt data-i18n="priceLabel">Price</dt><dd data-event-field="price"></dd></div>
+            </dl>
+            <p data-event-field="description"></p>
+            <a
+              class="button button-primary button-full book-class-button"
+              href="#reserve"
+              data-i18n="bookClass"
+              data-event-id="tropical-sunset"
+            >Book This Class</a>
+          </div>
+        </article>
+
+        <article class="event-card reveal" data-event-id="cherry-blossom">
+          <!-- Replace with real Cherry Blossom class artwork or participant photo. -->
+          <div class="event-image-wrap">
+            <img data-event-field="image" src="" alt="">
+            <time class="date-card" data-event-field="dateCard" datetime=""><span data-event-field="month"></span><strong data-event-field="day"></strong><span data-event-field="weekday"></span></time>
+          </div>
+          <div class="event-content">
+            <span class="badge badge-purple" data-event-field="seats"></span>
+            <h3 data-event-field="title"></h3>
+            <dl class="event-details">
+              <div><dt data-i18n="dateLabel">Date</dt><dd data-event-field="date"></dd></div>
+              <div><dt data-i18n="timeLabel">Time</dt><dd data-event-field="time"></dd></div>
+              <div><dt data-i18n="locationLabel">Location</dt><dd data-event-field="location"></dd></div>
+              <div><dt data-i18n="priceLabel">Price</dt><dd data-event-field="price"></dd></div>
+            </dl>
+            <p data-event-field="description"></p>
+            <a
+              class="button button-primary button-full book-class-button"
+              href="#reserve"
+              data-i18n="bookClass"
+              data-event-id="cherry-blossom"
+            >Book This Class</a>
+          </div>
+        </article>
+
+        <article class="event-card reveal" data-event-id="sea-turtle">
+          <!-- Replace with real Sea Turtle class artwork or participant photo. -->
+          <div class="event-image-wrap">
+            <img data-event-field="image" src="" alt="">
+            <time class="date-card" data-event-field="dateCard" datetime=""><span data-event-field="month"></span><strong data-event-field="day"></strong><span data-event-field="weekday"></span></time>
+          </div>
+          <div class="event-content">
+            <span class="badge badge-teal" data-event-field="seats"></span>
+            <h3 data-event-field="title"></h3>
+            <dl class="event-details">
+              <div><dt data-i18n="dateLabel">Date</dt><dd data-event-field="date"></dd></div>
+              <div><dt data-i18n="timeLabel">Time</dt><dd data-event-field="time"></dd></div>
+              <div><dt data-i18n="locationLabel">Location</dt><dd data-event-field="location"></dd></div>
+              <div><dt data-i18n="priceLabel">Price</dt><dd data-event-field="price"></dd></div>
+            </dl>
+            <p data-event-field="description"></p>
+            <a
+              class="button button-primary button-full book-class-button"
+              href="#reserve"
+              data-i18n="bookClass"
+              data-event-id="sea-turtle"
+            >Book This Class</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section steps-section" aria-labelledby="steps-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="stepsEyebrow">How It Works</p>
+        <h2 id="steps-title" data-i18n="stepsTitle">A simple way to make something beautiful</h2>
+      </div>
+      <div class="steps">
+        <article class="step reveal">
+          <span>1</span>
+          <h3 data-i18n="stepOneTitle">Choose a Class</h3>
+          <p data-i18n="stepOneText">Pick the painting date and design that fits your group.</p>
+        </article>
+        <article class="step reveal">
+          <span>2</span>
+          <h3 data-i18n="stepTwoTitle">Reserve Your Seat</h3>
+          <p data-i18n="stepTwoText">Send a quick request so Miya can confirm availability.</p>
+        </article>
+        <article class="step reveal">
+          <span>3</span>
+          <h3 data-i18n="stepThreeTitle">Come Paint & Relax</h3>
+          <p data-i18n="stepThreeText">Arrive ready to sip, paint, laugh, and take home your art.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section about-section section-tint" id="about" aria-labelledby="about-title">
+      <div class="about-photo reveal">
+        <!-- Replace with a real photo of Miya. -->
+ <img src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=900&q=82" alt="Pinto Beetle class guests smiling with finished paintings" data-i18n-alt="miyaAlt">
+      </div>
+      <div class="about-copy reveal">
+        <p class="eyebrow" data-i18n="aboutEyebrow">About Miya</p>
+        <h2 id="about-title" data-i18n="aboutTitle">Warm guidance, playful creativity</h2>
+        <p data-i18n="aboutText">Hi, I’m Miya. I love helping people relax and discover their creativity through fun, step-by-step acrylic painting classes in Okinawa.</p>
+        <a class="button button-secondary" href="#gallery" data-i18n="seeGallery">See the Gallery</a>
+      </div>
+    </section>
+
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="galleryEyebrow">Gallery</p>
+        <h2 id="gallery-title" data-i18n="galleryTitle">Real moments, colorful memories</h2>
+        <p data-i18n="galleryIntro">Replace these placeholders with Pinto Beetle class photos, finished artwork, and group smiles.</p>
+      </div>
+      <!-- Replace gallery placeholders with optimized local images in /images when available. -->
+      <div class="gallery-grid">
+ <img class="reveal" loading="lazy" src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=700&q=78" alt="Pinto Beetle guests holding blue paintings" data-i18n-alt="galleryPaintAlt">
+ <img class="reveal" loading="lazy" src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=78" alt="Two bright tropical sunset paintings" data-i18n-alt="galleryStudentAlt">
+        <img class="reveal" loading="lazy" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=78" alt="Friends gathered for a creative class" data-i18n-alt="galleryGroupAlt">
+        <img class="reveal" loading="lazy" src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?auto=format&fit=crop&w=700&q=78" alt="Bright acrylic paint supplies" data-i18n-alt="gallerySuppliesAlt">
+        <img class="reveal" loading="lazy" src="https://images.unsplash.com/photo-1513682121497-80211f36a7d3?auto=format&fit=crop&w=700&q=78" alt="Child making art with paint" data-i18n-alt="galleryKidsAlt">
+ <img class="reveal" loading="lazy" src="https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&w=700&q=78" alt="Cherry blossom class story graphic" data-i18n-alt="gallerySakuraAlt">
+ <img class="reveal" loading="lazy" src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=700&q=78" alt="Sea turtle class story graphic" data-i18n-alt="galleryTurtleAlt">
+ <img class="reveal" loading="lazy" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=700&q=78" alt="Tropical sunset paintings with palms" data-i18n-alt="gallerySunsetAlt">
+      </div>
+    </section>
+
+    <section class="section split-section section-tint" aria-labelledby="join-title">
+      <div class="list-panel reveal">
+        <p class="eyebrow" data-i18n="joinEyebrow">Who Can Join</p>
+        <h2 id="join-title" data-i18n="joinTitle">Everyone is welcome</h2>
+        <ul class="check-list">
+          <li data-i18n="joinKids">Kids welcome</li>
+          <li data-i18n="joinAdults">Adults welcome</li>
+          <li data-i18n="joinCouples">Couples welcome</li>
+          <li data-i18n="joinFriends">Friends welcome</li>
+          <li data-i18n="joinFamilies">Families welcome</li>
+          <li data-i18n="joinBeginners">Beginners welcome</li>
+        </ul>
+      </div>
+      <div class="list-panel reveal">
+        <p class="eyebrow" data-i18n="includedEyebrow">What's Included</p>
+        <h2 data-i18n="includedTitle">Just bring yourself</h2>
+        <ul class="check-list">
+          <li data-i18n="includedCanvas">Canvas</li>
+          <li data-i18n="includedPaints">Acrylic paints</li>
+          <li data-i18n="includedBrushes">Brushes</li>
+          <li data-i18n="includedInstruction">Step-by-step instruction</li>
+          <li data-i18n="includedApron">Apron if available</li>
+          <li data-i18n="includedAtmosphere">Relaxed atmosphere</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section testimonials" aria-labelledby="testimonials-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="testimonialsEyebrow">Testimonials</p>
+        <h2 id="testimonials-title" data-i18n="testimonialsTitle">Guests leave relaxed and proud</h2>
+      </div>
+      <div class="testimonial-grid">
+        <figure class="testimonial-card reveal">
+          <blockquote data-i18n="testimonialOne">“Such a fun experience. I never thought I could paint something this beautiful.”</blockquote>
+          <figcaption data-i18n="testimonialOneName">A first-time painter</figcaption>
+        </figure>
+        <figure class="testimonial-card reveal">
+          <blockquote data-i18n="testimonialTwo">“Perfect family afternoon in Okinawa. The class felt easy, welcoming, and joyful.”</blockquote>
+          <figcaption data-i18n="testimonialTwoName">Family guest</figcaption>
+        </figure>
+        <figure class="testimonial-card reveal">
+          <blockquote data-i18n="testimonialThree">“Miya made every step simple. We laughed the whole time and loved our paintings.”</blockquote>
+          <figcaption data-i18n="testimonialThreeName">Couples class guest</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-tint" id="faq" aria-labelledby="faq-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="faqEyebrow">FAQ</p>
+        <h2 id="faq-title" data-i18n="faqTitle">Good things to know before class</h2>
+      </div>
+      <div class="faq-list reveal">
+        <details>
+          <summary data-i18n="faqExperienceQ">Do I need painting experience?</summary>
+          <p data-i18n="faqExperienceA">No. Classes are designed for beginners and guided step by step.</p>
+        </details>
+        <details>
+          <summary data-i18n="faqKidsQ">Are kids allowed?</summary>
+          <p data-i18n="faqKidsA">Yes. Kids are welcome when the class theme and timing are a good fit.</p>
+        </details>
+        <details>
+          <summary data-i18n="faqPriceQ">How much is the class?</summary>
+          <p data-i18n="faqPriceA">Classes are ¥4,500 per person unless a special event lists a different price.</p>
+        </details>
+        <details>
+          <summary data-i18n="faqWhereQ">Where are classes held?</summary>
+          <p data-i18n="faqWhereA">Classes are held in Yomitan, Okinawa. Exact details are confirmed after reservation.</p>
+        </details>
+        <details>
+          <summary data-i18n="faqBringQ">What should I bring?</summary>
+          <p data-i18n="faqBringA">All painting supplies are included. Wear something comfortable that can handle a little paint.</p>
+        </details>
+        <details>
+          <summary data-i18n="faqPrivateQ">Can I book a private event?</summary>
+          <p data-i18n="faqPrivateA">Yes. Send a message with your preferred date, group size, and occasion.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section reserve-section" id="reserve" aria-labelledby="reserve-title">
+      <span class="reserve-art reserve-brushes" aria-hidden="true">🖌️</span>
+      <span class="reserve-art reserve-palette" aria-hidden="true">🎨</span>
+      <div class="reserve-copy reveal">
+        <p class="eyebrow" data-i18n="reserveEyebrow">Reserve</p>
+        <h2 id="reserve-title" data-i18n="reserveTitle">Request your seat</h2>
+        <p data-i18n="reserveIntro">Send a quick request and Miya will confirm availability. Online payments can be connected here later with Stripe, Square, Jotform, Google Forms, Formspree, or a custom API.</p>
+      </div>
+
+      <!-- Connect this form later to Jotform, Google Forms, Formspree, Stripe, Square, or a custom reservation API. -->
+      <form class="reservation-form reveal" id="reservation-form">
+        <label>
+          <span data-i18n="formName">Name</span>
+          <input type="text" name="name" autocomplete="name" required>
+        </label>
+        <label>
+          <span data-i18n="formEmail">Email</span>
+          <input type="email" name="email" autocomplete="email" required>
+        </label>
+        <label>
+          <span data-i18n="formContact">Phone or Instagram handle</span>
+          <input type="text" name="contact" autocomplete="tel">
+        </label>
+        <label>
+          <span data-i18n="formSelectedClass">Selected class</span>
+          <input type="text" name="selected-class" data-i18n-placeholder="formSelectedClassPlaceholder" placeholder="Choose a class above or type one here">
+        </label>
+        <label>
+          <span data-i18n="formDate">Class date</span>
+          <input type="text" name="class-date" data-i18n-placeholder="formDatePlaceholder" placeholder="Example: June 8" required>
+        </label>
+        <label>
+          <span data-i18n="formParticipants">Number of participants</span>
+          <input type="number" name="participants" min="1" max="20" value="1" required>
+        </label>
+        <label>
+          <span data-i18n="formGroup">Adults/Kids</span>
+          <select name="group-type" required>
+            <option value="" data-i18n="formGroupChoose">Choose one</option>
+            <option value="adults" data-i18n="formGroupAdults">Adults</option>
+            <option value="kids" data-i18n="formGroupKids">Kids</option>
+            <option value="mixed" data-i18n="formGroupMixed">Mixed group</option>
+          </select>
+        </label>
+        <label class="full-field">
+          <span data-i18n="formMessage">Message</span>
+          <textarea name="message" rows="5" data-i18n-placeholder="formMessagePlaceholder" placeholder="Tell us which class you want or ask about a private event."></textarea>
+        </label>
+        <button class="button button-primary button-full full-field" type="submit" data-i18n="requestReservation">Request Reservation</button>
+        <p class="form-status full-field" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="section contact-section section-tint" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+        <h2 id="contact-title" data-i18n="contactTitle">Questions? Message Miya anytime</h2>
+      </div>
+      <!-- Update contact information here when Instagram, venue details, or booking links change. -->
+      <div class="contact-card reveal">
+        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/miyas.paints/" target="_blank" rel="noopener">@miyas.paints</a></p>
+        <p><strong data-i18n="contactLocationLabel">Location:</strong> Yomitan, Okinawa</p>
+        <a class="button button-primary" href="https://www.instagram.com/miyas.paints/" target="_blank" rel="noopener" data-i18n="messageInstagram">Message on Instagram</a>
+        <!-- Replace this placeholder with a real Yomitan/Okinawa location photo or illustrated map. -->
+        <img class="contact-beach" loading="lazy" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=78" alt="Bright Okinawa beach placeholder">
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© Miya's Paints</p>
+  <footer class="site-footer">
+    <p><strong>Pinto Beetle</strong> | <span data-i18n="footerTagline">Sip & Paint Okinawa</span></p>
+    <a href="https://www.instagram.com/miyas.paints/" target="_blank" rel="noopener">Instagram @miyas.paints</a>
+    <p data-i18n="copyright">© 2026 Pinto Beetle. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
