@@ -425,9 +425,9 @@ h3 {
   width: 100%;
   aspect-ratio: 4 / 4.6;
   border-radius: var(--radius);
-  filter: sepia(0.08) saturate(1.08) brightness(1.04) contrast(0.98);
+  filter: sepia(0.12) saturate(1.12) brightness(1.05) contrast(0.98);
   object-fit: cover;
-  object-position: 44% center;
+  object-position: 36% center;
   box-shadow: var(--shadow);
 }
 
