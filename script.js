@@ -285,7 +285,7 @@ const classEvents = {
     seatsLeft: 6
   },
   "cherry-blossom": {
- image: "https://images.unsplash.com/photo-1522383225653-ed111181a951?auto=format&fit=crop&w=900&q=82",
+ image: "images/cherry-blossom-class-story.jpg",
     imageAlt: {
       en: "Cherry blossom painting class announcement",
       ja: "桜ペインティングクラスのお知らせ画像"
