@@ -16,7 +16,15 @@ const translations = {
     mobileHeroTitle: "Pinto Beetle Art & Sip",
     heroSubtitle: "Beginner-friendly acrylic painting classes in Yomitan for kids, adults, couples, and families. Unplug, relax with music, and feel refreshed through art.",
     heroImageAlt: "Adult student painting on canvas in a warm Pinto Beetle class setting",
+    mobileQuickLinksAria: "Quick links",
+    mobileQuickBook: "Book",
+    mobileQuickBookAria: "Reserve your seat",
+    mobileQuickContact: "Miya",
+    mobileQuickContactAria: "Contact Miya",
     perPerson: "per person",
+    statLocationMain: "Yomitan",
+    statLocationSub: "Okinawa",
+    statSuppliesMain: "All",
     supplies: "supplies included",
     quickInfoTitle: "Quick class details",
     infoBeginnerTitle: "Step-by-Step",
@@ -126,6 +134,7 @@ const translations = {
     contactEyebrow: "Contact",
     contactTitle: "Questions? Message Miya anytime",
     contactLocationLabel: "Location:",
+    contactLocationValue: "Yomitan, Okinawa",
     messageInstagram: "Message on Instagram",
     footerTagline: "Sip & Paint Okinawa",
     copyright: "© 2026 Pinto Beetle. All rights reserved."
@@ -142,23 +151,31 @@ const translations = {
     reserveSeat: "席を予約する",
     viewClasses: "開催予定を見る",
     heroEyebrow: "Sip & Paint Okinawa",
-    heroTitle: "Sip, Paint, and Create.",
-    mobileHeroTitle: "Pinto Beetle Art & Sip",
-    heroSubtitle: "日常を忘れて、アートに浸る特別な時間。デジタルから離れて（Unplug）、心地よい音楽とともにキャンバスに向き合うだけで、癒やし（Therapy）とリフレッシュを感じられます。",
+    heroTitle: "飲んで、描いて、楽しむ。",
+    mobileHeroTitle: "Pinto Beetle ペイント教室",
+    heroSubtitle: "読谷で楽しむ、初心者にやさしいアクリルペイント教室です。お子さま、大人、カップル、ご家族で、音楽を聴きながらゆったり作品づくりを楽しめます。",
     heroImageAlt: "温かい光の中でキャンバスに絵を描く大人のPinto Beetleの生徒",
+    mobileQuickLinksAria: "クイックリンク",
+    mobileQuickBook: "予約",
+    mobileQuickBookAria: "席を予約する",
+    mobileQuickContact: "Miyaへ",
+    mobileQuickContactAria: "Miyaへ問い合わせる",
     perPerson: "おひとり",
+    statLocationMain: "読谷",
+    statLocationSub: "沖縄",
+    statSuppliesMain: "すべて",
     supplies: "画材込み",
     quickInfoTitle: "クラス概要",
-    infoBeginnerTitle: "Step-by-Step",
+    infoBeginnerTitle: "ステップ式",
     infoBeginnerText: "絵心がなくても大丈夫。ガイドに沿って一歩ずつ、一筆ずつ進めるステップ式レッスンです。",
-    infoSmallTitle: "Small Group Sessions",
+    infoSmallTitle: "少人数制クラス",
     infoSmallSubtitle: "Miya’s table（最大6名様まで）",
     infoSmallText: "最大6名様までの少人数制クラス。リラックスして楽しめるアットホームな雰囲気です。",
-    infoCreativeTitle: "Creative Fun for All Ages",
+    infoCreativeTitle: "年齢問わず楽しめる",
     infoCreativeText: "キッズから大人まで、みんなで楽しめるアート体験を。",
-    infoCustomTitle: "Custom Events & Workshops",
+    infoCustomTitle: "イベント・ワークショップ",
     infoCustomText: "お誕生日会、お仲間との集まり、出張イベントなど、特別なひとときを彩るアート体験をお手伝いします。",
-    infoSuppliesTitle: "All Materials Included",
+    infoSuppliesTitle: "画材はすべて込み",
     infoSuppliesText: "手ぶらで、ワクワクだけ持ってきてください！ キャンバス、絵の具、筆、エプロンなど必要なものはすべてご用意しています。",
     classesEyebrow: "開催予定",
     classesTitle: "次に描く作品を選ぼう",
@@ -257,6 +274,7 @@ const translations = {
     contactEyebrow: "お問い合わせ",
     contactTitle: "質問はInstagramでお気軽にどうぞ",
     contactLocationLabel: "場所:",
+    contactLocationValue: "沖縄県読谷村",
     messageInstagram: "Instagramでメッセージ",
     footerTagline: "Sip & Paint Okinawa",
     copyright: "© 2026 Pinto Beetle. All rights reserved."
@@ -290,12 +308,27 @@ const classEvents = {
       ja: "2026年5月31日"
     },
     isoDate: "2026-05-31",
-    month: "MAY",
+    month: {
+      en: "MAY",
+      ja: "5月"
+    },
     day: "31",
- weekday: "SUN",
-    time: "1:00 PM",
-    location: "Yomitan, Miya's Table",
-    price: "¥4,500 per person",
+    weekday: {
+      en: "SUN",
+      ja: "日"
+    },
+    time: {
+      en: "1:00 PM",
+      ja: "午後1:00"
+    },
+    location: {
+      en: "Yomitan, Miya's Table",
+      ja: "読谷・ミヤのテーブル"
+    },
+    price: {
+      en: "¥4,500 per person",
+      ja: "おひとり¥4,500"
+    },
     seatsLeft: {
       en: "Final spot: 1 pair left",
       ja: "残りあと1組（2名さま）です。"
@@ -320,12 +353,27 @@ const classEvents = {
       ja: "2026年5月16日"
     },
     isoDate: "2026-05-16",
-    month: "MAY",
+    month: {
+      en: "MAY",
+      ja: "5月"
+    },
     day: "16",
- weekday: "SAT",
-    time: "1:00 PM",
-    location: "Yomitan, Okinawa",
-    price: "¥4,500",
+    weekday: {
+      en: "SAT",
+      ja: "土"
+    },
+    time: {
+      en: "1:00 PM",
+      ja: "午後1:00"
+    },
+    location: {
+      en: "Yomitan, Okinawa",
+      ja: "沖縄県読谷村"
+    },
+    price: {
+      en: "¥4,500",
+      ja: "¥4,500"
+    },
     seatsLeft: {
       en: "Fully booked",
       ja: "満席になりました"
@@ -345,14 +393,32 @@ const classEvents = {
       en: "Paint a cheerful sea turtle with bright Okinawa blues and beginner-friendly details.",
       ja: "沖縄らしい明るいブルーで、かわいいウミガメを初心者向けに描きます。"
     },
-    date: "June 22",
+    date: {
+      en: "June 22, 2026",
+      ja: "2026年6月22日"
+    },
     isoDate: "2026-06-22",
-    month: "JUN",
+    month: {
+      en: "JUN",
+      ja: "6月"
+    },
     day: "22",
- weekday: "MON",
-    time: "1:00 PM",
-    location: "Yomitan, Okinawa",
-    price: "¥4,500",
+    weekday: {
+      en: "MON",
+      ja: "月"
+    },
+    time: {
+      en: "1:00 PM",
+      ja: "午後1:00"
+    },
+    location: {
+      en: "Yomitan, Okinawa",
+      ja: "沖縄県読谷村"
+    },
+    price: {
+      en: "¥4,500",
+      ja: "¥4,500"
+    },
     seatsLeft: 6
   }
 };
@@ -404,12 +470,12 @@ function renderEventCard(card, event) {
   const image = card.querySelector('[data-event-field="image"]');
   const dateCard = card.querySelector('[data-event-field="dateCard"]');
   const fields = {
-    month: event.month,
+    month: localizedValue(event.month),
     day: event.day,
-    weekday: event.weekday,
+    weekday: localizedValue(event.weekday),
     title: localizedValue(event.title),
     date: localizedValue(event.date),
-    time: event.time,
+    time: localizedValue(event.time),
     location: localizedValue(event.location),
     price: localizedValue(event.price)
   };
@@ -495,7 +561,7 @@ function showSelectedClassSummary(event) {
 
   const fields = {
     title: localizedValue(event.title),
-    datetime: `${localizedValue(event.date)} ${event.time}`,
+    datetime: `${localizedValue(event.date)} ${localizedValue(event.time)}`,
     availability: seatsLabel(event.seatsLeft)
   };
 
@@ -538,7 +604,7 @@ bookClassButtons.forEach((button) => {
 
     const classTitle = localizedValue(event.title);
     const classDate = localizedValue(event.date);
-    const classTime = event.time;
+    const classTime = localizedValue(event.time);
 
     reservationForm.elements["selected-class"].value = classTitle;
     reservationForm.elements["class-date"].value = classDate;
