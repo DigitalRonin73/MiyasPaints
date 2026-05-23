@@ -450,8 +450,8 @@ h3 {
 
 .info-card {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 16px;
+  grid-template-columns: 1fr;
+  gap: 8px;
   align-items: start;
   padding: 22px 0;
 }
@@ -487,33 +487,10 @@ h3 {
   color: var(--muted);
 }
 
-.card-icon {
-  display: grid;
-  width: 64px;
-  height: 64px;
-  place-items: center;
-  border-radius: 50%;
-  color: var(--purple);
-  font-size: 1.55rem;
-  font-weight: 500;
-}
-
-.card-icon-pink {
-  background: #f9d5e4;
-}
-
-.card-icon-yellow {
-  background: var(--yellow);
-}
-
-.card-icon-teal {
-  background: #c9ece9;
-}
-
 .section-heading {
   display: grid;
   gap: 4px;
-  align-items: end;
+  align-items: start;
   margin-bottom: 22px;
 }
 
