@@ -1,12 +1,12 @@
 :root {
-  --pink: #e99396;
+  --pink: #ee8f9b;
   --purple: #3a253e;
   --soft-purple: #7f6388;
   --teal: #74c9c4;
-  --coral: #e99396;
+  --coral: #ee8f9b;
   --yellow: #f6d985;
-  --cream: #fbf4e8;
-  --cream-strong: #f5eadb;
+  --cream: #fbf3e7;
+  --cream-strong: #f5e8d7;
   --white: #ffffff;
   --ink: #322a34;
   --muted: #766e79;
@@ -465,7 +465,7 @@ h3 {
 
 @media (max-width: 619px) {
   body {
-    background: var(--cream);
+    background: #fbf3e7;
   }
 
   .site-header {
@@ -577,7 +577,7 @@ h3 {
     margin: 0 auto;
     border: 0;
     border-radius: 0;
-    background: rgba(255, 255, 255, 0.94);
+    background: #fbf3e7;
     box-shadow: none;
     padding: 30px 0 0;
     text-align: center;
@@ -590,7 +590,7 @@ h3 {
     gap: 7px;
     width: 100%;
     margin-bottom: 22px;
-    color: #392640;
+    color: var(--purple);
   }
 
   .mobile-hero-mark {
@@ -678,7 +678,7 @@ h3 {
     z-index: 3;
     max-width: 16ch;
     margin: 0 auto 18px;
-    color: #26172f;
+    color: var(--purple);
     font-family: "Allura", "Pacifico", cursive;
     font-size: 4rem;
     font-style: normal;
@@ -700,7 +700,7 @@ h3 {
     z-index: 3;
     max-width: 29ch;
     margin: 0 auto 34px;
-    color: #1f1725;
+    color: var(--purple);
     font-size: 1.16rem;
     font-weight: 600;
     letter-spacing: 0;
@@ -772,14 +772,14 @@ h3 {
   }
 
   .hero-actions .button-primary {
-    background: #3a253e;
-    border-color: #3a253e;
+    background: var(--purple);
+    border-color: var(--purple);
     box-shadow: none;
   }
 
   .hero-actions .button-secondary {
-    background: #ee8f9b;
-    color: #3a253e;
+    background: var(--pink);
+    color: var(--purple);
   }
 
   .mobile-button-arrow {
