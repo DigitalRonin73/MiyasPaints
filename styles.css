@@ -741,9 +741,9 @@ h3 {
   }
 
   .mobile-hero-room-photo {
-    display: block;
-    inset: 0 0 0 auto;
-    width: 55%;
+    display: none;
+    inset: 0;
+    width: 100%;
     height: 100%;
     border: 0;
     border-radius: 0;
@@ -754,13 +754,13 @@ h3 {
 
   .mobile-hero-paint-photo {
     display: block;
-    inset: 0 auto 0 0;
-    width: 48%;
+    inset: 0;
+    width: 100%;
     height: 100%;
     border: 0;
     border-radius: 0;
     box-shadow: none;
-    object-position: 50% 50%;
+    object-position: 50% 52%;
     transform: none;
   }
 
