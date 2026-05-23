@@ -587,7 +587,7 @@ h3 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 9px;
+    gap: 8px;
     width: 100%;
     margin-bottom: 20px;
     color: var(--purple);
@@ -596,9 +596,9 @@ h3 {
   .mobile-hero-mark {
     position: relative;
     display: inline-grid;
-    flex: 0 0 64px;
-    width: 64px;
-    height: 64px;
+    flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
     place-items: center;
   }
 
@@ -608,16 +608,16 @@ h3 {
     inset: 2px;
     border: 2px solid var(--purple);
     border-radius: 50%;
-    background: #fffdf9;
+    background: transparent;
   }
 
   .mobile-hero-mark img {
     position: relative;
     z-index: 2;
-    width: 54px;
-    height: 42px;
+    width: 43px;
+    height: 34px;
     object-fit: contain;
-    transform: translate(1px, 4px);
+    transform: translate(0, 3px);
   }
 
   .mobile-hero-logo-text {
