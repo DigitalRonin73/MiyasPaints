@@ -311,11 +311,14 @@ const classEvents = {
       en: "Create delicate blossoms with playful brush techniques and gentle pastel colors.",
       ja: "楽しい筆づかいとやさしいパステルカラーで、繊細な桜を描きます。"
     },
-    date: "June 15",
-    isoDate: "2026-06-15",
-    month: "JUN",
-    day: "15",
- weekday: "MON",
+    date: {
+      en: "May 16, 2026",
+      ja: "2026年5月16日"
+    },
+    isoDate: "2026-05-16",
+    month: "MAY",
+    day: "16",
+ weekday: "SAT",
     time: "10:30 AM",
     location: "Yomitan, Okinawa",
     price: "¥4,500",
