@@ -146,7 +146,7 @@ const translations = {
     skipLink: "本文へスキップ",
     menuToggle: "ナビゲーションメニューを開く",
     languageSelector: "言語を選択",
-    brandTagline: "沖縄・読谷のペイント体験",
+    brandTagline: "Sip & Paint Okinawa",
     navHome: "ホーム",
     navClasses: "クラス",
     navAbout: "Miyaについて",
@@ -155,7 +155,7 @@ const translations = {
     navContact: "お問い合わせ",
     reserveSeat: "席を予約する",
     viewClasses: "開催予定を見る",
-    heroEyebrow: "沖縄・読谷のペイント体験",
+    heroEyebrow: "Sip & Paint Okinawa",
     heroTitle: "Sip, Paint, and Create.",
     mobileHeroTitle: "Sip, Paint, and Create.",
     mobileHeroSubtitle: "Painting Event & Workshops",
@@ -282,7 +282,7 @@ const translations = {
     contactLocationLabel: "場所:",
     contactLocationValue: "沖縄県読谷村",
     messageInstagram: "Instagramでメッセージ",
-    footerTagline: "沖縄・読谷のペイント体験",
+    footerTagline: "Sip & Paint Okinawa",
     copyright: "© 2026 Pinto Beetle. All rights reserved."
   }
 };
