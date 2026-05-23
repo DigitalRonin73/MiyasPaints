@@ -477,6 +477,12 @@ h3 {
   font-weight: 300;
 }
 
+.info-card .info-subtitle {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
 .info-card p,
 .step p,
 .testimonial-card figcaption,
