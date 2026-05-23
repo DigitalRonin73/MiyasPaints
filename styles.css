@@ -937,20 +937,19 @@ details p {
     flex-wrap: wrap;
   }
 
-  .quick-info,
   .steps,
   .testimonial-grid {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .info-card {
-    grid-template-columns: 1fr;
-    border-right: 1px solid var(--line);
-    padding: 0 24px;
+  .quick-info {
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   }
 
-  .info-card:last-child {
+  .info-card {
+    grid-template-columns: 1fr;
     border-right: 0;
+    padding: 0 18px;
   }
 
   .steps {
