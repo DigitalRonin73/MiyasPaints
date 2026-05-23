@@ -605,10 +605,25 @@ h3 {
   .mobile-hero-mark::before {
     content: "";
     position: absolute;
-    inset: 3px;
-    border: 2px solid var(--purple);
+    inset: 2px;
     border-radius: 50%;
-    background: transparent;
+    background: conic-gradient(from 28deg, transparent 0 50deg, var(--purple) 50deg 338deg, transparent 338deg 360deg);
+    transform: rotate(-12deg);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2px));
+    mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2px));
+  }
+
+  .mobile-hero-mark::after {
+    content: "";
+    position: absolute;
+    right: 3px;
+    bottom: 12px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--purple);
+    box-shadow: 5px 5px 0 -0.5px var(--purple), 1px 10px 0 -1px var(--purple);
+    opacity: 0.9;
   }
 
   .mobile-hero-mark img {
