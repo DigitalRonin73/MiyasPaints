@@ -278,18 +278,24 @@ const classEvents = {
       ja: "トロピカルサンセット"
     },
     description: {
-      en: "Paint a glowing Okinawa sunset with soft waves, warm coral skies, and tropical color.",
-      ja: "やわらかな波、コーラルの空、南国カラーで沖縄の夕日を描きます。"
+      en: "A pair-art painting experience for couples, best friends, and parent-child duos.",
+      ja: "2つのキャンバスで1つの景色を描くペアアート。カップル、親子、お友だち同士におすすめです。"
     },
-    date: "June 8",
-    isoDate: "2026-06-08",
-    month: "JUN",
-    day: "08",
- weekday: "MON",
-    time: "2:00 PM",
-    location: "Yomitan, Okinawa",
-    price: "¥4,500",
-    seatsLeft: 6
+    date: {
+      en: "May 31, 2026",
+      ja: "2026年5月31日"
+    },
+    isoDate: "2026-05-31",
+    month: "MAY",
+    day: "31",
+ weekday: "SUN",
+    time: "1:00 PM",
+    location: "Yomitan, Miya's Table",
+    price: "¥4,500 per person",
+    seatsLeft: {
+      en: "Final spot: 1 pair left",
+      ja: "残りあと1組（2名さま）です"
+    }
   },
   "cherry-blossom": {
  image: "images/cherry-blossom-class-story.jpg",
@@ -374,6 +380,10 @@ function localizedValue(value, language = activeLanguage) {
 }
 
 function seatsLabel(seatsLeft, language = activeLanguage) {
+  if (seatsLeft && typeof seatsLeft === "object" && !Array.isArray(seatsLeft)) {
+    return localizedValue(seatsLeft, language);
+  }
+
   const dictionary = translations[language] || translations.en;
   return dictionary.seatsLeft.replace("{count}", String(seatsLeft));
 }
@@ -387,10 +397,10 @@ function renderEventCard(card, event) {
     weekday: event.weekday,
     seats: seatsLabel(event.seatsLeft),
     title: localizedValue(event.title),
-    date: event.date,
+    date: localizedValue(event.date),
     time: event.time,
-    location: event.location,
-    price: event.price,
+    location: localizedValue(event.location),
+    price: localizedValue(event.price),
     description: localizedValue(event.description)
   };
 
@@ -494,7 +504,7 @@ bookClassButtons.forEach((button) => {
     }
 
     const classTitle = localizedValue(event.title);
-    const classDate = event.date;
+    const classDate = localizedValue(event.date);
     const classTime = event.time;
 
     reservationForm.elements["selected-class"].value = classTitle;
