@@ -480,8 +480,8 @@ h3 {
     grid-template-columns: 1fr auto;
     justify-content: stretch;
     position: relative;
-    min-height: 74px;
-    padding: 12px 18px 8px;
+    min-height: 78px;
+    padding: 16px 18px 8px;
   }
 
   .brand {
@@ -500,11 +500,11 @@ h3 {
     position: absolute;
     top: 18px;
     right: 18px;
-    width: 50px;
-    height: 50px;
+    width: 54px;
+    height: 54px;
     border-color: rgba(60, 42, 63, 0.1);
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.78);
+    background: rgba(255, 255, 255, 0.92);
     box-shadow: 0 10px 24px rgba(60, 42, 63, 0.06);
   }
 
@@ -513,9 +513,9 @@ h3 {
     grid-column: 1 / -1;
     order: 2;
     justify-content: flex-end;
-    gap: 14px;
+    gap: 16px;
     margin-top: 0;
-    padding-right: 62px;
+    padding-right: 72px;
   }
 
   .nav-actions .language-toggle {
@@ -523,7 +523,8 @@ h3 {
   }
 
   .language-toggle {
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 700;
   }
 
   .language-option {
@@ -564,8 +565,8 @@ h3 {
     display: block;
     max-width: min(100%, 430px);
     min-height: auto;
-    padding-top: 86px;
-    padding-bottom: 22px;
+    padding-top: 92px;
+    padding-bottom: 18px;
   }
 
   .hero-copy {
@@ -574,11 +575,11 @@ h3 {
     width: 100%;
     min-height: auto;
     margin: 0 auto;
-    border: 1px solid rgba(60, 42, 63, 0.08);
-    border-radius: 26px;
-    background: rgba(255, 255, 255, 0.82);
-    box-shadow: 0 18px 42px rgba(58, 37, 62, 0.1);
-    padding: 26px 18px 20px;
+    border: 0;
+    border-radius: 0;
+    background: rgba(255, 255, 255, 0.94);
+    box-shadow: none;
+    padding: 30px 0 0;
     text-align: center;
   }
 
@@ -586,21 +587,70 @@ h3 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
-    margin-bottom: 20px;
+    gap: 7px;
+    width: 100%;
+    margin-bottom: 22px;
     color: #392640;
   }
 
-  .mobile-hero-brand img {
-    width: 48px;
-    height: 48px;
+  .mobile-hero-mark {
+    position: relative;
+    display: inline-grid;
+    flex: 0 0 72px;
+    width: 72px;
+    height: 58px;
+    place-items: center;
+  }
+
+  .mobile-hero-mark img {
+    position: relative;
+    z-index: 2;
+    width: 72px;
+    height: 58px;
     object-fit: contain;
+  }
+
+  .shell-color {
+    position: absolute;
+    z-index: 3;
+    display: block;
+    border-radius: 999px;
+    filter: blur(0.3px);
+    opacity: 0.72;
+    mix-blend-mode: screen;
+  }
+
+  .shell-color-teal {
+    left: 9px;
+    bottom: 12px;
+    width: 25px;
+    height: 18px;
+    background: #74c9c4;
+    transform: rotate(-18deg);
+  }
+
+  .shell-color-yellow {
+    left: 30px;
+    bottom: 20px;
+    width: 21px;
+    height: 15px;
+    background: #f6d985;
+    transform: rotate(16deg);
+  }
+
+  .shell-color-pink {
+    left: 22px;
+    top: 13px;
+    width: 20px;
+    height: 14px;
+    background: #e99396;
+    transform: rotate(28deg);
   }
 
   .mobile-hero-brand strong {
     display: block;
     font-family: "Pacifico", cursive;
-    font-size: 2.45rem;
+    font-size: 2.58rem;
     font-weight: 400;
     line-height: 0.96;
   }
@@ -609,7 +659,7 @@ h3 {
     display: block;
     margin-top: 4px;
     color: #1f1725;
-    font-size: 1.03rem;
+    font-size: 1.06rem;
     font-weight: 500;
     line-height: 1;
   }
@@ -627,13 +677,13 @@ h3 {
     position: relative;
     z-index: 3;
     max-width: 16ch;
-    margin: 0 auto 6px;
+    margin: 0 auto 18px;
     color: #26172f;
     font-family: "Allura", "Pacifico", cursive;
-    font-size: 3.55rem;
+    font-size: 4rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 0.9;
+    line-height: 0.86;
     text-shadow: none;
   }
 
@@ -648,18 +698,18 @@ h3 {
   .hero-text {
     position: relative;
     z-index: 3;
-    max-width: 31ch;
-    margin: 0 auto 18px;
+    max-width: 29ch;
+    margin: 0 auto 34px;
     color: #1f1725;
-    font-size: 1rem;
-    font-weight: 500;
+    font-size: 1.16rem;
+    font-weight: 600;
     letter-spacing: 0;
     line-height: 1.45;
     text-shadow: none;
   }
 
   .mobile-hero-socials {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 36px);
     justify-content: center;
     gap: 18px;
@@ -685,14 +735,14 @@ h3 {
   .mobile-hero-workshop-photo {
     display: block;
     width: 100%;
-    aspect-ratio: 1.18 / 1;
+    aspect-ratio: 1.03 / 1;
     margin: 0 auto 0;
-    border-radius: 24px;
+    border-radius: 18px 18px 0 0;
     background: #fff4df;
-    box-shadow: 0 14px 30px rgba(58, 37, 62, 0.14);
+    box-shadow: none;
     object-fit: cover;
-    object-position: 48% center;
-    filter: saturate(1.02) brightness(1) contrast(0.98);
+    object-position: 50% center;
+    filter: saturate(1.04) brightness(1) contrast(0.98);
   }
 
   .hero-actions {
@@ -701,21 +751,21 @@ h3 {
     grid-template-columns: 1fr 1fr;
     gap: 0;
     align-items: stretch;
-    margin: 12px 0 18px;
+    margin: 0;
     overflow: hidden;
-    border: 1px solid rgba(58, 37, 62, 0.14);
-    border-radius: 18px;
+    border: 0;
+    border-radius: 0 0 18px 18px;
   }
 
   .hero-actions .button {
     width: 100%;
-    min-height: 58px;
+    min-height: 62px;
     justify-content: center;
     border: 0;
     border-radius: 0;
     font-family: "Poppins", system-ui, sans-serif;
-    font-size: 0.82rem;
-    font-weight: 700;
+    font-size: 0.87rem;
+    font-weight: 800;
     line-height: 1.15;
     padding: 12px 10px;
     box-shadow: none;
@@ -737,21 +787,7 @@ h3 {
   }
 
   .hero-stats {
-    width: 100%;
-    justify-content: center;
-    gap: 8px 12px;
-    margin-top: 0;
-    margin-bottom: 0;
-    border-radius: 0;
-    background: transparent;
-    color: var(--purple);
-    font-size: 0.78rem;
-    font-weight: 600;
-    line-height: 1.15;
-    min-height: auto;
-    padding: 4px 0 0;
-    text-shadow: none;
-    white-space: normal;
+    display: none;
   }
 
   .hero-stats span {
