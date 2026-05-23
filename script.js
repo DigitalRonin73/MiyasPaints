@@ -294,7 +294,7 @@ const classEvents = {
     price: "¥4,500 per person",
     seatsLeft: {
       en: "Final spot: 1 pair left",
-      ja: "残りあと1組（2名さま）です"
+      ja: "残りあと1組（2名さま）です。"
     }
   },
   "cherry-blossom": {
