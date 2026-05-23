@@ -585,19 +585,23 @@ h3 {
   .mobile-hero-socials {
     display: flex;
     justify-content: center;
-    gap: 22px;
+    gap: 10px;
     margin-bottom: 26px;
   }
 
   .mobile-hero-socials a {
     display: inline-grid;
-    width: 30px;
-    height: 30px;
+    min-width: 54px;
+    min-height: 32px;
     place-items: center;
+    border: 1px solid rgba(60, 42, 63, 0.16);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.72);
     color: var(--purple);
-    font-size: 1.55rem;
-    font-weight: 700;
+    font-size: 0.76rem;
+    font-weight: 600;
     line-height: 1;
+    padding: 0 11px;
   }
 
   .hero-actions {
