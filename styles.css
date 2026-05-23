@@ -490,23 +490,34 @@ h3 {
     top: 10px;
     left: 14px;
     display: inline-flex;
-    width: 92px;
-    height: 78px;
+    width: min(58vw, 210px);
+    height: 60px;
     align-items: center;
-    justify-content: center;
-    gap: 0;
+    justify-content: flex-start;
+    gap: 8px;
+    text-align: left;
   }
 
   .brand-mark {
     display: block;
     flex-basis: auto;
-    width: 86px;
+    width: 48px;
     height: auto;
     filter: drop-shadow(0 10px 20px rgba(47, 23, 79, 0.16));
   }
 
-  .brand > span,
-  .brand-name,
+  .brand > span {
+    display: block;
+    min-width: 0;
+  }
+
+  .brand-name {
+    display: block;
+    font-size: 1.42rem;
+    line-height: 0.98;
+    white-space: nowrap;
+  }
+
   .brand-tagline {
     display: none;
   }
