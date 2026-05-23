@@ -484,11 +484,12 @@ h3 {
 
   .brand {
     position: absolute;
-    top: 13px;
+    top: 16px;
     left: 16px;
+    z-index: 4;
     display: inline-flex;
-    width: 44px;
-    height: 44px;
+    width: 52px;
+    height: 52px;
     align-items: center;
     justify-content: center;
   }
@@ -496,9 +497,9 @@ h3 {
   .brand-mark {
     display: block;
     flex-basis: auto;
-    width: 40px;
+    width: 48px;
     height: auto;
-    filter: drop-shadow(0 8px 16px rgba(47, 23, 79, 0.14));
+    filter: drop-shadow(0 8px 16px rgba(47, 23, 79, 0.16));
   }
 
   .brand > span {
