@@ -15,8 +15,8 @@ const translations = {
     viewClasses: "View Upcoming Classes",
     heroEyebrow: "Sip & Paint Okinawa",
     heroTitle: "Sip, paint, create",
-    mobileHeroTitle: "# Pinto Beetle Art & Sip",
-    mobileHeroSubtitle: "Building experiences, one canvas at a time. Step-by-step creative escapes in Yomitan. Beach Umbrella.",
+    mobileHeroTitle: "Sip, paint, create",
+    mobileHeroSubtitle: "Painting events & workshops in Yomitan",
     heroSubtitle: "Beginner-friendly acrylic painting classes in Yomitan for kids, adults, couples, and families. Unplug, relax with music, and feel refreshed through art.",
     heroImageAlt: "Cozy Pinto Beetle painting room prepared with easels, canvases, and ocean light",
     mobileQuickLinksAria: "Quick links",
@@ -157,7 +157,7 @@ const translations = {
     viewClasses: "開催予定を見る",
     heroEyebrow: "Sip & Paint Okinawa",
     heroTitle: "Sip, paint, create",
-    mobileHeroTitle: "# Pinto Beetle Art & Sip",
+    mobileHeroTitle: "Sip, paint, create",
     mobileHeroSubtitle: "読谷で楽しむ、初心者にやさしいステップ式のアート体験。リラックスしながら、ひとつのキャンバスに思い出を作ります。",
     heroSubtitle: "読谷で楽しむ、初心者にやさしいアクリルペイント教室です。お子さま、大人、カップル、ご家族で、音楽を聴きながらゆったり作品づくりを楽しめます。",
     heroImageAlt: "イーゼルとキャンバスが並ぶ、海の光が入るPinto Beetleのペイントルーム",
@@ -338,6 +338,10 @@ const classEvents = {
     seatsLeft: {
       en: "Final spot: 1 pair left",
       ja: "残りあと1組（2名さま）です。"
+    },
+    availabilityNote: {
+      en: "Only 1 pair left!",
+      ja: "Only 1 pair left!"
     }
   },
   "cherry-blossom": {
@@ -383,7 +387,8 @@ const classEvents = {
     seatsLeft: {
       en: "Fully booked",
       ja: "満席になりました"
-    }
+    },
+    availabilityNote: ""
   },
   "sea-turtle": {
  image: "images/sea-turtle-class-story.jpg",
@@ -425,7 +430,8 @@ const classEvents = {
       en: "¥4,500",
       ja: "¥4,500"
     },
-    seatsLeft: 6
+    seatsLeft: 6,
+    availabilityNote: ""
   }
 };
 
@@ -480,6 +486,7 @@ function renderEventCard(card, event) {
     day: event.day,
     weekday: localizedValue(event.weekday),
     title: localizedValue(event.title),
+    availabilityNote: localizedValue(event.availabilityNote),
     date: localizedValue(event.date),
     time: localizedValue(event.time),
     location: localizedValue(event.location),
