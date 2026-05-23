@@ -322,7 +322,10 @@ const classEvents = {
     time: "1:00 PM",
     location: "Yomitan, Okinawa",
     price: "¥4,500",
-    seatsLeft: 4
+    seatsLeft: {
+      en: "Fully booked",
+      ja: "満席になりました"
+    }
   },
   "sea-turtle": {
  image: "images/sea-turtle-class-story.jpg",
