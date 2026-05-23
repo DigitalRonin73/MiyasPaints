@@ -225,13 +225,13 @@ label {
   background: transparent;
   color: var(--purple);
   cursor: pointer;
+  font-weight: 500;
   padding: 8px 7px;
 }
 
 .language-option.is-active {
-  background: #fff0f7;
-  color: var(--pink);
-  box-shadow: 0 8px 20px rgba(255, 95, 162, 0.16);
+  color: var(--purple);
+  font-weight: 800;
 }
 
 .section {
