@@ -133,6 +133,7 @@ label {
   width: 68px;
   height: 68px;
   filter: drop-shadow(0 10px 20px rgba(47, 23, 79, 0.14));
+  object-fit: contain;
 }
 
 .brand-name {
@@ -386,6 +387,8 @@ h3 {
 .mobile-hero-subtitle,
 .mobile-hero-email,
 .mobile-hero-socials,
+.mobile-hero-photo-stack,
+.mobile-hero-room-photo,
 .mobile-hero-paint-photo,
 .mobile-hero-badges,
 .mobile-button-arrow {
@@ -478,31 +481,34 @@ h3 {
     grid-template-columns: 1fr auto;
     justify-content: stretch;
     position: relative;
-    min-height: 136px;
-    padding: 14px 18px 10px;
+    min-height: 118px;
+    padding: 14px 18px 8px;
   }
 
   .brand {
+    position: absolute;
+    top: 10px;
+    left: 14px;
     display: inline-flex;
-    grid-column: 1 / -1;
-    justify-self: center;
+    width: 92px;
+    height: 78px;
+    align-items: center;
+    justify-content: center;
     gap: 0;
-    text-align: center;
   }
 
   .brand-mark {
-    display: none;
+    display: block;
+    flex-basis: auto;
+    width: 86px;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(47, 23, 79, 0.16));
   }
 
-  .brand-name {
-    font-size: 2.5rem;
-    line-height: 0.95;
-  }
-
+  .brand > span,
+  .brand-name,
   .brand-tagline {
-    margin-top: 6px;
-    font-size: 1.02rem;
-    line-height: 1.05;
+    display: none;
   }
 
   .nav-toggle {
@@ -523,7 +529,7 @@ h3 {
     order: 2;
     justify-content: center;
     gap: 14px;
-    margin-top: 14px;
+    margin-top: 72px;
   }
 
   .nav-actions .language-toggle {
@@ -572,7 +578,7 @@ h3 {
     display: block;
     max-width: min(100%, 430px);
     min-height: 100svh;
-    padding-top: 156px;
+    padding-top: 136px;
     padding-bottom: 0;
   }
 
@@ -580,14 +586,14 @@ h3 {
     display: grid;
     justify-items: center;
     width: calc(100% - 48px);
-    min-height: calc(100svh - 156px);
+    min-height: calc(100svh - 136px);
     margin: 0 auto;
     border: 1px solid rgba(255, 255, 255, 0.26);
     border-radius: 24px;
     background: linear-gradient(180deg, rgba(255, 253, 249, 0.18), rgba(255, 253, 249, 0.36));
     backdrop-filter: none;
     box-shadow: 0 20px 46px rgba(60, 42, 63, 0.12);
-    padding: 18px 16px 0;
+    padding: 22px 16px 0;
     text-align: center;
     overflow: hidden;
   }
@@ -614,16 +620,7 @@ h3 {
   }
 
   .mobile-hero-avatar {
-    display: block;
-    width: 86px;
-    height: 86px;
-    margin-bottom: 28px;
-    border: 7px solid #d7ba84;
-    border-radius: 50%;
-    background: #fff;
-    box-shadow: 0 10px 22px rgba(60, 42, 63, 0.12);
-    object-fit: cover;
-    object-position: center;
+    display: none;
   }
 
   .hero .eyebrow,
@@ -695,17 +692,43 @@ h3 {
     padding: 0 11px;
   }
 
+  .mobile-hero-photo-stack {
+    display: block;
+    position: relative;
+    width: min(86%, 286px);
+    aspect-ratio: 1.38 / 1;
+    margin: 0 auto 20px;
+  }
+
+  .mobile-hero-room-photo,
+  .mobile-hero-paint-photo {
+    position: absolute;
+    object-fit: cover;
+  }
+
+  .mobile-hero-room-photo {
+    display: block;
+    inset: 0 auto auto 0;
+    width: 78%;
+    height: 82%;
+    border: 6px solid rgba(255, 255, 255, 0.74);
+    border-radius: 16px;
+    box-shadow: 0 16px 32px rgba(60, 42, 63, 0.16);
+    object-position: 48% 54%;
+    transform: rotate(-2deg);
+  }
+
   .mobile-hero-paint-photo {
     display: block;
-    width: min(58%, 190px);
-    aspect-ratio: 1.22 / 1;
-    margin: 0 auto 18px;
-    border: 6px solid rgba(255, 255, 255, 0.74);
-    border-radius: 18px;
-    box-shadow: 0 14px 30px rgba(60, 42, 63, 0.16);
-    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    width: 43%;
+    height: 52%;
+    border: 5px solid rgba(255, 255, 255, 0.82);
+    border-radius: 14px;
+    box-shadow: 0 14px 28px rgba(60, 42, 63, 0.18);
     object-position: 45% 62%;
-    transform: rotate(-2deg);
+    transform: rotate(4deg);
   }
 
   .hero-actions {
