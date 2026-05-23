@@ -33,6 +33,7 @@ const translations = {
     classesIntro: "Choose a design, reserve your spot, and come enjoy a cozy creative session in Yomitan.",
     viewAllClasses: "View all classes →",
     seatsLeft: "{count} seats left",
+    availabilityLabel: "Availability",
     dateLabel: "Date",
     timeLabel: "Time",
     locationLabel: "Location",
@@ -162,6 +163,7 @@ const translations = {
     classesIntro: "デザインを選んで席を予約し、読谷でゆったり楽しい時間を過ごしましょう。",
     viewAllClasses: "すべてのクラスを見る →",
     seatsLeft: "残り{count}席",
+    availabilityLabel: "残席状況",
     dateLabel: "日付",
     timeLabel: "時間",
     locationLabel: "場所",
@@ -349,7 +351,7 @@ const classEvents = {
     time: "1:00 PM",
     location: "Yomitan, Okinawa",
     price: "¥4,500",
-    seatsLeft: 8
+    seatsLeft: 6
   }
 };
 
@@ -360,6 +362,8 @@ const languageButtons = document.querySelectorAll(".language-option");
 const reservationForm = document.querySelector("#reservation-form");
 const formStatus = document.querySelector("#form-status");
 const bookClassButtons = document.querySelectorAll(".book-class-button");
+const selectedClassSummary = document.querySelector("#selected-class-summary");
+let selectedClassEventId = null;
 
 function getSavedLanguage() {
   try {
@@ -401,13 +405,11 @@ function renderEventCard(card, event) {
     month: event.month,
     day: event.day,
     weekday: event.weekday,
-    seats: seatsLabel(event.seatsLeft),
     title: localizedValue(event.title),
     date: localizedValue(event.date),
     time: event.time,
     location: localizedValue(event.location),
-    price: localizedValue(event.price),
-    description: localizedValue(event.description)
+    price: localizedValue(event.price)
   };
 
   if (image) {
@@ -425,7 +427,7 @@ function renderEventCard(card, event) {
     });
   });
 
-  card.dataset.seatsLeft = String(event.seatsLeft);
+  card.dataset.seatsLeft = seatsLabel(event.seatsLeft);
 }
 
 function renderEventCards() {
@@ -478,7 +480,30 @@ function applyLanguage(language) {
   });
 
   renderEventCards();
+  if (selectedClassEventId && classEvents[selectedClassEventId]) {
+    showSelectedClassSummary(classEvents[selectedClassEventId]);
+  }
   saveLanguage(activeLanguage);
+}
+
+function showSelectedClassSummary(event) {
+  if (!selectedClassSummary) {
+    return;
+  }
+
+  const fields = {
+    title: localizedValue(event.title),
+    datetime: `${localizedValue(event.date)} ${event.time}`,
+    availability: seatsLabel(event.seatsLeft)
+  };
+
+  Object.entries(fields).forEach(([field, value]) => {
+    selectedClassSummary.querySelectorAll(`[data-selected-class-field="${field}"]`).forEach((element) => {
+      element.textContent = value;
+    });
+  });
+
+  selectedClassSummary.hidden = false;
 }
 
 function closeMobileMenu() {
@@ -519,6 +544,8 @@ bookClassButtons.forEach((button) => {
       .replace("{classTitle}", classTitle)
       .replace("{classDate}", classDate)
       .replace("{classTime}", classTime);
+    selectedClassEventId = button.dataset.eventId;
+    showSelectedClassSummary(event);
 
     formStatus.textContent = "";
     setTimeout(() => {

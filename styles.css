@@ -557,24 +557,6 @@ h3 {
   padding: 16px 16px 18px;
 }
 
-.badge {
-  float: right;
-  display: inline-flex;
-  border-radius: 999px;
-  background: #ecf7c8;
-  color: #465b0d;
-  font-size: 0.72rem;
-  font-weight: 600;
-  margin: 4px 0 8px 10px;
-  padding: 5px 9px;
-}
-
-.badge-purple,
-.badge-teal {
-  background: #ecf7c8;
-  color: #465b0d;
-}
-
 .event-details {
   display: grid;
   gap: 7px;
@@ -785,6 +767,45 @@ details p {
   max-width: 720px;
   margin: 0 auto;
   text-align: center;
+}
+
+.selected-class-summary {
+  display: grid;
+  gap: 4px;
+  max-width: 34rem;
+  margin: 18px auto 0;
+  border: 1px solid #f3dfcd;
+  border-radius: var(--radius);
+  background: var(--white);
+  padding: 14px 16px;
+  box-shadow: 0 12px 24px rgba(90, 46, 74, 0.08);
+  text-align: left;
+}
+
+.selected-class-summary[hidden] {
+  display: none;
+}
+
+.summary-label {
+  color: var(--pink);
+  font-size: 0.78rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.summary-title {
+  color: var(--purple);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.summary-detail {
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .reserve-art {

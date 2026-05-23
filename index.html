@@ -126,7 +126,6 @@
             <time class="date-card" data-event-field="dateCard" datetime=""><span data-event-field="month"></span><strong data-event-field="day"></strong><span data-event-field="weekday"></span></time>
           </div>
           <div class="event-content">
-            <span class="badge" data-event-field="seats"></span>
             <h3 data-event-field="title"></h3>
             <dl class="event-details">
               <div><dt data-i18n="dateLabel">Date</dt><dd data-event-field="date"></dd></div>
@@ -134,7 +133,6 @@
               <div><dt data-i18n="locationLabel">Location</dt><dd data-event-field="location"></dd></div>
               <div><dt data-i18n="priceLabel">Price</dt><dd data-event-field="price"></dd></div>
             </dl>
-            <p data-event-field="description"></p>
             <a
               class="button button-primary button-full book-class-button"
               href="#reserve"
@@ -151,7 +149,6 @@
             <time class="date-card" data-event-field="dateCard" datetime=""><span data-event-field="month"></span><strong data-event-field="day"></strong><span data-event-field="weekday"></span></time>
           </div>
           <div class="event-content">
-            <span class="badge badge-purple" data-event-field="seats"></span>
             <h3 data-event-field="title"></h3>
             <dl class="event-details">
               <div><dt data-i18n="dateLabel">Date</dt><dd data-event-field="date"></dd></div>
@@ -159,7 +156,6 @@
               <div><dt data-i18n="locationLabel">Location</dt><dd data-event-field="location"></dd></div>
               <div><dt data-i18n="priceLabel">Price</dt><dd data-event-field="price"></dd></div>
             </dl>
-            <p data-event-field="description"></p>
             <a
               class="button button-primary button-full book-class-button"
               href="#reserve"
@@ -176,7 +172,6 @@
             <time class="date-card" data-event-field="dateCard" datetime=""><span data-event-field="month"></span><strong data-event-field="day"></strong><span data-event-field="weekday"></span></time>
           </div>
           <div class="event-content">
-            <span class="badge badge-teal" data-event-field="seats"></span>
             <h3 data-event-field="title"></h3>
             <dl class="event-details">
               <div><dt data-i18n="dateLabel">Date</dt><dd data-event-field="date"></dd></div>
@@ -184,7 +179,6 @@
               <div><dt data-i18n="locationLabel">Location</dt><dd data-event-field="location"></dd></div>
               <div><dt data-i18n="priceLabel">Price</dt><dd data-event-field="price"></dd></div>
             </dl>
-            <p data-event-field="description"></p>
             <a
               class="button button-primary button-full book-class-button"
               href="#reserve"
@@ -340,6 +334,12 @@
         <p class="eyebrow" data-i18n="reserveEyebrow">Reserve</p>
         <h2 id="reserve-title" data-i18n="reserveTitle">Request your seat</h2>
         <p data-i18n="reserveIntro">Send a quick request and Miya will confirm availability. Online payments can be connected here later with Stripe, Square, Jotform, Google Forms, Formspree, or a custom API.</p>
+        <div class="selected-class-summary" id="selected-class-summary" hidden>
+          <p class="summary-label" data-i18n="availabilityLabel">Availability</p>
+          <p class="summary-title" data-selected-class-field="title"></p>
+          <p class="summary-detail" data-selected-class-field="datetime"></p>
+          <p class="summary-detail" data-selected-class-field="availability"></p>
+        </div>
       </div>
 
       <!-- Connect this form later to Jotform, Google Forms, Formspree, Stripe, Square, or a custom reservation API. -->
@@ -366,7 +366,7 @@
         </label>
         <label>
           <span data-i18n="formParticipants">Number of participants</span>
-          <input type="number" name="participants" min="1" max="20" value="1" required>
+          <input type="number" name="participants" min="1" max="6" value="1" required>
         </label>
         <label>
           <span data-i18n="formGroup">Adults/Kids</span>
@@ -408,6 +408,6 @@
     <p data-i18n="copyright">© 2026 Pinto Beetle. All rights reserved.</p>
   </footer>
 
-  <script src="script.js?v=20260523-1"></script>
+  <script src="script.js?v=20260523-2"></script>
 </body>
 </html>
