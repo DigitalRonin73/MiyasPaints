@@ -319,7 +319,7 @@ const classEvents = {
     month: "MAY",
     day: "16",
  weekday: "SAT",
-    time: "10:30 AM",
+    time: "1:00 PM",
     location: "Yomitan, Okinawa",
     price: "¥4,500",
     seatsLeft: 4
