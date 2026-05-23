@@ -444,7 +444,7 @@ h3 {
 @media (max-width: 619px) {
   body {
     background:
-      linear-gradient(rgba(255, 250, 244, 0.86), rgba(255, 250, 244, 0.88)),
+      linear-gradient(rgba(255, 250, 244, 0.34), rgba(255, 250, 244, 0.42)),
       url("images/studio-hero.jpg") center / cover fixed;
   }
 
@@ -554,13 +554,15 @@ h3 {
   .hero-copy {
     display: grid;
     justify-items: center;
+    width: calc(100% - 48px);
     min-height: calc(100svh - 156px);
+    margin: 0 auto;
     border: 1px solid rgba(234, 222, 213, 0.86);
-    border-bottom: 0;
-    border-radius: 22px 22px 0 0;
-    background: rgba(255, 253, 249, 0.96);
+    border-radius: 24px;
+    background: rgba(255, 253, 249, 0.94);
+    backdrop-filter: blur(2px);
     box-shadow: 0 20px 46px rgba(60, 42, 63, 0.18);
-    padding: 20px 16px 0;
+    padding: 20px 16px 18px;
     text-align: center;
   }
 
@@ -657,7 +659,7 @@ h3 {
     grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
     gap: 10px;
     align-items: stretch;
-    margin-bottom: -8px;
+    margin-bottom: 16px;
   }
 
   .hero-actions .button {
@@ -687,41 +689,6 @@ h3 {
     display: none;
   }
 
-  .mobile-hero-badges {
-    display: grid;
-    grid-template-columns: repeat(4, 44px);
-    justify-content: center;
-    align-items: end;
-    z-index: 3;
-    margin-top: -28px;
-    margin-bottom: 0;
-    min-height: 88px;
-    pointer-events: none;
-  }
-
-  .mobile-hero-badges img {
-    width: 58px;
-    height: 58px;
-    margin-left: -7px;
-    border: 3px solid rgba(60, 42, 63, 0.9);
-    border-radius: 50%;
-    background: var(--cream);
-    object-fit: cover;
-    box-shadow: 0 8px 18px rgba(60, 42, 63, 0.16);
-  }
-
-  .mobile-hero-badges img:nth-child(2) {
-    transform: translateY(11px);
-  }
-
-  .mobile-hero-badges img:nth-child(3) {
-    transform: translateY(-8px);
-  }
-
-  .mobile-hero-badges img:nth-child(4) {
-    transform: translateY(17px);
-  }
-
   .hero-stats {
     width: 100%;
     justify-content: center;
@@ -740,16 +707,7 @@ h3 {
   }
 
   .hero-media {
-    min-height: 70px;
-    margin: -1px 18px 0;
-    overflow: hidden;
-    border-radius: 12px 12px 0 0;
-  }
-
-  .hero-media img {
-    aspect-ratio: 16 / 7;
-    border-radius: 12px 12px 0 0;
-    box-shadow: none;
+    display: none;
   }
 
   .quick-info {
