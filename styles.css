@@ -610,43 +610,6 @@ h3 {
     object-fit: contain;
   }
 
-  .shell-color {
-    position: absolute;
-    z-index: 3;
-    display: block;
-    border-radius: 999px;
-    filter: blur(0.3px);
-    opacity: 0.72;
-    mix-blend-mode: screen;
-  }
-
-  .shell-color-teal {
-    left: 9px;
-    bottom: 12px;
-    width: 25px;
-    height: 18px;
-    background: #74c9c4;
-    transform: rotate(-18deg);
-  }
-
-  .shell-color-yellow {
-    left: 30px;
-    bottom: 20px;
-    width: 21px;
-    height: 15px;
-    background: #f6d985;
-    transform: rotate(16deg);
-  }
-
-  .shell-color-pink {
-    left: 22px;
-    top: 13px;
-    width: 20px;
-    height: 14px;
-    background: #e99396;
-    transform: rotate(28deg);
-  }
-
   .mobile-hero-brand strong {
     display: block;
     font-family: "Pacifico", cursive;
