@@ -440,7 +440,7 @@ h3 {
   width: 100%;
   aspect-ratio: 4 / 4.6;
   border-radius: var(--radius);
-  filter: sepia(0.1) saturate(0.92) brightness(1.12) contrast(0.88);
+  filter: sepia(0.12) saturate(1.12) brightness(1.05) contrast(0.98);
   object-fit: cover;
   object-position: 36% center;
   box-shadow: var(--shadow);
@@ -456,9 +456,8 @@ h3 {
   border: 8px solid rgba(255, 255, 255, 0.86);
   border-radius: 18px;
   box-shadow: 0 18px 38px rgba(60, 42, 63, 0.18);
-  filter: sepia(0.06) saturate(0.9) brightness(1.08) contrast(0.9);
   object-fit: cover;
-  object-position: 48% 50%;
+  object-position: 46% 62%;
   transform: rotate(3deg);
 }
 
@@ -596,7 +595,7 @@ h3 {
   .mobile-hero-brand {
     display: block;
     margin-bottom: 28px;
-    color: #3a273d;
+    color: var(--purple);
   }
 
   .mobile-hero-brand strong {
@@ -633,12 +632,12 @@ h3 {
     z-index: 3;
     max-width: 11ch;
     margin: 0 auto -74px;
-    color: rgba(52, 35, 56, 0.9);
+    color: #281d2d;
     font-family: Georgia, "Times New Roman", serif;
     font-size: 2.62rem;
     font-weight: 700;
     line-height: 0.98;
-    text-shadow: 0 2px 20px rgba(255, 255, 255, 0.9);
+    text-shadow: 0 2px 18px rgba(255, 255, 255, 0.88);
   }
 
   .mobile-hero-title {
@@ -654,7 +653,7 @@ h3 {
     z-index: 3;
     max-width: 32ch;
     margin: 82px auto -102px;
-    color: rgba(52, 35, 56, 0.82);
+    color: #2f2535;
     font-size: 1.02rem;
     font-weight: 700;
     letter-spacing: 0;
@@ -721,22 +720,9 @@ h3 {
     box-shadow: 0 18px 38px rgba(60, 42, 63, 0.12);
   }
 
-  .mobile-hero-photo-stack::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-    background:
-      radial-gradient(circle at 32% 18%, rgba(255, 255, 255, 0.42), transparent 36%),
-      linear-gradient(180deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.18) 42%, rgba(255, 255, 255, 0.1));
-    pointer-events: none;
-  }
-
   .mobile-hero-room-photo,
   .mobile-hero-paint-photo {
     position: absolute;
-    z-index: 1;
-    filter: sepia(0.08) saturate(0.86) brightness(1.1) contrast(0.88);
     object-fit: cover;
   }
 
@@ -760,7 +746,7 @@ h3 {
     border: 0;
     border-radius: 0;
     box-shadow: none;
-    object-position: 50% 50%;
+    object-position: 40% 52%;
     transform: none;
   }
 
