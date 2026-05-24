@@ -1167,6 +1167,7 @@ details p {
   color: var(--muted);
   margin: 0;
   padding: 0 16px 14px;
+  white-space: pre-line;
 }
 
 .reserve-section {
