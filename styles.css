@@ -729,12 +729,12 @@ h3 {
     width: 100%;
     aspect-ratio: 1.03 / 1;
     margin: 0 auto 0;
-    border-radius: 8px 8px 0 0;
+    border-radius: clamp(58px, 18vw, 92px) clamp(58px, 18vw, 92px) 18px 18px;
     background: #fff4df;
     box-shadow: none;
     object-fit: cover;
     object-position: 50% center;
-    filter: saturate(1) brightness(1.045) contrast(0.955);
+    filter: saturate(0.9) brightness(1.12) contrast(0.86);
   }
 
   .hero-actions {
