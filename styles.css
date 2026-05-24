@@ -1026,8 +1026,8 @@ h3 {
 }
 
 .gallery-grid img.gallery-fireworks {
-  object-fit: contain;
-  background: #f7eadf;
+  object-fit: cover;
+  object-position: center 50%;
 }
 
 .split-section {
