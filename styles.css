@@ -1074,6 +1074,32 @@ h3 {
   font-weight: 800;
 }
 
+.notes-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 1fr;
+}
+
+.note-card {
+  border: 1px solid #f2dfd0;
+  border-radius: var(--radius);
+  background: var(--white);
+  padding: 18px;
+}
+
+.note-card h3 {
+  margin: 0 0 8px;
+  color: var(--purple);
+  font-size: 1rem;
+}
+
+.note-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
 .faq-list {
   display: grid;
   gap: 8px;
@@ -1327,6 +1353,10 @@ details p {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .notes-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .quick-info {
     grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   }
@@ -1422,6 +1452,10 @@ details p {
 
   .event-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .notes-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .section-heading {
