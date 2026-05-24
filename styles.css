@@ -1000,7 +1000,7 @@ h3 {
 
 .about-photo img {
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 836 / 1280;
   border: 8px solid var(--white);
   border-radius: 24px;
   object-fit: cover;
