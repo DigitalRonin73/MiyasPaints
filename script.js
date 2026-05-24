@@ -309,7 +309,7 @@ let activeLanguage = savedLanguage;
 // Later, seatsLeft can be replaced by live availability from a booking backend.
 const classEvents = {
   "tropical-sunset": {
-    image: "images/tropical-fireworks-artwork.jpg?v=20260524-15",
+    image: "images/tropical-fireworks-artwork.jpg?v=20260524-16",
     imageAlt: {
       en: "Finished tropical fireworks painting displayed in the Pinto Beetle studio",
       ja: "Pinto Beetleのスタジオに飾られた完成した花火の絵"
