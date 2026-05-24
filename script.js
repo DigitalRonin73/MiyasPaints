@@ -300,7 +300,7 @@ const translations = {
 };
 
 const languageStorageKey = "pintoBeetleLanguage";
-const contentLanguage = "en";
+const fallbackLanguage = "en";
 const savedLanguage = getSavedLanguage();
 let activeLanguage = savedLanguage;
 
@@ -476,7 +476,7 @@ function saveLanguage(language) {
 
 function localizedValue(value, language = activeLanguage) {
   if (value && typeof value === "object" && !Array.isArray(value)) {
-    return value[contentLanguage] || value[language] || value.en || "";
+    return value[language] || value[fallbackLanguage] || "";
   }
 
   return value || "";
@@ -487,7 +487,7 @@ function seatsLabel(seatsLeft, language = activeLanguage) {
     return localizedValue(seatsLeft, language);
   }
 
-  const dictionary = translations[contentLanguage] || translations[language] || translations.en;
+  const dictionary = translations[language] || translations[fallbackLanguage];
   return dictionary.seatsLeft.replace("{count}", String(seatsLeft));
 }
 
@@ -534,10 +534,10 @@ function renderEventCards() {
 }
 
 function applyLanguage(language) {
-  const dictionary = translations[contentLanguage] || translations[language] || translations.en;
-  activeLanguage = translations[language] ? language : "en";
+  activeLanguage = translations[language] ? language : fallbackLanguage;
+  const dictionary = translations[activeLanguage] || translations[fallbackLanguage];
 
-  document.documentElement.lang = "en";
+  document.documentElement.lang = activeLanguage;
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
