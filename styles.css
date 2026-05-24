@@ -1062,6 +1062,13 @@ h3 {
   line-height: 1;
 }
 
+.list-note {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
 .testimonials {
   padding-top: 40px;
   padding-bottom: 40px;
