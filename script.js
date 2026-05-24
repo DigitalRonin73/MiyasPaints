@@ -341,8 +341,8 @@ const classEvents = {
       ja: "午後1:00"
     },
     location: {
-      en: "Yomitan, Miya's Table",
-      ja: "読谷・ミヤのテーブル"
+      en: "Yomitan (Details upon booking)",
+      ja: "読谷村（詳細はご予約後）"
     },
     price: {
       en: "¥4,500 per person",
@@ -390,8 +390,8 @@ const classEvents = {
       ja: "午後1:00"
     },
     location: {
-      en: "Yomitan, Okinawa",
-      ja: "沖縄県読谷村"
+      en: "Yomitan (Details upon booking)",
+      ja: "読谷村（詳細はご予約後）"
     },
     price: {
       en: "¥4,500",
@@ -436,8 +436,8 @@ const classEvents = {
       ja: "午後1:00"
     },
     location: {
-      en: "Yomitan, Okinawa",
-      ja: "沖縄県読谷村"
+      en: "Yomitan (Details upon booking)",
+      ja: "読谷村（詳細はご予約後）"
     },
     price: {
       en: "¥4,500",
