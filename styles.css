@@ -1004,7 +1004,7 @@ h3 {
 
 .about-photo img {
   width: 100%;
-  aspect-ratio: 1.45 / 1;
+  aspect-ratio: 3 / 4;
   border: 8px solid var(--white);
   border-radius: 24px;
   object-fit: cover;
