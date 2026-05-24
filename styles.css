@@ -963,6 +963,10 @@ h3 {
   padding: 14px 0;
 }
 
+.step h3 {
+  white-space: nowrap;
+}
+
 .step span {
   display: grid;
   width: 68px;
