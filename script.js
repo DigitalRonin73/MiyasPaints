@@ -292,6 +292,7 @@ const translations = {
 };
 
 const languageStorageKey = "pintoBeetleLanguage";
+const contentLanguage = "en";
 const savedLanguage = getSavedLanguage();
 let activeLanguage = savedLanguage;
 
@@ -467,7 +468,7 @@ function saveLanguage(language) {
 
 function localizedValue(value, language = activeLanguage) {
   if (value && typeof value === "object" && !Array.isArray(value)) {
-    return value[language] || value.en || "";
+    return value[contentLanguage] || value[language] || value.en || "";
   }
 
   return value || "";
@@ -478,7 +479,7 @@ function seatsLabel(seatsLeft, language = activeLanguage) {
     return localizedValue(seatsLeft, language);
   }
 
-  const dictionary = translations[language] || translations.en;
+  const dictionary = translations[contentLanguage] || translations[language] || translations.en;
   return dictionary.seatsLeft.replace("{count}", String(seatsLeft));
 }
 
@@ -525,10 +526,10 @@ function renderEventCards() {
 }
 
 function applyLanguage(language) {
-  const dictionary = translations[language] || translations.en;
+  const dictionary = translations[contentLanguage] || translations[language] || translations.en;
   activeLanguage = translations[language] ? language : "en";
 
-  document.documentElement.lang = activeLanguage === "ja" ? "ja" : "en";
+  document.documentElement.lang = "en";
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const key = element.dataset.i18n;
