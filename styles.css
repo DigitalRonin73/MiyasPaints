@@ -1039,17 +1039,27 @@ h3 {
 
 .check-list li {
   position: relative;
-  padding-left: 28px;
+  min-height: 26px;
+  padding-left: 34px;
   font-weight: 700;
 }
 
 .check-list li::before {
   position: absolute;
   left: 0;
-  top: 0;
-  color: var(--pink);
-  content: "♡";
-  font-weight: 600;
+  top: -1px;
+  display: grid;
+  width: 22px;
+  height: 22px;
+  place-items: center;
+  border: 1px solid rgba(183, 95, 140, 0.32);
+  border-radius: 6px;
+  background: #fff4f9;
+  color: var(--purple);
+  content: "✓";
+  font-size: 0.86rem;
+  font-weight: 800;
+  line-height: 1;
 }
 
 .testimonials {
