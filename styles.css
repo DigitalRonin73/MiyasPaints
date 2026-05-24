@@ -729,12 +729,12 @@ h3 {
     width: 100%;
     aspect-ratio: 1.03 / 1;
     margin: 0 auto 0;
-    border-radius: 18px 18px 0 0;
+    border-radius: 8px 8px 0 0;
     background: #fff4df;
     box-shadow: none;
     object-fit: cover;
     object-position: 50% center;
-    filter: saturate(1.02) brightness(1.035) contrast(0.965);
+    filter: saturate(1) brightness(1.045) contrast(0.955);
   }
 
   .hero-actions {
@@ -746,7 +746,7 @@ h3 {
     margin: 0;
     overflow: hidden;
     border: 0;
-    border-radius: 0 0 18px 18px;
+    border-radius: 0 0 8px 8px;
   }
 
   .hero-actions .button {
