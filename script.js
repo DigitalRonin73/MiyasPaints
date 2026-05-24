@@ -62,7 +62,7 @@ const translations = {
     aboutEyebrow: "About Miya",
     aboutTitle: "Warm guidance, playful creativity",
     aboutText: "Hi, I’m Miya. I love helping people relax and discover their creativity through fun, step-by-step acrylic painting classes in Okinawa.",
-    miyaAlt: "Pinto Beetle class guests smiling with finished paintings",
+    miyaAlt: "Pinto Beetle class guests smiling with finished fireworks and cherry blossom paintings",
     seeGallery: "See the Gallery",
     galleryEyebrow: "Gallery",
     galleryTitle: "Real moments, colorful memories",
@@ -73,7 +73,7 @@ const translations = {
     gallerySuppliesAlt: "Miya smiling with a cherry blossom painting in the Pinto Beetle studio",
     galleryKidsAlt: "Guest painting cherry blossoms during a Pinto Beetle class",
     gallerySakuraAlt: "Paint tubes, candles, pineapple, and coffee ready for a creative class",
-    galleryTurtleAlt: "Finished sunflower painting displayed in the Pinto Beetle studio",
+    galleryTurtleAlt: "Finished tropical fireworks painting displayed in the Pinto Beetle studio",
     gallerySunsetAlt: "Guest smiling while painting during a Pinto Beetle class",
     joinEyebrow: "Who Can Join",
     joinTitle: "Everyone is welcome",
@@ -218,7 +218,7 @@ const translations = {
     aboutEyebrow: "Miyaについて",
     aboutTitle: "やさしく、楽しく、クリエイティブに",
     aboutText: "こんにちは、Miyaです。沖縄で楽しいステップ式のアクリルペイント教室を通して、リラックスしながら創造力を見つけるお手伝いをしています。",
-    miyaAlt: "完成作品を持って笑うPinto Beetleのクラス参加者",
+    miyaAlt: "完成した花火と桜の絵を持って笑うPinto Beetleのクラス参加者",
     seeGallery: "ギャラリーを見る",
     galleryEyebrow: "ギャラリー",
     galleryTitle: "楽しい瞬間とカラフルな思い出",
@@ -229,7 +229,7 @@ const translations = {
     gallerySuppliesAlt: "Pinto Beetleのスタジオで桜の絵を持って笑うMiya",
     galleryKidsAlt: "Pinto Beetleのクラスで桜の絵を描く参加者",
     gallerySakuraAlt: "クラスのために用意された絵の具、キャンドル、パイナップル、コーヒー",
-    galleryTurtleAlt: "Pinto Beetleのスタジオに飾られた完成したひまわりの絵",
+    galleryTurtleAlt: "Pinto Beetleのスタジオに飾られた完成した花火の絵",
     gallerySunsetAlt: "Pinto Beetleのクラスで笑顔で絵を描く参加者",
     joinEyebrow: "参加対象",
     joinTitle: "どなたでも歓迎",
@@ -309,10 +309,10 @@ let activeLanguage = savedLanguage;
 // Later, seatsLeft can be replaced by live availability from a booking backend.
 const classEvents = {
   "tropical-sunset": {
-    image: "images/tropical-sunset-artwork.jpg?v=20260524-13",
+    image: "images/tropical-fireworks-artwork.jpg?v=20260524-14",
     imageAlt: {
-      en: "Pinto Beetle students smiling with finished tropical night paintings",
-      ja: "完成したトロピカルナイトの絵を持って笑顔のPinto Beetleの生徒さんたち"
+      en: "Finished tropical fireworks painting displayed in the Pinto Beetle studio",
+      ja: "Pinto Beetleのスタジオに飾られた完成した花火の絵"
     },
     title: {
       en: "Tropical Sunset Painting",

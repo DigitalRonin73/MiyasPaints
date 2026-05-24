@@ -1025,6 +1025,11 @@ h3 {
   box-shadow: 0 10px 22px rgba(47, 23, 79, 0.08);
 }
 
+.gallery-grid img.gallery-fireworks {
+  object-fit: contain;
+  background: #f7eadf;
+}
+
 .split-section {
   align-items: stretch;
 }
