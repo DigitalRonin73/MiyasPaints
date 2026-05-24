@@ -171,7 +171,7 @@ const translations = {
     heroEyebrow: "Sip & Paint Okinawa",
     heroTitle: "Sip, paint, create",
     mobileHeroTitle: "Sip, paint, create",
-    mobileHeroSubtitle: "読谷で楽しむ、初心者にやさしいステップ式のアート体験。リラックスしながら、ひとつのキャンバスに思い出を作ります。",
+    mobileHeroSubtitle: "Painting events & workshops in Yomitan",
     heroSubtitle: "読谷で楽しむ、初心者にやさしいアクリルペイント教室です。お子さま、大人、カップル、ご家族で、音楽を聴きながらゆったり作品づくりを楽しめます。",
     heroImageAlt: "イーゼルとキャンバスが並ぶ、海の光が入るPinto Beetleのペイントルーム",
     mobileQuickLinksAria: "クイックリンク",
