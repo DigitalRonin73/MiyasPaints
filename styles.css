@@ -880,6 +880,10 @@ h3 {
   object-fit: cover;
 }
 
+[data-event-id="tropical-sunset"] .event-image-wrap img {
+  object-position: center 44%;
+}
+
 .date-card {
   position: absolute;
   top: 10px;
