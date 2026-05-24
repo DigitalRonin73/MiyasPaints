@@ -1318,9 +1318,9 @@ details p {
 
 .contact-beach {
   width: 100%;
-  max-height: 180px;
   border-radius: var(--radius);
-  object-fit: cover;
+  height: auto;
+  object-fit: contain;
 }
 
 .site-footer {
