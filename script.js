@@ -214,7 +214,7 @@ const translations = {
     stepThreeTitle: "描いてリラックス",
     stepThreeText: "飲み物を楽しみながら描いて、作品を持ち帰りましょう。",
     aboutEyebrow: "ホストについて",
-    aboutTitle: "やさしく、楽しく、クリエイティブに",
+    aboutTitle: "楽しく、クリエイティブに",
     aboutText: "こんにちは、Miyaです。沖縄で楽しいステップ式のアクリルペイント教室を通して、リラックスしながら創造力を見つけるお手伝いをしています。",
     miyaAlt: "海の見える部屋で一緒に絵を描くPinto Beetleの参加者",
     seeGallery: "ギャラリーを見る",
