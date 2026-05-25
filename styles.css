@@ -1083,6 +1083,17 @@ h3 {
   line-height: 1;
 }
 
+.check-list .check-list-note {
+  margin-top: 10px;
+  padding-left: 0;
+  color: #6f6472;
+  font-size: 1.02rem;
+}
+
+.check-list .check-list-note::before {
+  content: none;
+}
+
 .list-note {
   margin: 16px 0 0;
   color: var(--muted);
