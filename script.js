@@ -234,7 +234,7 @@ const translations = {
     joinKidsAdults: "キッズ＆大人",
     joinBeginners: "未経験でも安心",
     joinExperience: "未経験でも安心",
-    joinNote: "Couples / Friends / Families",
+    joinNote: "カップル / 友人 / ファミリー",
     includedEyebrow: "What's Included",
     includedTitle: "Just bring yourself",
     includedCanvasPaints: "Canvas & paints",
