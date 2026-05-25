@@ -232,7 +232,7 @@ const translations = {
     joinEyebrow: "参加対象",
     joinTitle: "どなたでも歓迎",
     joinKidsAdults: "キッズ＆大人",
-    joinBeginners: "初心者歓迎",
+    joinBeginners: "初心者大歓迎！",
     joinExperience: "経験不要",
     joinNote: "カップル / 友人 / ファミリー",
     includedEyebrow: "料金に含まれるもの",
