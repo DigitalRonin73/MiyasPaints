@@ -1022,19 +1022,27 @@ h3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
+  align-items: stretch;
 }
 
 .gallery-grid img {
+  display: block;
   width: 100%;
-  aspect-ratio: 1.45 / 1;
+  height: 100%;
+  aspect-ratio: 4 / 3;
   border-radius: var(--radius);
   object-fit: cover;
+  object-position: center;
   box-shadow: 0 10px 22px rgba(47, 23, 79, 0.08);
 }
 
 .gallery-grid img.gallery-portrait-fit {
   object-fit: contain;
   background: #f7efe9;
+}
+
+.gallery-grid img[src*="gallery-smiling-woman-class"] {
+  object-position: center 38%;
 }
 
 .split-section {
@@ -1437,8 +1445,8 @@ details p {
   }
 
   .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 980px;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
   }
