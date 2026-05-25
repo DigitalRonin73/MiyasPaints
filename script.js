@@ -249,7 +249,7 @@ const translations = {
     testimonialOne: "「貴重な体験でした！人生で初めて、何描いてるかわかる絵になりました！」",
     testimonialOneName: "初めて参加した方",
     testimonialTwo: "「お手本見ながら先生が手順を教えてくれるから、安心して色を塗れる！右脳が喜んでる！」",
-    testimonialTwoName: "参加された方",
+    testimonialTwoName: "初めて参加された方",
     testimonialThree: "「Miyaが一つずつわかりやすく教えてくれて、ずっと笑いながら楽しめました。」",
     testimonialThreeName: "カップルクラス参加者",
     notesEyebrow: "ご予約前に",
