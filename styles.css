@@ -1209,6 +1209,12 @@ details p {
   text-align: center;
 }
 
+.reserve-intro {
+  max-width: 44rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
 .selected-class-summary {
   display: grid;
   gap: 4px;
