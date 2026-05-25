@@ -561,6 +561,13 @@ h3 {
     padding-right: 14px;
   }
 
+  #about-title,
+  #gallery-title {
+    font-size: 1.55rem;
+    line-height: 1.22;
+    margin-bottom: 10px;
+  }
+
   .hero {
     display: block;
     max-width: min(100%, 430px);
