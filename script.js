@@ -63,7 +63,7 @@ const translations = {
     aboutTitle: "Warm guidance, playful creativity",
     aboutText: "Hi, I’m Miya. I love helping people relax and discover their creativity through fun, step-by-step acrylic painting classes in Okinawa.",
     miyaAlt: "Pinto Beetle guests painting together in an ocean-view room",
-    seeGallery: "See the Gallery",
+    seeGallery: "View Gallery",
     galleryEyebrow: "Gallery",
     galleryTitle: "Real moments, colorful memories",
     galleryIntro: "A peek inside Pinto Beetle classes, from ocean-view setup to relaxed painting moments.",
