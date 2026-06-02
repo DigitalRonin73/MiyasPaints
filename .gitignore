@@ -10,9 +10,11 @@ Thumbs.db
 # Environment variables
 .env
 .env.local
+.dev.vars
 
 # Node
 node_modules/
+.wrangler/
 
 # Python
 __pycache__/

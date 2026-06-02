@@ -1,0 +1,13 @@
+{
+  "name": "miyaspaints",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for Miya's Paints.",
+  "scripts": {
+    "dev": "wrangler pages dev . --compatibility-date=2026-06-02 --install-skills=false",
+    "deploy": "wrangler pages deploy . --project-name=miyaspaints --install-skills=false"
+  },
+  "devDependencies": {
+    "wrangler": "^4.96.0"
+  }
+}

@@ -1321,12 +1321,30 @@ details p {
   resize: vertical;
 }
 
+.reservation-honeypot {
+  display: none;
+}
+
+.turnstile-field {
+  min-height: 65px;
+  display: flex;
+  justify-content: center;
+}
+
 .form-status {
   min-height: 24px;
   color: var(--soft-purple);
   font-weight: 600;
   margin: 0;
   text-align: center;
+}
+
+.form-status[data-status="error"] {
+  color: #9f2d4c;
+}
+
+.form-status[data-status="success"] {
+  color: #276c5e;
 }
 
 .contact-section {

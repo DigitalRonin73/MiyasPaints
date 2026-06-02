@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "miyaspaints",
+  "pages_build_output_dir": ".",
+  "compatibility_date": "2026-06-02",
+  "vars": {
+    "TURNSTILE_SITE_KEY": "0x4AAAAAADdn6XCmdRLtEqWR",
+    "RESEND_FROM_EMAIL": "Scott Bennett <asbennett84@gmail.com>",
+    "RESERVATION_TO_EMAIL": "asbennett84@gmail.com"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "RESERVATION_RATE_LIMIT_KV",
+      "id": "ac79beed3ec743eba531f1114c5e2ea8"
+    }
+  ]
+}

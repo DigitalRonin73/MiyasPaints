@@ -144,7 +144,10 @@ const translations = {
     formMessagePlaceholder: "Tell us which class you want or ask about a private event.",
     bookingMessage: "I’d like to reserve {classTitle} on {classDate} at {classTime}.",
     requestReservation: "Request Reservation",
-    formSuccess: "Thanks! This demo form is ready to connect to a booking service next.",
+    formSubmitting: "Sending your reservation request...",
+    formSuccess: "Thanks! Your reservation request was sent. Please check your email for a confirmation.",
+    formError: "Sorry, something went wrong. Please try again or message Miya on Instagram.",
+    formVerificationError: "Please complete the verification and try again.",
     contactEyebrow: "Contact",
     contactTitle: "Questions? Message Miya anytime",
     contactLocationLabel: "Location:",
@@ -298,7 +301,10 @@ const translations = {
     formMessagePlaceholder: "参加したいクラスやプライベートイベントについてご記入ください。",
     bookingMessage: "{classDate} {classTime} の「{classTitle}」を予約したいです。",
     requestReservation: "予約をリクエスト",
-    formSuccess: "ありがとうございます。このデモフォームは次に予約サービスへ接続できます。",
+    formSubmitting: "予約リクエストを送信しています...",
+    formSuccess: "ありがとうございます。予約リクエストを送信しました。確認メールをご確認ください。",
+    formError: "申し訳ありません。送信できませんでした。もう一度お試しいただくか、InstagramでMiyaへご連絡ください。",
+    formVerificationError: "確認チェックを完了して、もう一度お試しください。",
     contactEyebrow: "お問い合わせ",
     contactTitle: "質問はInstagramでお気軽にどうぞ",
     contactLocationLabel: "場所:",
@@ -466,7 +472,9 @@ const reservationForm = document.querySelector("#reservation-form");
 const formStatus = document.querySelector("#form-status");
 const bookClassButtons = document.querySelectorAll(".book-class-button");
 const selectedClassSummary = document.querySelector("#selected-class-summary");
+const turnstileContainer = document.querySelector("#reservation-turnstile");
 let selectedClassEventId = null;
+let turnstileWidgetId = null;
 
 function getSavedLanguage() {
   try {
@@ -610,6 +618,71 @@ function showSelectedClassSummary(event) {
   selectedClassSummary.hidden = false;
 }
 
+function setFormStatus(message, type = "info") {
+  if (!formStatus) {
+    return;
+  }
+
+  formStatus.textContent = message;
+  formStatus.dataset.status = type;
+}
+
+function resetTurnstile() {
+  if (window.turnstile && turnstileWidgetId !== null) {
+    window.turnstile.reset(turnstileWidgetId);
+  }
+}
+
+function getTurnstileToken() {
+  if (window.turnstile && turnstileWidgetId !== null) {
+    return window.turnstile.getResponse(turnstileWidgetId);
+  }
+
+  const tokenInput = reservationForm.querySelector('[name="cf-turnstile-response"]');
+  return tokenInput ? tokenInput.value : "";
+}
+
+function waitForTurnstile() {
+  return new Promise((resolve) => {
+    if (window.turnstile) {
+      resolve(window.turnstile);
+      return;
+    }
+
+    const startedAt = Date.now();
+    const interval = window.setInterval(() => {
+      if (window.turnstile || Date.now() - startedAt > 8000) {
+        window.clearInterval(interval);
+        resolve(window.turnstile || null);
+      }
+    }, 100);
+  });
+}
+
+async function setupTurnstile() {
+  if (!turnstileContainer) {
+    return;
+  }
+
+  try {
+    const [turnstile, response] = await Promise.all([
+      waitForTurnstile(),
+      fetch("/api/config", { cache: "no-store" })
+    ]);
+    const config = response.ok ? await response.json() : {};
+
+    if (!turnstile || !config.turnstileSiteKey) {
+      return;
+    }
+
+    turnstileWidgetId = turnstile.render(turnstileContainer, {
+      sitekey: config.turnstileSiteKey
+    });
+  } catch {
+    setFormStatus(translations[activeLanguage].formVerificationError, "error");
+  }
+}
+
 function closeMobileMenu() {
   document.body.classList.remove("nav-open");
   navMenu.classList.remove("is-open");
@@ -651,7 +724,7 @@ bookClassButtons.forEach((button) => {
     selectedClassEventId = button.dataset.eventId;
     showSelectedClassSummary(event);
 
-    formStatus.textContent = "";
+    setFormStatus("");
     setTimeout(() => {
       reservationForm.elements.name.focus({ preventScroll: true });
     }, 350);
@@ -664,10 +737,48 @@ languageButtons.forEach((button) => {
   });
 });
 
-reservationForm.addEventListener("submit", (event) => {
+reservationForm.addEventListener("submit", async (event) => {
   event.preventDefault();
-  formStatus.textContent = translations[activeLanguage].formSuccess;
-  reservationForm.reset();
+  const dictionary = translations[activeLanguage] || translations.en;
+  const submitButton = reservationForm.querySelector('[type="submit"]');
+
+  if (!reservationForm.checkValidity()) {
+    reservationForm.reportValidity();
+    return;
+  }
+
+  const turnstileToken = getTurnstileToken();
+  if (!turnstileToken) {
+    setFormStatus(dictionary.formVerificationError, "error");
+    return;
+  }
+
+  const formData = new FormData(reservationForm);
+  formData.set("cf-turnstile-response", turnstileToken);
+
+  setFormStatus(dictionary.formSubmitting);
+  submitButton.disabled = true;
+
+  try {
+    const response = await fetch(reservationForm.action, {
+      method: "POST",
+      body: formData
+    });
+    const result = await response.json().catch(() => ({}));
+
+    if (!response.ok || !result.success) {
+      throw new Error(result.message || dictionary.formError);
+    }
+
+    setFormStatus(result.message || dictionary.formSuccess, "success");
+    reservationForm.reset();
+    resetTurnstile();
+  } catch (error) {
+    setFormStatus(error.message || dictionary.formError, "error");
+    resetTurnstile();
+  } finally {
+    submitButton.disabled = false;
+  }
 });
 
 const revealObserver = new IntersectionObserver(
@@ -687,3 +798,4 @@ document.querySelectorAll(".reveal").forEach((element) => {
 });
 
 applyLanguage(savedLanguage);
+setupTurnstile();
