@@ -16,7 +16,7 @@ const translations = {
     heroEyebrow: "Sip & Paint Okinawa",
     heroTitle: "Sip, paint, create",
     mobileHeroTitle: "Sip, paint, create",
-    mobileHeroSubtitle: "Painting events & workshops in Yomitan",
+    mobileHeroSubtitle: "Good people.\nGood vibes.\nGreat memories.",
     heroSubtitle: "Beginner-friendly acrylic painting classes in Yomitan for kids, adults, couples, and families. Unplug, relax with music, and feel refreshed through art.",
     heroImageAlt: "Cozy Pinto Beetle painting room prepared with easels, canvases, and ocean light",
     mobileQuickLinksAria: "Quick links",
@@ -40,10 +40,10 @@ const translations = {
     infoCustomText: "Art experiences for birthdays, gatherings, mobile events, and other special moments.",
     infoSuppliesTitle: "All Materials Included",
     infoSuppliesText: "Just bring your excitement. Canvas, paints, brushes, aprons, and everything you need are ready for you.",
-    classesEyebrow: "Upcoming Classes",
-    classesTitle: "Pick your next session",
+    classesEyebrow: "Upcoming Sessions",
+    classesTitle: "Upcoming Sessions",
     classesIntro: "Choose a design, reserve your spot, and come enjoy a cozy creative session in Yomitan.",
-    viewAllClasses: "View all classes →",
+    viewAllClasses: "View all →",
     seatsLeft: "{count} seats left",
     availabilityLabel: "Availability",
     dateLabel: "Date",
@@ -172,7 +172,7 @@ const translations = {
     heroEyebrow: "Sip & Paint Okinawa",
     heroTitle: "Sip, paint, create",
     mobileHeroTitle: "Sip, paint, create",
-    mobileHeroSubtitle: "Painting events & workshops in Yomitan",
+    mobileHeroSubtitle: "Good people.\nGood vibes.\nGreat memories.",
     heroSubtitle: "読谷で楽しむ、初心者にやさしいアクリルペイント教室です。お子さま、大人、カップル、ご家族で、音楽を聴きながらゆったり作品づくりを楽しめます。",
     heroImageAlt: "イーゼルとキャンバスが並ぶ、海の光が入るPinto Beetleのペイントルーム",
     mobileQuickLinksAria: "クイックリンク",
@@ -197,10 +197,10 @@ const translations = {
     infoCustomText: "お誕生日会、お仲間との集まり、出張イベントなど、特別なひとときを彩るアート体験をお手伝いします。",
     infoSuppliesTitle: "画材はすべて込み",
     infoSuppliesText: "手ぶらで、ワクワクだけ持ってきてください！ キャンバス、絵の具、筆、エプロンなど必要なものはすべてご用意しています。",
-    classesEyebrow: "開催予定",
-    classesTitle: "次に描く作品を選ぼう",
+    classesEyebrow: "Upcoming Sessions",
+    classesTitle: "Upcoming Sessions",
     classesIntro: "デザインを選んで席を予約し、読谷でゆったり楽しい時間を過ごしましょう。",
-    viewAllClasses: "すべてのクラスを見る →",
+    viewAllClasses: "View all →",
     seatsLeft: "残り{count}席",
     availabilityLabel: "残席状況",
     dateLabel: "日付",
@@ -461,6 +461,55 @@ const classEvents = {
     },
     seatsLeft: 6,
     availabilityNote: ""
+  },
+  "private-session": {
+    image: "images/studio-hero.jpg?v=20260523-18",
+    imageAlt: {
+      en: "Private Pinto Beetle painting session table setup",
+      ja: "Pinto Beetleのプライベートセッション用テーブル"
+    },
+    title: {
+      en: "Private Session",
+      ja: "プライベートセッション"
+    },
+    description: {
+      en: "Birthdays, groups, team events, and custom paint parties by request.",
+      ja: "お誕生日、グループ、チームイベントなど、ご希望に合わせたプライベートペイント体験です。"
+    },
+    date: {
+      en: "Available by request",
+      ja: "リクエスト制"
+    },
+    isoDate: "",
+    month: {
+      en: "BY",
+      ja: "相談"
+    },
+    day: "REQ",
+    weekday: {
+      en: "",
+      ja: ""
+    },
+    time: {
+      en: "Birthdays, groups, team events & more",
+      ja: "お誕生日、グループ、イベントなど"
+    },
+    location: {
+      en: "Miya's Table, Yomitan",
+      ja: "Miya's Table, 読谷"
+    },
+    price: {
+      en: "Inquire",
+      ja: "お問い合わせ"
+    },
+    seatsLeft: {
+      en: "Available by request",
+      ja: "リクエスト制"
+    },
+    availabilityNote: {
+      en: "",
+      ja: ""
+    }
   }
 };
 

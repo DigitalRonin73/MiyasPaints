@@ -80,10 +80,17 @@
           </span>
         </div>
         <p class="eyebrow" data-i18n="heroEyebrow">Sip & Paint Okinawa</p>
-        <h1><span class="desktop-hero-title" data-i18n="heroTitle">Sip, paint, create</span><span class="mobile-hero-title" data-i18n="mobileHeroTitle">Sip, paint, create</span></h1>
+        <h1>
+          <span class="desktop-hero-title" data-i18n="heroTitle">Sip, paint, create</span>
+          <span class="mobile-hero-title" aria-label="Sip. Paint. Create.">
+            <span>Sip.</span>
+            <span>Paint.</span>
+            <span>Create.</span>
+          </span>
+        </h1>
         <p class="hero-text">
           <span class="desktop-hero-text" data-i18n="heroSubtitle">Beginner-friendly acrylic painting classes in Yomitan for kids, adults, couples, and families. Unplug, relax with music, and feel refreshed through art.</span>
-          <span class="mobile-hero-subtitle" data-i18n="mobileHeroSubtitle">Painting Event & Workshops</span>
+          <span class="mobile-hero-subtitle" data-i18n="mobileHeroSubtitle">Good people.<br>Good vibes.<br>Great memories.</span>
         </p>
         <img class="mobile-hero-workshop-photo" src="images/painting-hero.jpg?v=20260523-20" alt="Pinto Beetle workshop scene with guests painting together" data-i18n-alt="heroImageAlt">
         <div class="hero-actions">
@@ -134,8 +141,8 @@
 
     <section class="section section-tint" id="classes" aria-labelledby="classes-title">
       <div class="section-heading reveal">
-        <p class="eyebrow" data-i18n="classesEyebrow">Upcoming Classes</p>
-        <h2 id="classes-title" data-i18n="classesTitle">Pick your next session</h2>
+        <p class="eyebrow" data-i18n="classesEyebrow">Upcoming Sessions</p>
+        <h2 id="classes-title" data-i18n="classesTitle">Upcoming Sessions</h2>
         <p data-i18n="classesIntro">Choose a design, reserve your spot, and come enjoy a cozy creative session in Yomitan.</p>
         <a class="text-link" href="#reserve" data-i18n="viewAllClasses">View all classes →</a>
       </div>
@@ -209,6 +216,50 @@
             >Book This Class</a>
           </div>
         </article>
+
+        <article class="event-card reveal private-session-card" data-event-id="private-session">
+          <div class="event-image-wrap">
+            <img data-event-field="image" src="images/studio-hero.jpg" alt="Private Pinto Beetle painting session table setup">
+            <time class="date-card" data-event-field="dateCard" datetime=""><span data-event-field="month"></span><strong data-event-field="day"></strong><span data-event-field="weekday"></span></time>
+          </div>
+          <div class="event-content">
+            <h3><span data-event-field="title"></span><span class="availability-note" data-event-field="availabilityNote"></span></h3>
+            <dl class="event-details">
+              <div><dt data-i18n="dateLabel">Date</dt><dd data-event-field="date"></dd></div>
+              <div><dt data-i18n="timeLabel">Time</dt><dd data-event-field="time"></dd></div>
+              <div><dt data-i18n="locationLabel">Location</dt><dd data-event-field="location"></dd></div>
+              <div><dt data-i18n="priceLabel">Price</dt><dd data-event-field="price"></dd></div>
+            </dl>
+            <a
+              class="button button-primary button-full book-class-button"
+              href="#reserve"
+              data-i18n="bookClass"
+              data-event-id="private-session"
+            >Book This Class</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="experience-strip section compact" aria-labelledby="experience-title">
+      <h2 id="experience-title">Choose Your Experience</h2>
+      <div class="experience-options">
+        <a href="#reserve" aria-label="Girls' Night">
+          <span aria-hidden="true">♢</span>
+          <strong>Girls' Night</strong>
+        </a>
+        <a href="#reserve" aria-label="Date Night">
+          <span aria-hidden="true">◌</span>
+          <strong>Date Night</strong>
+        </a>
+        <a href="#reserve" aria-label="Family Paint Time">
+          <span aria-hidden="true">♙</span>
+          <strong>Family<br>Paint Time</strong>
+        </a>
+        <a href="#reserve" aria-label="Private Events">
+          <span aria-hidden="true">□</span>
+          <strong>Private Events</strong>
+        </a>
       </div>
     </section>
 
@@ -455,9 +506,12 @@ To secure your desired date and group size, please feel free to reach out as ear
   </main>
 
   <footer class="site-footer">
-    <p><strong>Pinto Beetle</strong> | <span data-i18n="footerTagline">Sip & Paint Okinawa</span></p>
-    <a href="https://www.instagram.com/miyas.paints/" target="_blank" rel="noopener">Instagram @miyas.paints</a>
-    <p data-i18n="copyright">© 2026 Pinto Beetle. All rights reserved.</p>
+    <p class="footer-note">See you<br>at Miya's Table!</p>
+    <img src="images/pinto-beetle-mark.png" alt="" aria-hidden="true">
+    <div class="footer-socials" aria-label="Pinto Beetle social links">
+      <a href="https://www.instagram.com/miyas.paints/" target="_blank" rel="noopener" aria-label="Instagram">◎</a>
+      <a href="mailto:info@pinto-beetle.com" aria-label="Email">✉</a>
+    </div>
   </footer>
 
   <script src="script.js?v=20260524-08"></script>
