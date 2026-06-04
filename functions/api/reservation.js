@@ -56,7 +56,7 @@ export async function onRequestPost({ request, env }) {
 
     return jsonResponse({
       success: true,
-      message: "Thanks! Your reservation request was sent. Please check your email for a confirmation.",
+      message: "Thanks! Your reservation request was sent. Miya will follow up with confirmation details.",
       reservationId
     });
   } catch (error) {
@@ -235,10 +235,13 @@ async function sendReservationEmails(env, payload, reservationId) {
     text: customerEmailText(payload, reservationId)
   };
 
-  await Promise.all([
-    sendEmail(env.RESEND_API_KEY, ownerEmail),
-    sendEmail(env.RESEND_API_KEY, customerEmail)
-  ]);
+  await sendEmail(env.RESEND_API_KEY, ownerEmail);
+
+  try {
+    await sendEmail(env.RESEND_API_KEY, customerEmail);
+  } catch (error) {
+    console.error("Customer confirmation email failed", error);
+  }
 }
 
 async function sendEmail(apiKey, email) {
