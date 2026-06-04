@@ -12,18 +12,6 @@ export async function onRequestPost({ request, env }) {
   try {
     assertConfigured(env);
 
-    const ip = getClientIp(request);
-    const rateLimit = await checkRateLimit(env, ip);
-    if (!rateLimit.allowed) {
-      return jsonResponse(
-        {
-          success: false,
-          message: "Too many reservation requests. Please wait a few minutes and try again."
-        },
-        429
-      );
-    }
-
     const formData = await request.formData();
     if (cleanText(formData.get("website"))) {
       return jsonResponse({ success: true, message: "Thanks! Your reservation request was sent." });
@@ -35,6 +23,7 @@ export async function onRequestPost({ request, env }) {
       return jsonResponse({ success: false, message: validationError }, 400);
     }
 
+    const ip = getClientIp(request);
     const turnstile = await verifyTurnstile({
       secret: env.TURNSTILE_SECRET_KEY,
       token: payload.turnstileToken,
@@ -48,6 +37,17 @@ export async function onRequestPost({ request, env }) {
           message: "Verification failed. Please refresh the page and try again."
         },
         403
+      );
+    }
+
+    const rateLimit = await checkRateLimit(env, ip);
+    if (!rateLimit.allowed) {
+      return jsonResponse(
+        {
+          success: false,
+          message: "Too many reservation requests. Please wait a few minutes and try again."
+        },
+        429
       );
     }
 
