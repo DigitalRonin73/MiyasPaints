@@ -1521,22 +1521,24 @@ details p {
 
 /* 2026-06-03 wide studio-card direction */
 .paint-swatch-strip {
-  grid-column: 1 / -1;
   display: grid;
   grid-template-columns: repeat(8, minmax(74px, 1fr));
-  gap: 14px;
+  gap: clamp(8px, 1.4vw, 16px);
   width: 100%;
+  max-width: min(100%, 1360px);
   align-items: start;
-  margin: -18px 0 12px;
+  margin: -3px auto 0;
+  padding: 0 clamp(12px, 2.3vw, 30px) 10px;
+  background: transparent;
 }
 
 .paint-swatch-strip span {
   display: grid;
-  gap: 5px;
+  gap: 4px;
   min-width: 0;
   color: var(--purple);
   font-family: "Allura", "Pacifico", cursive;
-  font-size: clamp(0.88rem, 1.5vw, 1.2rem);
+  font-size: clamp(0.82rem, 1.16vw, 1.08rem);
   line-height: 1;
   text-align: center;
 }
@@ -1545,16 +1547,39 @@ details p {
   content: "";
   display: block;
   width: 100%;
-  height: 28px;
-  border-radius: 52% 42% 48% 36%;
-  background: var(--swatch);
-  filter: saturate(1.08);
-  transform: rotate(-1deg);
+  height: clamp(18px, 2.3vw, 28px);
+  border-radius: 48% 54% 45% 58% / 62% 44% 56% 40%;
+  background:
+    radial-gradient(80% 110% at 12% 28%, rgba(255, 255, 255, 0.42), transparent 36%),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.22), transparent 42%, rgba(47, 27, 52, 0.1)),
+    var(--swatch);
+  box-shadow:
+    inset 10px 0 10px rgba(255, 255, 255, 0.18),
+    inset -12px 0 10px rgba(50, 42, 52, 0.1),
+    0 6px 10px rgba(58, 37, 62, 0.08);
+  clip-path: polygon(2% 28%, 9% 12%, 20% 20%, 34% 10%, 51% 18%, 66% 8%, 82% 18%, 97% 11%, 99% 56%, 91% 77%, 75% 71%, 61% 86%, 42% 78%, 27% 90%, 13% 76%, 0 84%);
+  filter: saturate(1.12);
+  transform: rotate(var(--stroke-tilt, -1.2deg));
+}
+
+.paint-swatch-strip span:nth-child(even)::before {
+  --stroke-tilt: 1.1deg;
+  clip-path: polygon(0 34%, 10% 14%, 25% 22%, 39% 9%, 55% 18%, 70% 12%, 87% 21%, 100% 17%, 98% 68%, 87% 78%, 70% 72%, 56% 88%, 38% 80%, 24% 91%, 8% 76%, 2% 64%);
+}
+
+.paint-swatch-strip span:nth-child(3n)::before {
+  --stroke-tilt: -0.5deg;
 }
 
 .paint-swatch-strip i {
   font-style: normal;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mobile-paint-swatch-strip {
+  display: none;
 }
 
 .hero {
@@ -1828,9 +1853,15 @@ h1 {
 
 @media (max-width: 859px) {
   .paint-swatch-strip {
-    grid-template-columns: repeat(4, minmax(60px, 1fr));
-    gap: 10px 12px;
+    grid-template-columns: repeat(8, minmax(78px, 1fr));
+    gap: 9px;
     margin-top: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .paint-swatch-strip::-webkit-scrollbar {
+    display: none;
   }
 
   .hero {
@@ -1856,8 +1887,27 @@ h1 {
 }
 
 @media (max-width: 619px) {
-  .paint-swatch-strip {
+  .header-paint-swatch-strip {
     display: none;
+  }
+
+  .mobile-paint-swatch-strip {
+    display: grid;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    grid-template-columns: repeat(8, minmax(72px, 1fr));
+    max-width: 100%;
+    margin: -8px 0 18px;
+    padding: 0 12px 8px;
+    overflow-x: auto;
+  }
+
+  .mobile-paint-swatch-strip span {
+    font-size: 0.78rem;
+  }
+
+  .mobile-paint-swatch-strip span::before {
+    height: 18px;
   }
 
   .hero {
@@ -2209,7 +2259,7 @@ h1 {
 
   .mobile-hero-workshop-photo {
     grid-column: 2;
-    grid-row: 2 / span 2;
+    grid-row: 3 / span 2;
     align-self: stretch;
     height: 100%;
     min-height: 300px;
