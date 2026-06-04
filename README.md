@@ -85,4 +85,6 @@ After Cloudflare is authenticated locally, deploy directly with:
 npm run deploy
 ```
 
+GitHub Actions also deploys the site to Cloudflare Pages whenever `main` is updated. The workflow uses the `CLOUDFLARE_API_TOKEN` repository secret and deploys to the existing `miyaspaints` Pages project.
+
 The reservation form posts to the Cloudflare Pages Function at `/api/reservation`. The function validates the request, checks Turnstile, sends a formatted reservation email to Miyako, sends a confirmation email to the customer, and returns JSON success/error responses.
