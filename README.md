@@ -58,7 +58,7 @@ Set these in Cloudflare Pages under **Settings > Environment variables**:
 - `TURNSTILE_SITE_KEY`: Public Cloudflare Turnstile site key for `miyaspaints.com`. Current value: `0x4AAAAAADdn6XCmdRLtEqWR`.
 - `TURNSTILE_SECRET_KEY`: Private Turnstile secret key.
 - `RESEND_API_KEY`: Resend API key.
-- `RESEND_FROM_EMAIL`: Verified Resend sender. Current temporary value: `Scott Bennett <asbennett84@gmail.com>`.
+- `RESEND_FROM_EMAIL`: Verified Resend sender. Current temporary value: `Pinto Beetle <onboarding@resend.dev>`.
 - `RESERVATION_TO_EMAIL`: Miyako's destination email address for new reservation requests. Current temporary value: `asbennett84@gmail.com`.
 
 Rate-limit binding:
