@@ -2664,3 +2664,28 @@ h1 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Final color lockups requested 2026-06-04. */
+.brand-name,
+.mobile-hero-logo-text strong,
+.mobile-hero-logo-text strong span,
+.mobile-hero-logo-text .logo-coral,
+.mobile-hero-logo-text .logo-teal,
+.mobile-hero-logo-text .logo-gold {
+  color: var(--purple);
+}
+
+.desktop-hero-title span:nth-child(1),
+.mobile-hero-title span:nth-child(1) {
+  color: #e94f97;
+}
+
+.desktop-hero-title span:nth-child(2),
+.mobile-hero-title span:nth-child(2) {
+  color: #28aeb9;
+}
+
+.desktop-hero-title span:nth-child(3),
+.mobile-hero-title span:nth-child(3) {
+  color: #6aa63f;
+}
