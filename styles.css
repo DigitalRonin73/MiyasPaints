@@ -3112,8 +3112,8 @@ h1 {
   z-index: 0;
   background-image: url("images/top-class-group-night-painting.jpg?v=20260604-03");
   background-repeat: no-repeat;
-  background-size: min(100%, 1120px) auto;
-  background-position: right 92px;
+  background-size: cover;
+  background-position: 66% center;
   opacity: 0.95;
 }
 
@@ -3457,8 +3457,8 @@ h1 {
   }
 
   .hero::before {
-    background-size: 100% auto;
-    background-position: right 120px;
+    background-size: cover;
+    background-position: 59% center;
   }
 
   .hero::after {
