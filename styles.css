@@ -3155,6 +3155,10 @@ h1 {
   gap: 10px;
 }
 
+.mobile-hero-title {
+  display: none !important;
+}
+
 .desktop-hero-title span,
 .mobile-hero-title span,
 .desktop-hero-title span:nth-child(1),
@@ -3358,36 +3362,85 @@ h1 {
 @media (max-width: 619px) {
   .site-header {
     position: absolute;
+    z-index: 100;
+    min-height: 150px;
+    pointer-events: none;
+  }
+
+  .site-header::before {
+    content: none;
+  }
+
+  .site-header::first-line {
+    font-family: "Pacifico", cursive;
+    font-size: 2.85rem;
+    font-weight: 400;
+    line-height: 0.88;
+  }
+
+  .site-header::after {
+    content: none;
   }
 
   .nav-shell {
+    position: relative;
     min-height: 82px;
     padding: 24px 26px 0;
+    max-width: none;
   }
 
   .brand {
-    display: flex;
+    position: absolute;
+    top: 22px;
+    left: 28px;
+    z-index: 110;
+    display: flex !important;
     gap: 10px;
+    max-width: calc(100vw - 104px);
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto;
+  }
+
+  .brand > span {
+    display: block !important;
   }
 
   .brand-mark {
-    width: 60px;
-    height: 60px;
+    display: block !important;
+    flex: 0 0 58px;
+    width: 58px;
+    height: 58px;
+    border: 3px solid var(--purple);
+    border-radius: 50%;
+    object-fit: contain;
   }
 
   .brand-name {
-    font-size: clamp(2.6rem, 11.2vw, 3.25rem);
-    line-height: 0.82;
+    font-size: clamp(2.25rem, 10.2vw, 2.9rem);
+    line-height: 0.86;
+    white-space: nowrap;
   }
 
   .brand-tagline {
-    font-size: clamp(0.86rem, 4vw, 1.06rem);
+    font-size: clamp(0.78rem, 3.5vw, 0.94rem);
     font-weight: 800;
+    white-space: nowrap;
+  }
+
+  .nav-toggle {
+    position: absolute;
+    top: 28px;
+    right: 24px;
+    z-index: 103;
+    pointer-events: auto;
   }
 
   .header-paint-swatch-strip {
-    top: 120px;
+    top: 118px;
     left: 38px;
+    z-index: 101;
+    display: grid !important;
     grid-template-columns: repeat(5, 30px);
     gap: 12px;
   }
@@ -3417,11 +3470,11 @@ h1 {
   }
 
   .desktop-hero-title {
-    display: none;
+    display: none !important;
   }
 
   .mobile-hero-title {
-    display: grid;
+    display: grid !important;
   }
 
   h1 {
