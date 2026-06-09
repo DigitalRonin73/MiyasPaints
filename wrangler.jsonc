@@ -6,7 +6,7 @@
   "vars": {
     "TURNSTILE_SITE_KEY": "0x4AAAAAADdn6XCmdRLtEqWR",
     "RESEND_FROM_EMAIL": "Pinto Beetle <onboarding@resend.dev>",
-    "RESERVATION_TO_EMAIL": "asbennett84@gmail.com"
+    "RESERVATION_TO_EMAIL": "Hello.Pintobeetle@gmail.com"
   },
   "kv_namespaces": [
     {
