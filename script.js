@@ -16,8 +16,8 @@ const translations = {
     heroEyebrow: "Sip & Paint Okinawa",
     heroTitle: "Unplug.\nPaint.\nCreate.",
     mobileHeroTitle: "Unplug.\nPaint.\nCreate.",
-    mobileHeroSubtitle: "Small-group sip & paint experiences for beginners in Okinawa.",
-    heroSubtitle: "Small-group sip & paint experiences for beginners in Okinawa.",
+    mobileHeroSubtitle: "Creative sip & paint experiences in Okinawa.",
+    heroSubtitle: "Creative sip & paint experiences in Okinawa.",
     heroImageAlt: "Pinto Beetle guests smiling with finished night paintings",
     mobileQuickLinksAria: "Quick links",
     mobileQuickBook: "Book",
@@ -30,12 +30,12 @@ const translations = {
     statSuppliesMain: "All",
     supplies: "supplies included",
     quickInfoTitle: "Quick class details",
-    infoBeginnerTitle: "Beginner Friendly",
-    infoBeginnerText: "No experience? No problem!",
+    infoBeginnerTitle: "Paint",
+    infoBeginnerText: "Step-by-step guidance makes it easy and fun.",
     infoSmallTitle: "Sip & Relax",
-    infoSmallText: "Enjoy your favorite drink and unwind.",
-    infoCreativeTitle: "Small Group Sessions",
-    infoCreativeText: "Personal attention in a cozy atmosphere.",
+    infoSmallText: "Enjoy drinks, treats, and good company.",
+    infoCreativeTitle: "Creative Escape",
+    infoCreativeText: "Unplug, explore your creativity, and enjoy the moment.",
     infoCustomTitle: "Private Events & Parties",
     infoCustomText: "Art experiences for birthdays, gatherings, mobile events, and other special moments.",
     infoSuppliesTitle: "No Experience Needed",
@@ -50,7 +50,7 @@ const translations = {
     timeLabel: "Time",
     locationLabel: "Location",
     priceLabel: "Price",
-    bookClass: "Book This Class",
+    bookClass: "Reserve Your Seat",
     stepsEyebrow: "How It Works",
     stepsTitle: "Create something beautiful",
     stepOneTitle: "Choose a Class",
@@ -61,12 +61,15 @@ const translations = {
     stepThreeText: "Come sip, paint, laugh, and take home your artwork.",
     aboutEyebrow: "About the Host",
     aboutTitle: "Warm guidance, playful creativity",
-    aboutText: "Hi, I’m Miya. I love helping people relax and discover their creativity through fun, step-by-step acrylic painting classes in Okinawa.",
+    aboutText: "I create relaxed, beginner-friendly paint experiences where everyone can unplug, connect, and have fun.",
+    instructorTitle: "Miya",
+    instructorIntro: "I create relaxed, beginner-friendly paint experiences where everyone can unplug, connect, and have fun.",
+    languageWelcome: "English and Japanese welcome.",
     miyaAlt: "Pinto Beetle guests painting together in an ocean-view room",
     seeGallery: "View Gallery",
-    galleryEyebrow: "Gallery",
+    galleryEyebrow: "Past Events / Gallery",
     galleryTitle: "Real moments, colorful memories",
-    galleryIntro: "A peek inside Pinto Beetle classes, from ocean-view setup to relaxed painting moments.",
+    galleryIntro: "A peek inside Pinto Beetle classes, from creative moments to finished masterpieces.",
     galleryPaintAlt: "Pinto Beetle class guests painting together by the ocean-view windows",
     galleryStudentAlt: "Pinto Beetle guests smiling during an ocean-view painting class",
     galleryGroupAlt: "Two Pinto Beetle guests painting together at the class table",
@@ -90,11 +93,11 @@ const translations = {
     includedAtmosphere: "Relaxed atmosphere",
     testimonialsEyebrow: "Testimonials",
     testimonialsTitle: "Guests leave relaxed and proud",
-    testimonialOne: "“It was a precious experience! For the first time in my life, I painted something recognizable!”",
+    testimonialOne: "“I surprised myself. I loved my painting!”",
     testimonialOneName: "A first-time painter",
-    testimonialTwo: "“The teacher shows an example and explains each step, so I felt comfortable adding color. My right brain was so happy!”",
+    testimonialTwo: "“Easy to follow, relaxing, and so much fun.”",
     testimonialTwoName: "Class guest",
-    testimonialThree: "“Miya made every step simple. We laughed the whole time and loved our paintings.”",
+    testimonialThree: "“We laughed, relaxed, and left with paintings we love.”",
     testimonialThreeName: "Couples class guest",
     notesEyebrow: "Before You Book",
     notesTitle: "A few helpful notes",
@@ -111,25 +114,27 @@ const translations = {
     noteChangesTitle: "Changes and cancellations",
     noteChangesText: "If you need to change or cancel your reservation, please message as early as possible so the seat and supplies can be adjusted.",
     faqEyebrow: "FAQ",
-    faqTitle: "Good things to know before class",
+    faqTitle: "Before You Book",
     faqExperienceQ: "Is it really okay if I have no artistic talent?",
     faqExperienceA: "Yes. We are not here to create perfect Picassos. You will be guided step by step, and most of all, the process gently brings out your creativity. By the end, you may surprise yourself with a painting you are proud of.",
     faqKidsQ: "Can I join with my child?",
-    faqKidsA: "Of course. Children are wonderful artists by nature, and they often show bolder, more beautiful color choices than adults. Please come with your family and enjoy a lively art time together.",
+    faqKidsA: "Yes! Children are welcome to join. Many kids create amazing artwork, and painting together can be a fun family experience.",
     faqPriceQ: "How much is the class?",
-    faqPriceA: "Classes are ¥4,500 per person unless a special event lists a different price.",
+    faqPriceA: "Classes are ¥4,500 per person (approx. $30 USD), unless a special event lists a different price.",
+    faqPaymentQ: "How does payment work?",
+    faqPaymentA: "Payment details will be sent after your reservation is confirmed.",
     faqWhereQ: "Where are classes held?",
     faqWhereA: "Classes are held in Yomitan, Okinawa. Exact details are confirmed after reservation.",
     faqClothesQ: "What if I am worried about getting paint on my clothes?",
-    faqClothesA: "Cute aprons are available at the studio, but paint sometimes loves to jump in unexpected directions. Just in case, relaxed clothes that can handle a little paint are the best choice.",
+    faqClothesA: "Aprons are provided, but we recommend wearing clothes that you do not mind getting a little paint on.",
     faqPrivateQ: "Can I add a paint party to my special event?",
     faqPrivateA: "I'd love to help you celebrate! Let's plan a memorable paint party as a special activity for your birthday, anniversary, or gathering.\n\nAvailable for private mobile events at your home, cafe, or preferred venue.\n\nTo secure your desired date and group size, please feel free to reach out as early as possible!",
     reserveEyebrow: "Reserve",
     reserveTitle: "Book Your Spot",
-    reserveIntro: "Once you submit your request, I will check availability and send you a confirmation email. Looking forward to painting with you!",
+    reserveIntro: "Send a reservation request, and I’ll check availability. After your reservation is confirmed, you’ll receive payment details by email.",
     formName: "Name",
     formEmail: "Email",
-    formContact: "Phone or Instagram ID",
+    formContact: "Instagram ID or phone number",
     formSelectedClass: "Selected Class / Date",
     formSelectedClassPlaceholder: "Choose your painting and date above or type them here",
     formDate: "Class date",
@@ -153,6 +158,7 @@ const translations = {
     contactLocationLabel: "Location:",
     contactLocationValue: "Yomitan, Okinawa",
     messageInstagram: "Message on Instagram",
+    messageEmail: "Send an Email",
     footerTagline: "Sip & Paint Okinawa",
     copyright: "© 2026 Pinto Beetle. All rights reserved."
   },
@@ -172,8 +178,8 @@ const translations = {
     heroEyebrow: "Sip & Paint Okinawa",
     heroTitle: "Unplug.\nPaint.\nCreate.",
     mobileHeroTitle: "Unplug.\nPaint.\nCreate.",
-    mobileHeroSubtitle: "Small-group sip & paint experiences for beginners in Okinawa.",
-    heroSubtitle: "Small-group sip & paint experiences for beginners in Okinawa.",
+    mobileHeroSubtitle: "Creative sip & paint experiences in Okinawa.",
+    heroSubtitle: "Creative sip & paint experiences in Okinawa.",
     heroImageAlt: "完成した夜の絵を持って笑顔のPinto Beetle参加者",
     mobileQuickLinksAria: "クイックリンク",
     mobileQuickBook: "予約",
@@ -186,13 +192,13 @@ const translations = {
     statSuppliesMain: "すべて",
     supplies: "画材込み",
     quickInfoTitle: "クラス概要",
-    infoBeginnerTitle: "初心者にやさしい",
-    infoBeginnerText: "初めてでも大丈夫。",
-    infoSmallTitle: "Sip & Relax",
+    infoBeginnerTitle: "Paint",
+    infoBeginnerText: "ステップごとのサポートで、初めてでも楽しく描けます。",
+    infoSmallTitle: "Relax",
     infoSmallSubtitle: "Miya’s table（最大6名様まで）",
-    infoSmallText: "好きなドリンクでリラックス。",
-    infoCreativeTitle: "少人数制クラス",
-    infoCreativeText: "少人数でゆったり楽しめます。",
+    infoSmallText: "ドリンクやおやつを楽しみながら、リラックスできます。",
+    infoCreativeTitle: "Create",
+    infoCreativeText: "日常から少し離れ、創造力を楽しみながら心地よい時間を過ごせます。",
     infoCustomTitle: "貸切イベント・パーティー",
     infoCustomText: "お誕生日会、お仲間との集まり、出張イベントなど、特別なひとときを彩るアート体験をお手伝いします。",
     infoSuppliesTitle: "経験不要",
@@ -207,7 +213,7 @@ const translations = {
     timeLabel: "時間",
     locationLabel: "場所",
     priceLabel: "料金",
-    bookClass: "このクラスを予約",
+    bookClass: "席を予約する",
     stepsEyebrow: "参加の流れ",
     stepsTitle: "かんたんに素敵な作品を作れます",
     stepOneTitle: "クラスを選ぶ",
@@ -218,12 +224,15 @@ const translations = {
     stepThreeText: "ドリンクを片手に、楽しみながら描いて作品を持ち帰りましょう。",
     aboutEyebrow: "ホストについて",
     aboutTitle: "楽しく、クリエイティブに",
-    aboutText: "こんにちは、Miyaです。沖縄で楽しいステップ式のアクリルペイント教室を通して、リラックスしながら創造力を見つけるお手伝いをしています。",
+    aboutText: "初心者でもリラックスして楽しめるペイント体験を通して、日常から少し離れ、人とつながり、楽しい時間を過ごせる空間をつくっています。",
+    instructorTitle: "Miya",
+    instructorIntro: "初めての方でも安心して楽しめる、リラックスしたペイント体験をお届けしています。ゆっくり描きながら、楽しい時間を一緒に過ごしましょう。",
+    languageWelcome: "英語・日本語どちらでも歓迎です。",
     miyaAlt: "海の見える部屋で一緒に絵を描くPinto Beetleの参加者",
     seeGallery: "ギャラリーを見る",
-    galleryEyebrow: "ギャラリー",
-    galleryTitle: "楽しい瞬間とカラフルな思い出",
-    galleryIntro: "海の見える教室の準備から、リラックスして描く時間まで。Pinto Beetleのクラスの様子です。",
+    galleryEyebrow: "過去のイベント・ギャラリー",
+    galleryTitle: "ギャラリー",
+    galleryIntro: "クリエイティブな時間から完成した作品まで。Pinto Beetleのクラスの様子です。",
     galleryPaintAlt: "海の見える窓のそばで一緒に絵を描くPinto Beetleの参加者",
     galleryStudentAlt: "海の見える教室で笑顔のPinto Beetleの参加者",
     galleryGroupAlt: "Pinto Beetleのクラスで一緒に絵を描く2人の参加者",
@@ -233,9 +242,9 @@ const translations = {
     galleryTurtleAlt: "Pinto Beetleのスタジオに飾られた完成した花火の絵",
     gallerySunsetAlt: "Pinto Beetleのクラスで笑顔で絵を描く参加者",
     joinEyebrow: "参加対象",
-    joinTitle: "どなたでも歓迎",
+    joinTitle: "はじめてでも大丈夫",
     joinKidsAdults: "キッズ＆大人",
-    joinBeginners: "初心者大歓迎！",
+    joinBeginners: "ステップごとのサポート",
     joinExperience: "経験不要",
     joinNote: "カップル / 友人 / ファミリー",
     includedEyebrow: "料金に含まれるもの",
@@ -246,15 +255,15 @@ const translations = {
     includedApron: "エプロンあり",
     includedAtmosphere: "リラックスした雰囲気",
     testimonialsEyebrow: "お客様の声",
-    testimonialsTitle: "リラックスして、作品に自信を持てる時間",
-    testimonialOne: "「貴重な体験でした！人生で初めて、何描いてるかわかる絵になりました！」",
+    testimonialsTitle: "ゲストの声",
+    testimonialOne: "「自分でもびっくり。お気に入りの作品ができました！」",
     testimonialOneName: "初めて参加した方",
-    testimonialTwo: "「お手本見ながら先生が手順を教えてくれるから、安心して色を塗れる！右脳が喜んでる！」",
+    testimonialTwo: "「絵を描いたことがない私が、初めて自分で絵を完成することが出来てうれしかった！」",
     testimonialTwoName: "初めて参加された方",
-    testimonialThree: "「Miyaが一つずつわかりやすく教えてくれて、ずっと笑いながら楽しめました。」",
+    testimonialThree: "「たくさん笑って、素敵な作品を持ち帰れました。」",
     testimonialThreeName: "カップルクラス参加者",
     notesEyebrow: "ご予約前に",
-    notesTitle: "参加前に知っておいてほしいこと",
+    notesTitle: "ご参加前に",
     noteCatsTitle: "猫がいるホームスタジオです",
     noteCatsText: "自宅スタジオには猫がいます。猫アレルギーがある方は、ご予約前にご確認ください。",
     noteBookingTitle: "5日前までのご予約をお願いします",
@@ -268,25 +277,27 @@ const translations = {
     noteChangesTitle: "変更・キャンセルについて",
     noteChangesText: "予約の変更やキャンセルが必要な場合は、できるだけ早めにご連絡ください。お席や画材の準備を調整します。",
     faqEyebrow: "FAQ",
-    faqTitle: "参加前によくある質問",
+    faqTitle: "ご予約前に",
     faqExperienceQ: "本当に絵心がなくても大丈夫ですか？",
     faqExperienceA: "大丈夫です、私たちは完璧なピカソを目指しているわけではありません（笑）。ステップに沿って一歩ずつガイドしますし、何より描いているうちに、あなたのクリエイティビティをそっと引き出してくれるはずです。最後には、ご自身でも驚くような素敵な作品が完成しますよ！",
     faqKidsQ: "子どもと一緒に参加してもいい？",
-    faqKidsA: "もちろん大歓迎です！子どもたちは生まれながらの素晴らしいアーティスト。大人よりもずっと大胆で素敵な色使いを見せてくれます。ぜひご家族みんなで、ワイワイ賑やかにアートの時間を楽しんでください。",
+    faqKidsA: "はい、お子さまもご参加いただけます。子どもたちは素晴らしい作品を生み出します。ご家族で一緒に描く楽しい時間をお過ごしください。",
     faqPriceQ: "料金はいくらですか？",
-    faqPriceA: "通常クラスはおひとり¥4,500です。特別イベントの場合は別料金になることがあります。",
+    faqPriceA: "通常クラスはおひとり¥4,500 / $30です。特別イベントの場合は別料金になることがあります。",
+    faqPaymentQ: "支払いはどのように行いますか？",
+    faqPaymentA: "ご予約確定後に、お支払い方法の詳細をお送りします。",
     faqWhereQ: "クラスはどこで開催されますか？",
     faqWhereA: "沖縄県読谷村で開催します。詳しい場所は予約確認後にお知らせします。",
     faqClothesQ: "服が汚れるのが心配です。",
-    faqClothesA: "スタジオで可愛いエプロンをご用意していますが、絵の具は時々、思いがけないところに飛び跳ねるのが大好きです。万が一のために、お気に入りのドレスではなく、汚れても気にならないリラックスできる服装でお越しいただくのが一番おすすめです。",
+    faqClothesA: "エプロンをご用意していますが、少し絵の具がついても気にならない服装でお越しいただくことをおすすめします。",
     faqPrivateQ: "特別なイベントにペイントパーティーを取り入れたい！",
     faqPrivateA: "喜んでお手伝いします！お誕生日会や記念日の集まりなど、特別な日のアクティビティとして思い出になるアートパーティーを計画しましょう。\n\nご希望の日時や人数が決まりましたら、お早めにご相談ください！",
-    reserveEyebrow: "予約",
+    reserveEyebrow: "Reservation",
     reserveTitle: "席をリクエストする",
-    reserveIntro: "リクエストを送信後、空き状況を確認して確定メールをお送りいたします。 みなさまのご参加を心よりお待ちしております！",
+    reserveIntro: "予約リクエスト送信後、空き状況を確認します。ご予約確定後、メールでお支払い方法の詳細をお送りします。",
     formName: "お名前",
     formEmail: "メール",
-    formContact: "電話番号 または Instagramアカウント",
+    formContact: "Instagramアカウント または 電話番号",
     formSelectedClass: "ご希望のクラス・日時",
     formSelectedClassPlaceholder: "上のクラスと日時を選ぶか、こちらに入力してください",
     formDate: "参加希望日",
@@ -306,10 +317,11 @@ const translations = {
     formError: "申し訳ありません。送信できませんでした。もう一度お試しいただくか、InstagramでMiyaへご連絡ください。",
     formVerificationError: "確認チェックを完了して、もう一度お試しください。",
     contactEyebrow: "お問い合わせ",
-    contactTitle: "質問はInstagramでお気軽にどうぞ",
+    contactTitle: "お問い合わせはこちら",
     contactLocationLabel: "場所:",
     contactLocationValue: "沖縄県読谷村",
     messageInstagram: "Instagramでメッセージ",
+    messageEmail: "メールを送る",
     footerTagline: "Sip & Paint Okinawa",
     copyright: "© 2026 Pinto Beetle. All rights reserved."
   }
@@ -324,30 +336,78 @@ let activeLanguage = savedLanguage;
 // this data, so changing a date, title, time, price, image, or seats is one edit.
 // Later, seatsLeft can be replaced by live availability from a booking backend.
 const classEvents = {
-  "tropical-sunset": {
-    image: "images/tropical-fireworks-artwork.jpg?v=20260524-19",
+  "sea-turtles-ocean-vibes": {
+    image: "images/sea-turtles-ocean-vibes-session.jpg?v=20260609-01",
     imageAlt: {
-      en: "Finished tropical sunset pair paintings displayed with candles",
-      ja: "キャンドルと一緒に飾られた完成したトロピカルサンセットのペア絵"
+      en: "Cute sea turtles and ocean vibes painting session announcement",
+      ja: "かわいいウミガメと海を描くペインティングセッションのお知らせ"
     },
     title: {
-      en: "Tropical Sunset Painting",
-      ja: "トロピカルサンセット"
+      en: "Cute Sea Turtles & Ocean Vibes",
+      ja: "ウミガメとサンゴ"
     },
     description: {
-      en: "A pair-art painting experience for couples, best friends, and parent-child duos.",
-      ja: "2つのキャンバスで1つの景色を描くペアアート。カップル、親子、お友だち同士におすすめです。"
+      en: "Paint a beautiful marine world with cute sea turtles, colorful coral, and calming ocean blues.",
+      ja: "かわいいウミガメ、カラフルなサンゴ、穏やかな海のブルーで美しい海の世界を描きます。"
     },
     date: {
-      en: "May 31, 2026",
-      ja: "2026年5月31日"
+      en: "June 10, 2026",
+      ja: "2026年6月10日"
     },
-    isoDate: "2026-05-31",
+    isoDate: "2026-06-10",
     month: {
-      en: "MAY",
-      ja: "5月"
+      en: "JUN",
+      ja: "6月"
     },
-    day: "31",
+    day: "10",
+    weekday: {
+      en: "WED",
+      ja: "水"
+    },
+    time: {
+      en: "10:00 AM",
+      ja: "午前10:00"
+    },
+    location: {
+      en: "Miya's Table, Yomitan",
+      ja: "Miya's Table, 読谷"
+    },
+    price: {
+      en: "¥4,500 / approx. $30",
+      ja: "¥4,500 / $30"
+    },
+    capacity: 6,
+    bookedSeats: 1,
+    seatsLeft: 5,
+    availabilityNote: {
+      en: "Tomorrow · 1 booked · 5 seats left",
+      ja: "明日開催・1名予約済み・残り5席"
+    }
+  },
+  "moonlit-getto": {
+    image: "images/moonlit-getto-session.jpg?v=20260609-01",
+    imageAlt: {
+      en: "Moonlit Getto painting session announcement",
+      ja: "Moonlit Gettoペインティングセッションのお知らせ"
+    },
+    title: {
+      en: "Moonlit Getto",
+      ja: "Moonlit Getto"
+    },
+    description: {
+      en: "Paint moonlit getto flowers in a glass vase against a deep Okinawa night sky.",
+      ja: "沖縄の深い夜空を背景に、月明かりに照らされた月桃をガラスの花瓶と一緒に描きます。"
+    },
+    date: {
+      en: "June 21, 2026",
+      ja: "2026年6月21日"
+    },
+    isoDate: "2026-06-21",
+    month: {
+      en: "JUN",
+      ja: "6月"
+    },
+    day: "21",
     weekday: {
       en: "SUN",
       ja: "日"
@@ -357,159 +417,69 @@ const classEvents = {
       ja: "午後1:00"
     },
     location: {
-      en: "Yomitan (Details upon booking)",
-      ja: "読谷村（詳細はご予約後）"
+      en: "Miya's Table, Yomitan",
+      ja: "Miya's Table, 読谷"
     },
     price: {
-      en: "¥4,500 per person",
-      ja: "おひとり¥4,500"
+      en: "¥4,500 / approx. $30",
+      ja: "¥4,500 / $30"
     },
-    seatsLeft: {
-      en: "Final spot: 1 pair left",
-      ja: "残りあと1組（2名さま）です。"
-    },
+    capacity: 6,
+    bookedSeats: 4,
+    seatsLeft: 2,
     availabilityNote: {
-      en: "Only 1 pair left!",
-      ja: "Only 1 pair left!"
+      en: "4 booked · 2 seats left",
+      ja: "4名予約済み・残り2席"
     }
   },
-  "cherry-blossom": {
- image: "images/cherry-blossom-class-story.jpg",
+  "firefly-forest-private": {
+    image: "images/firefly-forest-private-session.jpg?v=20260609-01",
     imageAlt: {
-      en: "Cherry blossom painting class announcement",
-      ja: "桜ペインティングクラスのお知らせ画像"
+      en: "Firefly Forest private couples date event announcement",
+      ja: "Firefly Forestの貸切カップルデートイベントのお知らせ"
     },
     title: {
-      en: "Cherry Blossom Painting",
-      ja: "桜ペインティング"
+      en: "Firefly Forest",
+      ja: "Firefly Forest"
     },
     description: {
-      en: "Create delicate blossoms with playful brush techniques and gentle pastel colors.",
-      ja: "楽しい筆づかいとやさしいパステルカラーで、繊細な桜を描きます。"
+      en: "A private couples date event featuring a glowing firefly forest painting.",
+      ja: "ホタルが輝く森を描く、貸切のカップルデートイベントです。"
     },
     date: {
-      en: "May 16, 2026",
-      ja: "2026年5月16日"
+      en: "June 28, 2026",
+      ja: "2026年6月28日"
     },
-    isoDate: "2026-05-16",
-    month: {
-      en: "MAY",
-      ja: "5月"
-    },
-    day: "16",
-    weekday: {
-      en: "SAT",
-      ja: "土"
-    },
-    time: {
-      en: "1:00 PM",
-      ja: "午後1:00"
-    },
-    location: {
-      en: "Yomitan (Details upon booking)",
-      ja: "読谷村（詳細はご予約後）"
-    },
-    price: {
-      en: "¥4,500",
-      ja: "¥4,500"
-    },
-    seatsLeft: {
-      en: "Fully booked",
-      ja: "満席になりました"
-    },
-    availabilityNote: ""
-  },
-  "sea-turtle": {
- image: "images/sea-turtle-class-story.jpg",
-    imageAlt: {
-      en: "Sea turtle acrylic painting on an easel",
-      ja: "イーゼルに置かれたウミガメのアクリル作品"
-    },
-    title: {
-      en: "Sea Turtle Painting",
-      ja: "ウミガメペインティング"
-    },
-    description: {
-      en: "Paint a cheerful sea turtle with bright Okinawa blues and beginner-friendly details.",
-      ja: "沖縄らしい明るいブルーで、かわいいウミガメを初心者向けに描きます。"
-    },
-    date: {
-      en: "June 22, 2026",
-      ja: "2026年6月22日"
-    },
-    isoDate: "2026-06-22",
+    isoDate: "2026-06-28",
     month: {
       en: "JUN",
       ja: "6月"
     },
-    day: "22",
+    day: "28",
     weekday: {
-      en: "MON",
-      ja: "月"
+      en: "SUN",
+      ja: "日"
     },
     time: {
       en: "1:00 PM",
       ja: "午後1:00"
-    },
-    location: {
-      en: "Yomitan (Details upon booking)",
-      ja: "読谷村（詳細はご予約後）"
-    },
-    price: {
-      en: "¥4,500",
-      ja: "¥4,500"
-    },
-    seatsLeft: 6,
-    availabilityNote: ""
-  },
-  "private-session": {
-    image: "images/studio-hero.jpg?v=20260523-18",
-    imageAlt: {
-      en: "Private Pinto Beetle painting session table setup",
-      ja: "Pinto Beetleのプライベートセッション用テーブル"
-    },
-    title: {
-      en: "Private Session",
-      ja: "プライベートセッション"
-    },
-    description: {
-      en: "Birthdays, groups, team events, and custom paint parties by request.",
-      ja: "お誕生日、グループ、チームイベントなど、ご希望に合わせたプライベートペイント体験です。"
-    },
-    date: {
-      en: "Available by request",
-      ja: "リクエスト制"
-    },
-    isoDate: "",
-    month: {
-      en: "BY",
-      ja: "相談"
-    },
-    day: "REQ",
-    weekday: {
-      en: "",
-      ja: ""
-    },
-    time: {
-      en: "Birthdays, groups, team events & more",
-      ja: "お誕生日、グループ、イベントなど"
     },
     location: {
       en: "Miya's Table, Yomitan",
       ja: "Miya's Table, 読谷"
     },
     price: {
-      en: "Inquire",
-      ja: "お問い合わせ"
+      en: "Private Session",
+      ja: "貸切セッション"
     },
     seatsLeft: {
-      en: "Available by request",
-      ja: "リクエスト制"
+      en: "Private event — not open for booking",
+      ja: "貸切イベントのため募集していません"
     },
     availabilityNote: {
-      en: "",
-      ja: ""
-    }
+      en: "Private Couples Date Event",
+      ja: "貸切カップルデートイベント"
+    },
   }
 };
 
@@ -521,6 +491,7 @@ const reservationForm = document.querySelector("#reservation-form");
 const formStatus = document.querySelector("#form-status");
 const bookClassButtons = document.querySelectorAll(".book-class-button");
 const selectedClassSummary = document.querySelector("#selected-class-summary");
+const participantInput = reservationForm.elements.participants;
 const turnstileContainer = document.querySelector("#reservation-turnstile");
 let selectedClassEventId = null;
 let turnstileWidgetId = null;
@@ -567,10 +538,12 @@ function renderEventCard(card, event) {
     weekday: localizedValue(event.weekday),
     title: localizedValue(event.title),
     availabilityNote: localizedValue(event.availabilityNote),
+    description: localizedValue(event.description),
     date: localizedValue(event.date),
     time: localizedValue(event.time),
     location: localizedValue(event.location),
-    price: localizedValue(event.price)
+    price: localizedValue(event.price),
+    seatsLeft: seatsLabel(event.seatsLeft)
   };
 
   if (image) {
@@ -665,6 +638,15 @@ function showSelectedClassSummary(event) {
   });
 
   selectedClassSummary.hidden = false;
+}
+
+function setParticipantLimit(event) {
+  const availableSeats = typeof event?.seatsLeft === "number" ? event.seatsLeft : 6;
+  participantInput.max = String(Math.min(6, availableSeats));
+
+  if (Number(participantInput.value) > availableSeats) {
+    participantInput.value = String(availableSeats);
+  }
 }
 
 function setFormStatus(message, type = "info") {
@@ -764,7 +746,7 @@ bookClassButtons.forEach((button) => {
     const classDate = localizedValue(event.date);
     const classTime = localizedValue(event.time);
 
-    reservationForm.elements["selected-class"].value = classTitle;
+    reservationForm.elements["selected-class"].value = `${classTitle} — ${classDate}`;
     reservationForm.elements["class-date"].value = classDate;
     reservationForm.elements.message.value = dictionary.bookingMessage
       .replace("{classTitle}", classTitle)
@@ -772,6 +754,7 @@ bookClassButtons.forEach((button) => {
       .replace("{classTime}", classTime);
     selectedClassEventId = button.dataset.eventId;
     showSelectedClassSummary(event);
+    setParticipantLimit(event);
 
     setFormStatus("");
     setTimeout(() => {
@@ -821,6 +804,7 @@ reservationForm.addEventListener("submit", async (event) => {
 
     setFormStatus(result.message || dictionary.formSuccess, "success");
     reservationForm.reset();
+    participantInput.max = "6";
     resetTurnstile();
   } catch (error) {
     setFormStatus(error.message || dictionary.formError, "error");
