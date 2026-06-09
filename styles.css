@@ -5251,3 +5251,14 @@ html[lang="ja"] .reserve-section .eyebrow {
     white-space: nowrap;
   }
 }
+
+/* Keep the mobile hero and host introduction visually connected. */
+@media (max-width: 619px) {
+  .hero {
+    padding-bottom: 12px;
+  }
+
+  .home-instructor {
+    padding-top: 28px;
+  }
+}
