@@ -779,14 +779,11 @@ reservationForm.addEventListener("submit", async (event) => {
     return;
   }
 
-  const turnstileToken = getTurnstileToken();
-  if (!turnstileToken) {
-    setFormStatus(dictionary.formVerificationError, "error");
-    return;
-  }
-
   const formData = new FormData(reservationForm);
-  formData.set("cf-turnstile-response", turnstileToken);
+  const turnstileToken = getTurnstileToken();
+  if (turnstileToken) {
+    formData.set("cf-turnstile-response", turnstileToken);
+  }
 
   setFormStatus(dictionary.formSubmitting);
   submitButton.disabled = true;

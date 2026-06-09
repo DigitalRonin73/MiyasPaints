@@ -24,20 +24,22 @@ export async function onRequestPost({ request, env }) {
     }
 
     const ip = getClientIp(request);
-    const turnstile = await verifyTurnstile({
-      secret: env.TURNSTILE_SECRET_KEY,
-      token: payload.turnstileToken,
-      ip
-    });
+    if (payload.turnstileToken) {
+      const turnstile = await verifyTurnstile({
+        secret: env.TURNSTILE_SECRET_KEY,
+        token: payload.turnstileToken,
+        ip
+      });
 
-    if (!turnstile.success) {
-      return jsonResponse(
-        {
-          success: false,
-          message: "Verification failed. Please refresh the page and try again."
-        },
-        403
-      );
+      if (!turnstile.success) {
+        return jsonResponse(
+          {
+            success: false,
+            message: "Verification failed. Please refresh the page and try again."
+          },
+          403
+        );
+      }
     }
 
     const rateLimit = await checkRateLimit(env, ip);
@@ -140,10 +142,6 @@ function validateReservation(payload) {
 
   if (payload.message.length > 1000) {
     return "Please shorten the message.";
-  }
-
-  if (!payload.turnstileToken) {
-    return "Please complete the verification.";
   }
 
   return "";
