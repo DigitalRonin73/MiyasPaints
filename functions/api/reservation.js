@@ -126,8 +126,8 @@ function validateReservation(payload) {
     return "Please shorten the selected class field.";
   }
 
-  if (!between(payload.classDate, 2, 80)) {
-    return "Please enter the class date.";
+  if (payload.classDate.length > 80) {
+    return "Please shorten the class date.";
   }
 
   if (!Number.isInteger(payload.participants) || payload.participants < 1 || payload.participants > 6) {
