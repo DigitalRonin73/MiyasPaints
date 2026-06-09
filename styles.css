@@ -5031,10 +5031,8 @@ body {
   }
 }
 
-.language-welcome {
-  color: #678b2b;
-  font-size: 0.88rem;
-  font-weight: 700;
+.instructor-closing {
+  color: var(--muted);
 }
 
 @media (max-width: 619px) {
