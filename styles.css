@@ -5245,6 +5245,10 @@ html[lang="ja"] .reserve-section .eyebrow {
   text-transform: none;
 }
 
+html[lang="ja"] #gallery .section-heading p:not(.eyebrow) {
+  white-space: pre-line;
+}
+
 @media (min-width: 820px) {
   .brand-name {
     white-space: nowrap;

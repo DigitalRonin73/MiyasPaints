@@ -232,7 +232,7 @@ const translations = {
     seeGallery: "ギャラリーを見る",
     galleryEyebrow: "過去のイベント・ギャラリー",
     galleryTitle: "ギャラリー",
-    galleryIntro: "クリエイティブな時間から完成した作品まで。Pinto Beetleのクラスの様子です。",
+    galleryIntro: "クリエイティブな時間から完成した作品まで。\nPinto Beetleのクラスの様子です。",
     galleryPaintAlt: "海の見える窓のそばで一緒に絵を描くPinto Beetleの参加者",
     galleryStudentAlt: "海の見える教室で笑顔のPinto Beetleの参加者",
     galleryGroupAlt: "Pinto Beetleのクラスで一緒に絵を描く2人の参加者",
