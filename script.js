@@ -205,7 +205,7 @@ const translations = {
     infoSuppliesText: "手ぶらで、ワクワクだけ持ってきてください！ キャンバス、絵の具、筆、エプロンなど必要なものはすべてご用意しています。",
     classesEyebrow: "Upcoming Sessions",
     classesTitle: "Upcoming Sessions",
-    classesIntro: "デザインを選んで席を予約し、読谷でゆったり楽しい時間を過ごしましょう。",
+    classesIntro: "お好きなデザインを選んで、創作の時間を楽しみましょう。",
     viewAllClasses: "View all sessions →",
     seatsLeft: "残り{count}席",
     availabilityLabel: "残席状況",
