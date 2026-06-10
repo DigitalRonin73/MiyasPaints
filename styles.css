@@ -1138,6 +1138,7 @@ h3 {
 .testimonial-card {
   display: flex;
   flex-direction: column;
+  min-height: 156px;
   margin: 0;
   padding: 22px;
 }
@@ -1147,6 +1148,7 @@ h3 {
   color: var(--purple);
   font-size: 1rem;
   font-weight: 800;
+  line-height: 1.65;
 }
 
 .testimonial-card figcaption {
@@ -1157,6 +1159,12 @@ h3 {
 
 html[lang="ja"] .testimonial-card blockquote {
   white-space: pre-line;
+}
+
+@media (max-width: 619px) {
+  .testimonial-card {
+    min-height: 148px;
+  }
 }
 
 .notes-grid {
