@@ -336,54 +336,6 @@ let activeLanguage = savedLanguage;
 // this data, so changing a date, title, time, price, image, or seats is one edit.
 // Later, seatsLeft can be replaced by live availability from a booking backend.
 const classEvents = {
-  "sea-turtles-ocean-vibes": {
-    image: "images/sea-turtles-ocean-vibes-session.jpg?v=20260609-01",
-    imageAlt: {
-      en: "Cute sea turtles and ocean vibes painting session announcement",
-      ja: "かわいいウミガメと海を描くペインティングセッションのお知らせ"
-    },
-    title: {
-      en: "Cute Sea Turtles & Ocean Vibes",
-      ja: "ウミガメとサンゴ"
-    },
-    description: {
-      en: "Paint a beautiful marine world with cute sea turtles, colorful coral, and calming ocean blues.",
-      ja: "かわいいウミガメ、カラフルなサンゴ、穏やかな海のブルーで美しい海の世界を描きます。"
-    },
-    date: {
-      en: "June 10, 2026",
-      ja: "2026年6月10日"
-    },
-    isoDate: "2026-06-10",
-    month: {
-      en: "JUN",
-      ja: "6月"
-    },
-    day: "10",
-    weekday: {
-      en: "WED",
-      ja: "水"
-    },
-    time: {
-      en: "10:00 AM",
-      ja: "午前10:00"
-    },
-    location: {
-      en: "Miya's Table, Yomitan",
-      ja: "Miya's Table, 読谷"
-    },
-    price: {
-      en: "¥4,500 / approx. $30",
-      ja: "¥4,500 / $30"
-    },
-    capacity: 6,
-    bookedSeats: 1,
-    seatsLeft: 5,
-    availabilityNote: {
-      en: "Tomorrow · 1 booked · 5 seats left",
-      ja: "明日開催・1名予約済み・残り5席"
-    }
-  },
   "moonlit-getto": {
     image: "images/moonlit-getto-session.jpg?v=20260609-01",
     imageAlt: {
