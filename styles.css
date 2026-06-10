@@ -1136,6 +1136,8 @@ h3 {
 }
 
 .testimonial-card {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 22px;
 }
@@ -1148,8 +1150,13 @@ h3 {
 }
 
 .testimonial-card figcaption {
+  margin-top: auto;
   font-size: 0.88rem;
   font-weight: 800;
+}
+
+html[lang="ja"] .testimonial-card blockquote {
+  white-space: pre-line;
 }
 
 .notes-grid {
