@@ -42,7 +42,7 @@ const translations = {
     infoSuppliesText: "Just bring your excitement. Canvas, paints, brushes, aprons, and everything you need are ready for you.",
     classesEyebrow: "Upcoming Sessions",
     classesTitle: "Upcoming Sessions",
-    classesIntro: "Choose a design, reserve your spot, and come enjoy a cozy creative session in Yomitan.",
+    classesIntro: "Choose a design, reserve your spot, and join us for a cozy creative session.",
     viewAllClasses: "View all sessions →",
     seatsLeft: "{count} seats left",
     availabilityLabel: "Availability",
