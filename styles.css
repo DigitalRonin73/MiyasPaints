@@ -5293,3 +5293,61 @@ html[lang="ja"] #gallery .section-heading p:not(.eyebrow) {
     padding-top: 28px;
   }
 }
+
+/* A quiet invitation for custom dates and painting requests below the schedule. */
+.session-request-card {
+  display: flex;
+  width: min(100%, 880px);
+  gap: clamp(18px, 4vw, 42px);
+  align-items: center;
+  justify-content: space-between;
+  margin: 26px auto 0;
+  border: 1px solid rgba(65, 31, 78, 0.14);
+  border-left: 4px solid var(--pink);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: clamp(22px, 3.5vw, 34px);
+}
+
+.session-request-card h3 {
+  margin: 0 0 8px;
+  color: var(--purple);
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  line-height: 1.25;
+}
+
+.session-request-card p {
+  max-width: 62ch;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  white-space: pre-line;
+}
+
+.session-request-card .button {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 619px) {
+  .session-request-card {
+    display: grid;
+    gap: 18px;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .session-request-card h3 {
+    font-size: 1.08rem;
+  }
+
+  .session-request-card p {
+    font-size: 0.84rem;
+    line-height: 1.65;
+  }
+
+  .session-request-card .button {
+    width: 100%;
+  }
+}

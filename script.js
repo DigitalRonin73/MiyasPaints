@@ -44,6 +44,11 @@ const translations = {
     classesTitle: "Upcoming Sessions",
     classesIntro: "Choose a design, reserve your spot, and join us for a cozy creative session.",
     viewAllClasses: "View all sessions →",
+    sessionRequestTitle: "Looking for a different date or painting?",
+    sessionRequestBody: "If you have a specific painting you'd love to create, feel free to reach out. I may be able to arrange a session outside the scheduled classes.\n\nSimply send me the painting you'd like to create along with 2–3 preferred dates, and I'll do my best to accommodate your request.",
+    sessionRequestButton: "Request a Session",
+    sessionRequestSelected: "Custom session request",
+    sessionRequestMessage: "I’d like to request a session. The painting I’d like to create is:\n\nMy preferred dates are:\n1.\n2.\n3.",
     seatsLeft: "{count} seats left",
     availabilityLabel: "Availability",
     dateLabel: "Date",
@@ -309,6 +314,11 @@ const translations = {
     formMessage: "メッセージ",
     formMessagePlaceholder: "参加したいクラスやプライベートイベントについてご記入ください。",
     bookingMessage: "{classDate} {classTime} の「{classTitle}」を予約したいです。",
+    sessionRequestTitle: "ご希望の日程や描きたい絵がありますか？",
+    sessionRequestBody: "開催スケジュール以外の日程でも、参加人数や内容に応じてクラスを開催できる場合があります。\n\n描きたい作品と、候補日時を2〜3日ほどお知らせください。\nできる限り調整させていただきます。",
+    sessionRequestButton: "リクエストする",
+    sessionRequestSelected: "リクエスト開催",
+    sessionRequestMessage: "開催リクエストを希望します。\n\n描きたい作品：\n\n候補日時：\n1.\n2.\n3.",
     requestReservation: "予約をリクエスト",
     formSubmitting: "予約リクエストを送信しています...",
     formSuccess: "ありがとうございます。予約リクエストを送信しました。Miyaより確認のご連絡をいたします。",
@@ -440,6 +450,7 @@ const languageButtons = document.querySelectorAll(".language-option");
 const reservationForm = document.querySelector("#reservation-form");
 const formStatus = document.querySelector("#form-status");
 const bookClassButtons = document.querySelectorAll(".book-class-button");
+const requestSessionButton = document.querySelector(".request-session-button");
 const selectedClassSummary = document.querySelector("#selected-class-summary");
 const participantInput = reservationForm.elements.participants;
 const turnstileContainer = document.querySelector("#reservation-turnstile");
@@ -711,6 +722,22 @@ bookClassButtons.forEach((button) => {
       reservationForm.elements.name.focus({ preventScroll: true });
     }, 350);
   });
+});
+
+requestSessionButton?.addEventListener("click", () => {
+  const dictionary = translations[activeLanguage] || translations.en;
+
+  reservationForm.elements["selected-class"].value = dictionary.sessionRequestSelected;
+  reservationForm.elements["class-date"].value = "";
+  reservationForm.elements.message.value = dictionary.sessionRequestMessage;
+  selectedClassEventId = null;
+  selectedClassSummary.hidden = true;
+  participantInput.max = 6;
+
+  setFormStatus("");
+  setTimeout(() => {
+    reservationForm.elements.name.focus({ preventScroll: true });
+  }, 350);
 });
 
 languageButtons.forEach((button) => {
