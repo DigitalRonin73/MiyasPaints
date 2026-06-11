@@ -344,6 +344,54 @@ let activeLanguage = savedLanguage;
 // this data, so changing a date, title, time, price, image, or seats is one edit.
 // Later, seatsLeft can be replaced by live availability from a booking backend.
 const classEvents = {
+  "coffee-paint-morning-glow": {
+    image: "images/coffee-paint-morning-glow-session.jpg?v=20260611-01",
+    imageAlt: {
+      en: "Coffee and Paint Morning Glow session announcement",
+      ja: "Coffee & Paint Morning Glowセッションのお知らせ"
+    },
+    title: {
+      en: "Coffee & Paint: Morning Glow",
+      ja: "Coffee & Paint: Morning Glow"
+    },
+    description: {
+      en: "Bring a coffee and paint a soft tropical sunrise in a relaxed morning session.",
+      ja: "コーヒーを片手に、南国のやわらかな朝焼けを描くリラックスしたモーニングセッションです。"
+    },
+    date: {
+      en: "June 19, 2026",
+      ja: "2026年6月19日"
+    },
+    isoDate: "2026-06-19",
+    month: {
+      en: "JUN",
+      ja: "6月"
+    },
+    day: "19",
+    weekday: {
+      en: "FRI",
+      ja: "金"
+    },
+    time: {
+      en: "10:00 AM",
+      ja: "午前10:00"
+    },
+    location: {
+      en: "Miya's Table, Yomitan",
+      ja: "Miya's Table, 読谷"
+    },
+    price: {
+      en: "¥4,500 / approx. $30",
+      ja: "¥4,500 / $30"
+    },
+    capacity: 6,
+    bookedSeats: 0,
+    seatsLeft: 6,
+    availabilityNote: {
+      en: "6 seats available",
+      ja: "残り6席"
+    }
+  },
   "moonlit-getto": {
     image: "images/moonlit-getto-session.jpg?v=20260609-01",
     imageAlt: {
