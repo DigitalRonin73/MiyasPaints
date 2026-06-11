@@ -58,8 +58,8 @@ Set these in Cloudflare Pages under **Settings > Environment variables**:
 - `TURNSTILE_SITE_KEY`: Public Cloudflare Turnstile site key for `miyaspaints.com`. Current value: `0x4AAAAAADdn6XCmdRLtEqWR`.
 - `TURNSTILE_SECRET_KEY`: Private Turnstile secret key.
 - `RESEND_API_KEY`: Resend API key.
-- `RESEND_FROM_EMAIL`: Verified Resend sender. Current temporary value: `Pinto Beetle <onboarding@resend.dev>`.
-- `RESERVATION_TO_EMAIL`: Miyako's destination email address for new reservation requests. Current temporary value: `asbennett84@gmail.com`. To use `Hello.Pintobeetle@gmail.com`, verify a sending domain in Resend first.
+- `RESEND_FROM_EMAIL`: Verified Resend sender: `Pinto Beetle <reservations@send.miyaspaints.com>`.
+- `RESERVATION_TO_EMAIL`: Miyako's destination email address for new reservation requests: `hello.Pintobeetle@gmail.com`.
 
 Rate-limit binding:
 
