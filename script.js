@@ -385,11 +385,11 @@ const classEvents = {
       ja: "¥4,500 / $30"
     },
     capacity: 6,
-    bookedSeats: 0,
-    seatsLeft: 6,
+    bookedSeats: 1,
+    seatsLeft: 5,
     availabilityNote: {
-      en: "6 seats available",
-      ja: "残り6席"
+      en: "1 booked · 5 seats left",
+      ja: "1名予約済み・残り5席"
     }
   },
   "moonlit-getto": {
