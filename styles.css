@@ -5327,27 +5327,38 @@ html[lang="ja"] #gallery .section-heading p:not(.eyebrow) {
 
 .session-request-card .button {
   flex: 0 0 auto;
+  border-color: rgba(65, 31, 78, 0.38);
+  background: rgba(255, 255, 255, 0.82);
+  color: var(--purple);
+  box-shadow: none;
   white-space: nowrap;
+}
+
+.session-request-card .button:hover {
+  border-color: rgba(65, 31, 78, 0.58);
+  background: rgba(233, 121, 177, 0.1);
 }
 
 @media (max-width: 619px) {
   .session-request-card {
     display: grid;
-    gap: 18px;
+    gap: 16px;
     margin-top: 20px;
-    padding: 20px;
+    padding: 22px 20px;
   }
 
   .session-request-card h3 {
+    margin-bottom: 10px;
     font-size: 1.08rem;
   }
 
   .session-request-card p {
     font-size: 0.84rem;
-    line-height: 1.65;
+    line-height: 1.72;
   }
 
   .session-request-card .button {
     width: 100%;
+    min-height: 46px;
   }
 }
