@@ -5413,3 +5413,15 @@ html[lang="ja"] #gallery .section-heading p:not(.eyebrow) {
   stroke-linejoin: round;
   stroke-width: 1.7;
 }
+
+/* Keep the horizontal Coffee & Paint artwork fully visible on desktop. */
+@media (min-width: 620px) {
+  #classes .coffee-artwork-card .event-image-wrap {
+    background: #fff8f6;
+  }
+
+  #classes .coffee-artwork-card .event-image-wrap img {
+    object-fit: contain;
+    padding: 16px;
+  }
+}
