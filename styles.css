@@ -5375,3 +5375,41 @@ html[lang="ja"] #gallery .section-heading p:not(.eyebrow) {
     width: 100%;
   }
 }
+
+/* Subtle Instagram link at the very bottom of the page. */
+.site-footer .footer-socials {
+  display: flex;
+  grid-column: 1 / -1;
+  justify-self: center;
+  order: 4;
+  margin-top: 8px;
+}
+
+.site-footer .footer-socials a {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
+  border: 1px solid rgba(65, 31, 78, 0.24);
+  border-radius: 50%;
+  color: rgba(65, 31, 78, 0.72);
+  background: rgba(255, 255, 255, 0.38);
+  transition: background 180ms ease, border-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.site-footer .footer-socials a:hover {
+  border-color: rgba(65, 31, 78, 0.44);
+  background: rgba(238, 143, 155, 0.14);
+  color: var(--purple);
+  transform: translateY(-2px);
+}
+
+.site-footer .footer-socials svg {
+  width: 17px;
+  height: 17px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
