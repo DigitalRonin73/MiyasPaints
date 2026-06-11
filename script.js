@@ -44,7 +44,7 @@ const translations = {
     classesTitle: "Upcoming Sessions",
     classesIntro: "Choose a design, reserve your spot, and join us for a cozy creative session.",
     viewAllClasses: "View all sessions →",
-    sessionRequestTitle: "Looking for a different date or painting?",
+    sessionRequestTitle: "Have a painting you’d love to create?",
     sessionRequestBody: "If you have a specific painting you'd love to create, feel free to reach out. I may be able to arrange a session outside the scheduled classes.\n\nSimply send me the painting you'd like to create along with 2–3 preferred dates, and I'll do my best to accommodate your request.",
     sessionRequestButton: "Request a Session",
     sessionRequestSelected: "Custom session request",
