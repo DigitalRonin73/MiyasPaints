@@ -1061,6 +1061,10 @@ h3 {
   object-position: center 38%;
 }
 
+.gallery-grid img.gallery-couple-face-fit {
+  object-position: center 18%;
+}
+
 .split-section {
   align-items: stretch;
 }
