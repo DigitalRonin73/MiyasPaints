@@ -5050,6 +5050,10 @@ body {
   color: var(--muted);
 }
 
+html[lang="ja"] .home-instructor-copy p[data-i18n="instructorIntro"] {
+  white-space: pre-line;
+}
+
 @media (max-width: 619px) {
   .reservation-form {
     grid-template-columns: 1fr;
