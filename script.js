@@ -345,10 +345,10 @@ let activeLanguage = savedLanguage;
 // Later, seatsLeft can be replaced by live availability from a booking backend.
 const classEvents = {
   "coffee-paint-morning-glow": {
-    image: "images/coffee-paint-morning-glow-session.jpg?v=20260611-01",
+    image: "images/coffee-paint-morning-glow-artwork.jpg?v=20260611-01",
     imageAlt: {
-      en: "Coffee and Paint Morning Glow session announcement",
-      ja: "Coffee & Paint Morning Glowセッションのお知らせ"
+      en: "Colorful tropical sunrise painting for Coffee and Paint Morning Glow",
+      ja: "Coffee & Paint Morning Glowで描くカラフルな南国の朝焼け"
     },
     title: {
       en: "Coffee & Paint: Morning Glow",
