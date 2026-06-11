@@ -5327,16 +5327,26 @@ html[lang="ja"] #gallery .section-heading p:not(.eyebrow) {
 
 .session-request-card .button {
   flex: 0 0 auto;
-  border-color: rgba(65, 31, 78, 0.38);
-  background: rgba(255, 255, 255, 0.82);
+  min-height: 48px;
+  border: 1px solid #e4a0ad;
+  background: #f7d9df;
   color: var(--purple);
-  box-shadow: none;
+  padding: 12px 22px;
+  box-shadow: 0 8px 18px rgba(65, 31, 78, 0.08);
+  font-size: 0.82rem;
+  font-weight: 700;
   white-space: nowrap;
 }
 
+.session-request-card .button::after {
+  content: "→";
+  margin-left: 10px;
+}
+
 .session-request-card .button:hover {
-  border-color: rgba(65, 31, 78, 0.58);
-  background: rgba(233, 121, 177, 0.1);
+  border-color: #d9899a;
+  background: #f2c8d1;
+  box-shadow: 0 10px 22px rgba(65, 31, 78, 0.12);
 }
 
 @media (max-width: 619px) {
@@ -5359,6 +5369,5 @@ html[lang="ja"] #gallery .section-heading p:not(.eyebrow) {
 
   .session-request-card .button {
     width: 100%;
-    min-height: 46px;
   }
 }
