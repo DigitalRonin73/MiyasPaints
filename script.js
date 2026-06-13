@@ -381,8 +381,8 @@ const classEvents = {
       ja: "Miya's Table, 読谷"
     },
     price: {
-      en: "¥3,000 / approx. $20",
-      ja: "¥3,000 / $20"
+      en: "¥3,000 ($20)",
+      ja: "¥3,000 ($20)"
     },
     capacity: 6,
     bookedSeats: 1,
@@ -429,8 +429,8 @@ const classEvents = {
       ja: "Miya's Table, 読谷"
     },
     price: {
-      en: "¥3,000 / approx. $20",
-      ja: "¥3,000 / $20"
+      en: "¥3,000 ($20)",
+      ja: "¥3,000 ($20)"
     },
     capacity: 6,
     bookedSeats: 3,
