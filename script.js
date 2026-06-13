@@ -124,7 +124,7 @@ const translations = {
     faqKidsQ: "Can I join with my child?",
     faqKidsA: "Yes! Children are welcome to join. Many kids create amazing artwork, and painting together can be a fun family experience.",
     faqPriceQ: "How much is the class?",
-    faqPriceA: "Classes are ¥3,000 per person (approx. $20 USD), unless a special event lists a different price.",
+    faqPriceA: "Classes are ¥4,500 per person (approx. $30 USD), unless a special event lists a different price.",
     faqPaymentQ: "How does payment work?",
     faqPaymentA: "Payment details will be sent after your reservation is confirmed.",
     faqWhereQ: "Where are classes held?",
@@ -286,7 +286,7 @@ const translations = {
     faqKidsQ: "子どもと一緒に参加してもいい？",
     faqKidsA: "はい、お子さまもご参加いただけます。子どもたちは素晴らしい作品を生み出します。ご家族で一緒に描く楽しい時間をお過ごしください。",
     faqPriceQ: "料金はいくらですか？",
-    faqPriceA: "通常クラスはおひとり¥3,000 / $20です。特別イベントの場合は別料金になることがあります。",
+    faqPriceA: "通常クラスはおひとり¥4,500 / $30です。特別イベントの場合は別料金になることがあります。",
     faqPaymentQ: "支払いはどのように行いますか？",
     faqPaymentA: "ご予約確定後に、お支払い方法の詳細をお送りします。",
     faqWhereQ: "クラスはどこで開催されますか？",
@@ -381,8 +381,8 @@ const classEvents = {
       ja: "Miya's Table, 読谷"
     },
     price: {
-      en: "¥3,000 ($20)",
-      ja: "¥3,000 ($20)"
+      en: "¥4,500 / $30",
+      ja: "¥4,500 / $30"
     },
     capacity: 6,
     bookedSeats: 1,
@@ -429,8 +429,8 @@ const classEvents = {
       ja: "Miya's Table, 読谷"
     },
     price: {
-      en: "¥3,000 ($20)",
-      ja: "¥3,000 ($20)"
+      en: "¥4,500 / $30",
+      ja: "¥4,500 / $30"
     },
     capacity: 6,
     bookedSeats: 3,
