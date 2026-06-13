@@ -433,11 +433,11 @@ const classEvents = {
       ja: "¥4,500 / $30"
     },
     capacity: 6,
-    bookedSeats: 4,
-    seatsLeft: 2,
+    bookedSeats: 3,
+    seatsLeft: 3,
     availabilityNote: {
-      en: "4 booked · 2 seats left",
-      ja: "4名予約済み・残り2席"
+      en: "3 booked · 3 seats left",
+      ja: "3名予約済み・残り3席"
     }
   },
   "firefly-forest-private": {
