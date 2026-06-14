@@ -488,6 +488,54 @@ const classEvents = {
       en: "Private Couples Date Event",
       ja: "貸切カップルデートイベント"
     },
+  },
+  "pink-sky-palms": {
+    image: "images/pink-sky-palms-session.jpg?v=20260614-01",
+    imageAlt: {
+      en: "Pink Sky Palms painting with palm trees beneath a colorful summer sky",
+      ja: "ピンク色の夏空とヤシの木を描いたPink Sky Palms"
+    },
+    title: {
+      en: "Pink Sky Palms",
+      ja: "Pink Sky Palms"
+    },
+    description: {
+      en: "Paint swaying palm trees beneath a pink summer sky. A relaxing creative escape inspired by Okinawa.",
+      ja: "ピンク色に染まる空とヤシの木。夏の沖縄を感じながら、のんびりと楽しむペイントタイムです。"
+    },
+    date: {
+      en: "July 19, 2026",
+      ja: "2026年7月19日"
+    },
+    isoDate: "2026-07-19",
+    month: {
+      en: "JUL",
+      ja: "7月"
+    },
+    day: "19",
+    weekday: {
+      en: "SUN",
+      ja: "日"
+    },
+    time: {
+      en: "1:00 PM",
+      ja: "午後1:00"
+    },
+    location: {
+      en: "Miya's Table, Yomitan",
+      ja: "Miya's Table, 読谷"
+    },
+    price: {
+      en: "¥4,500 ($30)",
+      ja: "¥4,500 ($30)"
+    },
+    capacity: 6,
+    bookedSeats: 0,
+    seatsLeft: 6,
+    availabilityNote: {
+      en: "6 seats available",
+      ja: "残り6席"
+    }
   }
 };
 
