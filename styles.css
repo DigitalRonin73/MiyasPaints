@@ -5425,3 +5425,20 @@ html[lang="ja"] #gallery .section-heading p:not(.eyebrow) {
     padding: 16px;
   }
 }
+
+/* Keep the full Pink Sky Palms canvas visible at every screen size. */
+#classes .full-artwork-card .event-image-wrap {
+  background: #fff8f6;
+}
+
+#classes .full-artwork-card .event-image-wrap img {
+  object-fit: contain;
+  padding: 12px;
+}
+
+@media (max-width: 619px) {
+  #classes .full-artwork-card .event-image-wrap img {
+    aspect-ratio: 3 / 4;
+    padding: 10px;
+  }
+}
