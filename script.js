@@ -501,7 +501,7 @@ const classEvents = {
     },
     description: {
       en: "Paint swaying palm trees beneath a pink summer sky. A relaxing creative escape inspired by Okinawa.",
-      ja: "ピンク色に染まる空とヤシの木。夏の沖縄を感じながら、のんびりと楽しむペイントタイムです。"
+      ja: "ピンク色に染まる空とヤシの木。夏の沖縄を感じる、のんびりペイントタイム。"
     },
     date: {
       en: "July 19, 2026",
@@ -589,12 +589,15 @@ function seatsLabel(seatsLeft, language = activeLanguage) {
 function renderEventCard(card, event) {
   const image = card.querySelector('[data-event-field="image"]');
   const dateCard = card.querySelector('[data-event-field="dateCard"]');
+  const isPrivateEvent = event.seatsLeft && typeof event.seatsLeft === "object" && !Array.isArray(event.seatsLeft);
+  const showAvailability = isPrivateEvent || (typeof event.seatsLeft === "number" && event.seatsLeft <= 3);
+  const isUrgentAvailability = !isPrivateEvent && typeof event.seatsLeft === "number" && event.seatsLeft <= 2;
   const fields = {
     month: localizedValue(event.month),
     day: event.day,
     weekday: localizedValue(event.weekday),
     title: localizedValue(event.title),
-    availabilityNote: localizedValue(event.availabilityNote),
+    availabilityNote: showAvailability ? localizedValue(event.availabilityNote) : "",
     description: localizedValue(event.description),
     date: localizedValue(event.date),
     time: localizedValue(event.time),
@@ -616,6 +619,11 @@ function renderEventCard(card, event) {
     card.querySelectorAll(`[data-event-field="${field}"]`).forEach((element) => {
       element.textContent = value;
     });
+  });
+
+  card.querySelectorAll('[data-event-field="availabilityNote"]').forEach((element) => {
+    element.hidden = !showAvailability;
+    element.classList.toggle("urgent-availability", isUrgentAvailability);
   });
 
   card.dataset.seatsLeft = seatsLabel(event.seatsLeft);
