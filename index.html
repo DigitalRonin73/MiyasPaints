@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Pacifico&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20260614-02">
+  <link rel="stylesheet" href="styles.css?v=20260614-03">
   <script src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit" defer></script>
 </head>
 <body>
@@ -314,6 +314,29 @@
             >Book This Class</a>
           </div>
         </article>
+
+        <article class="event-card full-artwork-card reveal" data-event-id="rays-of-okinawa">
+          <div class="event-image-wrap">
+            <img data-event-field="image" src="images/rays-of-okinawa-session.jpg?v=20260614-01" alt="Rays of Okinawa under-the-sea painting with coral, fish, and manta rays">
+            <time class="date-card" data-event-field="dateCard" datetime=""><span data-event-field="month"></span><strong data-event-field="day"></strong><span data-event-field="weekday"></span></time>
+          </div>
+          <div class="event-content">
+            <h3><span data-event-field="title"></span><span class="availability-note" data-event-field="availabilityNote"></span></h3>
+            <p class="event-description" data-event-field="description"></p>
+            <dl class="event-details">
+              <div><dt data-i18n="dateLabel">Date</dt><dd data-event-field="date"></dd></div>
+              <div><dt data-i18n="timeLabel">Time</dt><dd data-event-field="time"></dd></div>
+              <div><dt data-i18n="locationLabel">Location</dt><dd data-event-field="location"></dd></div>
+              <div><dt data-i18n="priceLabel">Price</dt><dd data-event-field="price"></dd></div>
+            </dl>
+            <a
+              class="button button-primary button-full book-class-button"
+              href="#reserve"
+              data-i18n="bookClass"
+              data-event-id="rays-of-okinawa"
+            >Book This Class</a>
+          </div>
+        </article>
       </div>
 
       <aside class="session-request-card reveal" aria-labelledby="session-request-title">
@@ -585,7 +608,7 @@ If you already have a venue in mind, simply let me know your preferred date, loc
     </div>
   </footer>
 
-  <script src="script.js?v=20260614-02"></script>
+  <script src="script.js?v=20260614-03"></script>
   <!-- Cloudflare Web Analytics -->
   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"f1c91800bab048548ab0c3bb075e32cd"}'></script>
   <!-- End Cloudflare Web Analytics -->

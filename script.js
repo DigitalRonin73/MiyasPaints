@@ -536,6 +536,54 @@ const classEvents = {
       en: "6 seats available",
       ja: "残り6席"
     }
+  },
+  "rays-of-okinawa": {
+    image: "images/rays-of-okinawa-session.jpg?v=20260614-01",
+    imageAlt: {
+      en: "Rays of Okinawa under-the-sea painting with coral, fish, and manta rays",
+      ja: "サンゴや魚、マンタを描いたRays of Okinawaの海中作品"
+    },
+    title: {
+      en: "Rays of Okinawa",
+      ja: "Rays of Okinawa"
+    },
+    description: {
+      en: "A relaxing under-the-sea painting inspired by Okinawa’s ocean.",
+      ja: "やさしい光に包まれる、アンダー・ザ・シー ペイント。"
+    },
+    date: {
+      en: "July 26, 2026",
+      ja: "2026年7月26日"
+    },
+    isoDate: "2026-07-26",
+    month: {
+      en: "JUL",
+      ja: "7月"
+    },
+    day: "26",
+    weekday: {
+      en: "SUN",
+      ja: "日"
+    },
+    time: {
+      en: "1:00 PM",
+      ja: "午後1:00"
+    },
+    location: {
+      en: "Miya's Table, Yomitan",
+      ja: "Miya's Table, 読谷"
+    },
+    price: {
+      en: "¥4,500 ($30)",
+      ja: "¥4,500 ($30)"
+    },
+    capacity: 6,
+    bookedSeats: 0,
+    seatsLeft: 6,
+    availabilityNote: {
+      en: "6 seats available",
+      ja: "残り6席"
+    }
   }
 };
 
