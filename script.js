@@ -538,7 +538,7 @@ const classEvents = {
     }
   },
   "rays-of-okinawa": {
-    image: "images/rays-of-okinawa-session.jpg?v=20260614-02",
+    image: "images/rays-of-okinawa-studio-session.jpg",
     imageAlt: {
       en: "Rays of Okinawa under-the-sea painting with coral, fish, and manta rays",
       ja: "サンゴや魚、マンタを描いたRays of Okinawaの海中作品"
