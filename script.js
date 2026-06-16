@@ -539,18 +539,18 @@ const classEvents = {
     }
   },
   "rays-of-okinawa": {
-    image: "images/rays-of-okinawa-studio-session.jpg",
+    image: "images/ocean-friends-session.jpg?v=20260616-01",
     imageAlt: {
-      en: "Rays of Okinawa under-the-sea painting with coral, fish, and manta rays",
-      ja: "サンゴや魚、マンタを描いたRays of Okinawaの海中作品"
+      en: "Ocean Friends painting with a whale, sea turtle, and peaceful blue ocean light",
+      ja: "クジラとウミガメ、青い海の光を描いたOcean Friendsの作品"
     },
     title: {
-      en: "Rays of Okinawa",
-      ja: "Rays of Okinawa"
+      en: "Ocean Friends 🐋🐢",
+      ja: "オーシャンフレンズ🐋🐢"
     },
     description: {
-      en: "A relaxing under-the-sea painting inspired by Okinawa’s ocean.",
-      ja: "やさしい光に包まれる、アンダー・ザ・シー ペイント。"
+      en: "Paint a peaceful underwater scene. Beginner friendly.",
+      ja: "光に包まれた海の世界を描きます。初心者歓迎です✨"
     },
     date: {
       en: "July 26, 2026",
