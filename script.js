@@ -70,6 +70,7 @@ const translations = {
     instructorTitle: "Miya",
     instructorIntro: "I create relaxed, beginner-friendly painting experiences where everyone can enjoy the process.",
     instructorClosing: "No pressure, no perfection. Just time to slow down, create, and have fun.",
+    instructorLanguageNote: "English is not my first language, but everyone is welcome.",
     miyaAlt: "Pinto Beetle guests painting together in an ocean-view room",
     seeGallery: "View Gallery",
     galleryEyebrow: "Past Events / Gallery",

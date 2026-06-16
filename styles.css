@@ -4110,7 +4110,7 @@ body {
   font-weight: 800;
 }
 
-.home-instructor-copy p:not(.script-kicker):not(.signature) {
+.home-instructor-copy p:not(.script-kicker):not(.signature):not(.host-language-note) {
   color: rgba(31, 24, 48, 0.9);
   font-size: 1.04rem;
   font-weight: 500;
@@ -5065,6 +5065,18 @@ body {
 
 .instructor-closing {
   color: var(--muted);
+}
+
+.host-language-note {
+  margin-top: 12px;
+  color: rgba(31, 24, 48, 0.58);
+  font-size: 0.88rem;
+  font-weight: 400;
+  line-height: 1.55;
+}
+
+html[lang="ja"] .host-language-note {
+  display: none;
 }
 
 html[lang="ja"] .home-instructor-copy p[data-i18n="instructorIntro"] {
