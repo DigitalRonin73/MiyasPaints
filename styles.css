@@ -1069,10 +1069,8 @@ h3 {
   object-position: center 18%;
 }
 
-#gallery .gallery-grid img.gallery-young-artist-face-fit {
-  object-fit: contain;
-  object-position: center;
-  background: #f7efe9;
+.gallery-grid img.gallery-young-artist-face-fit {
+  object-position: center top;
 }
 
 .split-section {
