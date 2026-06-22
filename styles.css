@@ -5323,47 +5323,52 @@ html[lang="ja"] #gallery .section-heading p:not(.eyebrow) {
   }
 }
 
-/* A quiet invitation for custom dates and painting requests below the schedule. */
+/* A prominent invitation for custom dates and painting requests below the schedule. */
+.request-painting-section {
+  padding-block: clamp(48px, 7vw, 76px);
+  background:
+    radial-gradient(circle at 12% 20%, rgba(255, 255, 255, 0.9) 0 3px, transparent 4px),
+    radial-gradient(circle at 88% 80%, rgba(255, 255, 255, 0.75) 0 4px, transparent 5px),
+    linear-gradient(135deg, #fce8ec 0%, #fff8f3 52%, #f5e9f6 100%);
+}
+
 .session-request-card {
-  display: flex;
   width: min(100%, 880px);
-  gap: clamp(18px, 4vw, 42px);
-  align-items: center;
-  justify-content: space-between;
-  margin: 26px auto 0;
-  border: 1px solid rgba(65, 31, 78, 0.14);
-  border-left: 4px solid var(--pink);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.72);
-  padding: clamp(22px, 3.5vw, 34px);
+  margin: 0 auto;
+  border: 1px solid rgba(218, 137, 154, 0.38);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.88);
+  padding: clamp(30px, 5vw, 52px);
+  text-align: center;
+  box-shadow: 0 18px 50px rgba(65, 31, 78, 0.1);
 }
 
-.session-request-card h3 {
-  margin: 0 0 8px;
+.session-request-card .eyebrow {
+  margin-bottom: 10px;
+}
+
+.session-request-card h2 {
+  margin: 0 0 20px;
   color: var(--purple);
-  font-size: clamp(1.15rem, 2vw, 1.45rem);
-  line-height: 1.25;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.15;
 }
 
-.session-request-card p {
+.session-request-card .session-request-body {
   max-width: 62ch;
-  margin: 0;
+  margin: 0 auto;
   color: var(--muted);
-  font-size: 0.9rem;
-  line-height: 1.7;
+  font-size: clamp(0.95rem, 1.5vw, 1.05rem);
+  line-height: 1.85;
   white-space: pre-line;
 }
 
 .session-request-card .button {
-  flex: 0 0 auto;
-  min-height: 48px;
-  border: 1px solid #e4a0ad;
-  background: #f7d9df;
-  color: var(--purple);
-  padding: 12px 22px;
-  box-shadow: 0 8px 18px rgba(65, 31, 78, 0.08);
-  font-size: 0.82rem;
-  font-weight: 700;
+  min-height: 52px;
+  margin-top: 28px;
+  padding: 14px 28px;
+  box-shadow: 0 10px 24px rgba(65, 31, 78, 0.16);
+  font-size: 0.9rem;
   white-space: nowrap;
 }
 
@@ -5373,31 +5378,34 @@ html[lang="ja"] #gallery .section-heading p:not(.eyebrow) {
 }
 
 .session-request-card .button:hover {
-  border-color: #d9899a;
-  background: #f2c8d1;
-  box-shadow: 0 10px 22px rgba(65, 31, 78, 0.12);
+  box-shadow: 0 14px 30px rgba(65, 31, 78, 0.2);
 }
 
 @media (max-width: 619px) {
+  .request-painting-section {
+    padding-block: 38px;
+  }
+
   .session-request-card {
-    display: grid;
-    gap: 16px;
-    margin-top: 20px;
-    padding: 22px 20px;
+    border-radius: 14px;
+    padding: 28px 20px 22px;
   }
 
-  .session-request-card h3 {
-    margin-bottom: 10px;
-    font-size: 1.08rem;
+  .session-request-card h2 {
+    margin-bottom: 18px;
+    font-size: 1.85rem;
   }
 
-  .session-request-card p {
-    font-size: 0.84rem;
-    line-height: 1.72;
+  .session-request-card .session-request-body {
+    font-size: 0.9rem;
+    line-height: 1.8;
   }
 
   .session-request-card .button {
     width: 100%;
+    min-height: 54px;
+    margin-top: 24px;
+    font-size: 0.92rem;
   }
 }
 
