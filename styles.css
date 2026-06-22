@@ -1073,6 +1073,10 @@ h3 {
   object-position: center top;
 }
 
+.gallery-grid img.gallery-studio-group-fit {
+  object-position: center bottom;
+}
+
 .split-section {
   align-items: stretch;
 }
