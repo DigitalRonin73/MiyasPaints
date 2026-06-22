@@ -5388,17 +5388,17 @@ html[lang="ja"] #gallery .section-heading p:not(.eyebrow) {
 
   .session-request-card {
     border-radius: 14px;
-    padding: 28px 20px 22px;
+    padding: 26px 20px 22px;
   }
 
   .session-request-card h2 {
-    margin-bottom: 18px;
-    font-size: 1.85rem;
+    margin-bottom: 16px;
+    font-size: 1.65rem;
   }
 
   .session-request-card .session-request-body {
     font-size: 0.9rem;
-    line-height: 1.8;
+    line-height: 1.75;
   }
 
   .session-request-card .button {
