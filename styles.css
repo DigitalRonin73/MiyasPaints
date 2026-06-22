@@ -4816,6 +4816,10 @@ body {
   border-radius: 8px;
 }
 
+#classes .event-card[hidden] {
+  display: none;
+}
+
 #classes .event-image-wrap {
   min-height: 100%;
 }

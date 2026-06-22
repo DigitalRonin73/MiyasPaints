@@ -16,6 +16,7 @@ This repository is for Miya's painting website.
 - Avoid unnecessary frameworks unless requested.
 - Keep dependencies minimal.
 - Do not modify unrelated repositories.
+- After making requested website changes, commit and push them to `main` so the live site deploys automatically, unless the user specifically says not to.
 
 ## Suggested Workflow
 

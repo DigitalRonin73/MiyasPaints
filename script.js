@@ -345,102 +345,6 @@ let activeLanguage = savedLanguage;
 // this data, so changing a date, title, time, price, image, or seats is one edit.
 // Later, seatsLeft can be replaced by live availability from a booking backend.
 const classEvents = {
-  "coffee-paint-morning-glow": {
-    image: "images/coffee-paint-morning-glow-artwork.jpg?v=20260611-01",
-    imageAlt: {
-      en: "Colorful tropical sunrise painting for Coffee and Paint Morning Glow",
-      ja: "Coffee & Paint Morning Glowで描くカラフルな南国の朝焼け"
-    },
-    title: {
-      en: "Coffee & Paint: Morning Glow",
-      ja: "Coffee & Paint: Morning Glow"
-    },
-    description: {
-      en: "Bring a coffee and paint a soft tropical sunrise in a relaxed morning session.",
-      ja: "コーヒーを片手に、南国のやわらかな朝焼けを描くリラックスしたモーニングセッションです。"
-    },
-    date: {
-      en: "June 19, 2026",
-      ja: "2026年6月19日"
-    },
-    isoDate: "2026-06-19",
-    month: {
-      en: "JUN",
-      ja: "6月"
-    },
-    day: "19",
-    weekday: {
-      en: "FRI",
-      ja: "金"
-    },
-    time: {
-      en: "10:00 AM",
-      ja: "午前10:00"
-    },
-    location: {
-      en: "Miya's Table, Yomitan",
-      ja: "Miya's Table, 読谷"
-    },
-    price: {
-      en: "¥4,500 / $30",
-      ja: "¥4,500 / $30"
-    },
-    capacity: 6,
-    bookedSeats: 1,
-    seatsLeft: 5,
-    availabilityNote: {
-      en: "1 booked · 5 seats left",
-      ja: "1名予約済み・残り5席"
-    }
-  },
-  "moonlit-getto": {
-    image: "images/moonlit-getto-session.jpg?v=20260609-01",
-    imageAlt: {
-      en: "Moonlit Getto painting session announcement",
-      ja: "Moonlit Gettoペインティングセッションのお知らせ"
-    },
-    title: {
-      en: "Moonlit Getto",
-      ja: "Moonlit Getto"
-    },
-    description: {
-      en: "Paint moonlit getto flowers in a glass vase against a deep Okinawa night sky.",
-      ja: "沖縄の深い夜空を背景に、月明かりに照らされた月桃をガラスの花瓶と一緒に描きます。"
-    },
-    date: {
-      en: "June 21, 2026",
-      ja: "2026年6月21日"
-    },
-    isoDate: "2026-06-21",
-    month: {
-      en: "JUN",
-      ja: "6月"
-    },
-    day: "21",
-    weekday: {
-      en: "SUN",
-      ja: "日"
-    },
-    time: {
-      en: "1:00 PM",
-      ja: "午後1:00"
-    },
-    location: {
-      en: "Miya's Table, Yomitan",
-      ja: "Miya's Table, 読谷"
-    },
-    price: {
-      en: "¥4,500 / $30",
-      ja: "¥4,500 / $30"
-    },
-    capacity: 6,
-    bookedSeats: 3,
-    seatsLeft: 3,
-    availabilityNote: {
-      en: "3 booked · 3 seats left",
-      ja: "3名予約済み・残り3席"
-    }
-  },
   "firefly-forest-private": {
     image: "images/firefly-forest-private-session.jpg?v=20260609-01",
     imageAlt: {
@@ -635,6 +539,22 @@ function seatsLabel(seatsLeft, language = activeLanguage) {
   return dictionary.seatsLeft.replace("{count}", String(seatsLeft));
 }
 
+function getOkinawaDate() {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "Asia/Tokyo",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  }).formatToParts(new Date());
+  const dateParts = Object.fromEntries(parts.map(({ type, value }) => [type, value]));
+
+  return `${dateParts.year}-${dateParts.month}-${dateParts.day}`;
+}
+
+function eventHasEnded(event, today = getOkinawaDate()) {
+  return event.isoDate < today;
+}
+
 function renderEventCard(card, event) {
   const image = card.querySelector('[data-event-field="image"]');
   const dateCard = card.querySelector('[data-event-field="dateCard"]');
@@ -682,6 +602,12 @@ function renderEventCards() {
   document.querySelectorAll(".event-card[data-event-id]").forEach((card) => {
     const event = classEvents[card.dataset.eventId];
     if (event) {
+      card.hidden = eventHasEnded(event);
+
+      if (card.hidden) {
+        return;
+      }
+
       renderEventCard(card, event);
     }
   });
