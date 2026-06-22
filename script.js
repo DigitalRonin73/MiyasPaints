@@ -457,18 +457,18 @@ const classEvents = {
       ja: "光に包まれた海の世界を描きます。初心者歓迎です✨"
     },
     date: {
-      en: "July 26, 2026",
-      ja: "2026年7月26日"
+      en: "July 25, 2026",
+      ja: "2026年7月25日"
     },
-    isoDate: "2026-07-26",
+    isoDate: "2026-07-25",
     month: {
       en: "JUL",
       ja: "7月"
     },
-    day: "26",
+    day: "25",
     weekday: {
-      en: "SUN",
-      ja: "日"
+      en: "SAT",
+      ja: "土"
     },
     time: {
       en: "1:00 PM",
