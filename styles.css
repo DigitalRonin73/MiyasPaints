@@ -1069,6 +1069,10 @@ h3 {
   object-position: center 18%;
 }
 
+.gallery-grid img.gallery-young-artist-face-fit {
+  object-position: center 12%;
+}
+
 .split-section {
   align-items: stretch;
 }
