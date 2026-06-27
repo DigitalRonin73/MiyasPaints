@@ -444,6 +444,54 @@ const classEvents = {
       ja: "残り6席"
     }
   },
+  "under-the-sea": {
+    image: "images/under-the-sea-session.jpg?v=20260627-01",
+    imageAlt: {
+      en: "Under the Sea painting event announcement with colorful ocean life",
+      ja: "色とりどりの海の生き物を描くUnder the Seaイベントのお知らせ"
+    },
+    title: {
+      en: "Under the Sea",
+      ja: "Under the Sea"
+    },
+    description: {
+      en: "Paint your own ocean adventure with colorful sea life. Beginner friendly.",
+      ja: "カラフルな海の世界を描くクラスです。初心者の方も歓迎です。"
+    },
+    date: {
+      en: "July 12, 2026",
+      ja: "2026年7月12日"
+    },
+    isoDate: "2026-07-12",
+    month: {
+      en: "JUL",
+      ja: "7月"
+    },
+    day: "12",
+    weekday: {
+      en: "SUN",
+      ja: "日"
+    },
+    time: {
+      en: "1:00 PM",
+      ja: "午後1:00"
+    },
+    location: {
+      en: "Miya's Table, Yomitan",
+      ja: "Miya's Table, 読谷"
+    },
+    price: {
+      en: "¥4,500 / $30",
+      ja: "¥4,500 / $30"
+    },
+    capacity: 6,
+    bookedSeats: 2,
+    seatsLeft: 4,
+    availabilityNote: {
+      en: "2 booked · 4 seats left",
+      ja: "2名予約済み・残り4席"
+    }
+  },
   "rays-of-okinawa": {
     image: "images/ocean-friends-session.jpg?v=20260616-01",
     imageAlt: {
@@ -561,7 +609,7 @@ function renderEventCard(card, event) {
   const image = card.querySelector('[data-event-field="image"]');
   const dateCard = card.querySelector('[data-event-field="dateCard"]');
   const isPrivateEvent = event.seatsLeft && typeof event.seatsLeft === "object" && !Array.isArray(event.seatsLeft);
-  const showAvailability = isPrivateEvent || (typeof event.seatsLeft === "number" && event.seatsLeft <= 3);
+  const showAvailability = isPrivateEvent || event.bookedSeats > 0 || (typeof event.seatsLeft === "number" && event.seatsLeft <= 3);
   const isUrgentAvailability = !isPrivateEvent && typeof event.seatsLeft === "number" && event.seatsLeft <= 2;
   const fields = {
     month: localizedValue(event.month),
