@@ -397,6 +397,7 @@ const classEvents = {
     },
   },
   "pink-sky-palms": {
+    hidden: true,
     image: "images/pink-sky-palms-session.jpg?v=20260614-01",
     imageAlt: {
       en: "Pink Sky Palms painting with palm trees beneath a colorful summer sky",
@@ -652,7 +653,7 @@ function renderEventCards() {
   document.querySelectorAll(".event-card[data-event-id]").forEach((card) => {
     const event = classEvents[card.dataset.eventId];
     if (event) {
-      card.hidden = eventHasEnded(event);
+      card.hidden = Boolean(event.hidden) || eventHasEnded(event);
 
       if (card.hidden) {
         return;
