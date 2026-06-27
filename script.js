@@ -493,7 +493,7 @@ const classEvents = {
     }
   },
   "rays-of-okinawa": {
-    image: "images/ocean-friends-session.jpg?v=20260627-01",
+    image: "images/ocean-friends-july-25-flyer.jpg",
     imageAlt: {
       en: "Ocean Friends painting with a whale, sea turtle, and peaceful blue ocean light",
       ja: "クジラとウミガメ、青い海の光を描いたOcean Friendsの作品"
