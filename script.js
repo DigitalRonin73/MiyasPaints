@@ -500,7 +500,7 @@ const classEvents = {
     },
     title: {
       en: "Ocean Friends 🐋🐢",
-      ja: "オーシャンフレンズ🐋🐢"
+      ja: "Ocean Friends 🐋🐢"
     },
     description: {
       en: "Paint a peaceful underwater scene. Beginner friendly.",
