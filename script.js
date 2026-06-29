@@ -131,6 +131,8 @@ const translations = {
     faqPaymentA: "Payment details will be sent after your reservation is confirmed.",
     faqWhereQ: "Where are classes held?",
     faqWhereA: "Classes are held in Yomitan, Okinawa. Exact details are confirmed after reservation.",
+    faqDrinksQ: "Can I bring my own drinks?",
+    faqDrinksA: "Yes! BYOB is welcome. Feel free to bring your favorite beer, wine, or other alcoholic beverages if you'd like. Tea, water, and soft drinks are provided.",
     faqClothesQ: "What if I am worried about getting paint on my clothes?",
     faqClothesA: "Aprons are provided, but we recommend wearing clothes that you do not mind getting a little paint on.",
     faqPrivateQ: "Do you offer private events or mobile workshops?",

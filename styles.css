@@ -1077,6 +1077,24 @@ h3 {
   object-position: center bottom;
 }
 
+.gallery-grid img.gallery-firefly-done-fit {
+  object-position: center 34%;
+}
+
+.gallery-grid img.gallery-firefly-couple-fit,
+.gallery-grid img.gallery-firefly-pair-fit {
+  object-position: center 24%;
+}
+
+.gallery-grid img.gallery-firefly-shaka-fit,
+.gallery-grid img.gallery-firefly-painting-fit {
+  object-position: center 28%;
+}
+
+.gallery-grid img.gallery-firefly-table-fit {
+  object-position: center 36%;
+}
+
 .split-section {
   align-items: stretch;
 }
