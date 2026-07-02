@@ -496,6 +496,7 @@ const classEvents = {
     }
   },
   "rays-of-okinawa": {
+    hidden: true,
     image: "images/ocean-friends-july-25-flyer.jpg",
     imageAlt: {
       en: "Ocean Friends painting with a whale, sea turtle, and peaceful blue ocean light",
