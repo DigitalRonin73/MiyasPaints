@@ -6,6 +6,17 @@
 // private: true prevents anyone else from joining the class.
 // bookedGuests and capacity control the remaining-seat count.
 // artwork.image may be left blank until an image is ready.
+const CHRISTMAS_PRICING = {
+  adult: 4000,
+  child: 3000,
+  currency: "JPY",
+  parentChildDiscount: false
+};
+const CHRISTMAS_DETAILS = {
+  en: "One canvas per person. All materials included. Beginners welcome. No additional parent & child discount.",
+  ja: "キャンバスは1人1枚、画材すべて込み。初心者歓迎。親子の追加割引はありません。"
+};
+
 export const RESERVATION_SESSIONS = [
   {
     id: "2026-11-15-1000-moonlit-sakura",
@@ -43,6 +54,41 @@ export const RESERVATION_SESSIONS = [
       name: { en: "Christmas Wreath", ja: "クリスマスリース" },
       image: "/images/christmas-wreath-dec-5-2026-class.jpg?v=20261112-photos"
     },
+    flyer: "/images/christmas-wreath-dec-5-2026-flyer.jpg",
+    pricing: CHRISTMAS_PRICING,
+    details: CHRISTMAS_DETAILS,
+    capacity: 6,
+    bookedGuests: 0,
+    private: false,
+    status: "open"
+  },
+  {
+    id: "2026-12-09-1000-joy-christmas-tree",
+    date: "2026-12-09",
+    startTime: "10:00",
+    artwork: {
+      name: { en: "JOY Christmas Tree", ja: "JOY Christmas Tree" },
+      image: "/images/joy-paint-design.jpg?v=20261112-photos"
+    },
+    flyer: "/images/joy-christmas-tree-dec-9-2026-flyer.jpg",
+    pricing: CHRISTMAS_PRICING,
+    details: CHRISTMAS_DETAILS,
+    capacity: 6,
+    bookedGuests: 0,
+    private: false,
+    status: "open"
+  },
+  {
+    id: "2026-12-13-1300-starry-christmas-night",
+    date: "2026-12-13",
+    startTime: "13:00",
+    artwork: {
+      name: { en: "Starry Christmas Night", ja: "Starry Christmas Night（星降る夜）" },
+      image: "/images/starry-christmas-night-paint-design.jpg?v=20261112-photos"
+    },
+    flyer: "/images/starry-christmas-night-dec-13-2026-flyer.jpg",
+    pricing: CHRISTMAS_PRICING,
+    details: CHRISTMAS_DETAILS,
     capacity: 6,
     bookedGuests: 0,
     private: false,
