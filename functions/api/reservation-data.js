@@ -41,7 +41,7 @@ export const RESERVATION_SESSIONS = [
     startTime: "13:00",
     artwork: {
       name: { en: "Christmas Wreath", ja: "クリスマスリース" },
-      image: "/images/christmas-wreath-dec-5-2026-class.jpg"
+      image: "/images/christmas-wreath-dec-5-2026-class.jpg?v=20261112-photos"
     },
     capacity: 6,
     bookedGuests: 0,
